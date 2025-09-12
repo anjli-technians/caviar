@@ -319,14 +319,11 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .category_menu{margin-top: 15px;}
     .nav-pills .toggle_section .nav-link, .nav-pills #toggle_section .nav-link{padding: 15px;}
     .spacial_trend{margin-top: 20px;}
-<<<<<<< HEAD
     .offers_sale{flex-direction: row;margin-top: 10px;}
-=======
     .product_category .nav-pills{overflow: auto;}
     .toggle_section{display: flex; flex-direction: row; gap: 10px;}
 
     .offers_sale{flex-direction: row;}
->>>>>>> 36ebe47d793760f2d6de4cbfad0cf13facc52caf
     .ad_bg.bg_2{margin-top: 0px;}
     .ad_bg.bg_1{margin-right: 5px;}
     .ad_bg span{font-size: 9px;}
