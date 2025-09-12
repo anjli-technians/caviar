@@ -333,7 +333,7 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .ad_bg img{width: 110px;}
     .ad_bg {display: flex;flex-direction: column;justify-content: flex-end;align-items: center;}
     .remove_padding{padding: 0px  !important;}
-    .cart_count_badge{right: -5px;}
+    .cart_count_badge{right: -5px;padding: 1px 3px; top: -5px;}
     .Product_category .category_menu{border-radius: unset;}
     .Product_category .nav-pills .toggle_section .nav-link img{margin-right: 10px !important;}
     .product_category .nav-pills .toggle_section .nav-link{width: max-content;}
