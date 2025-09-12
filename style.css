@@ -8,9 +8,9 @@
 .category_menu{border:unset;overflow: hidden;}
 .top_category{background: #FA6905;color: #fff;padding: 10px 15px;border: 0px;width: -webkit-fill-available;text-align: left;font-size: 15px;font-weight: 400;font-family: "Poppins", sans-serif;text-transform: uppercase;}
 .top_category img{width: 16px;height: 16px;object-fit: contain;margin-right:18px;}
-.nav-pills #toggle_section .nav-link{ font-size: 11px;font-weight: 600;font-family: "Montserrat", sans-serif;text-transform: uppercase;color: #000;background: transparent;padding: 25px 20px 17px 20px;padding-left: 15px;width: -webkit-fill-available;text-align: left;}
-.nav-pills #toggle_section .nav-link img{width: 24px;height: 24px;object-fit: contain;margin-right:18px;}   
-.nav-pills #toggle_section .nav-link.active{color: #FA6905;position: relative;}
+.nav-pills .toggle_section .nav-link, .nav-pills #toggle_section .nav-link{ font-size: 11px;font-weight: 600;font-family: "Montserrat", sans-serif;text-transform: uppercase;color: #000;background: transparent;padding: 25px 20px 17px 20px;padding-left: 15px;width: -webkit-fill-available;text-align: left;}
+.nav-pills #toggle_section .nav-link img, .nav-pills .toggle_section .nav-link img{width: 24px;height: 24px;object-fit: contain;margin-right:18px;}   
+.nav-pills .toggle_section .nav-link.active, .nav-pills #toggle_section .nav-link.active{color: #FA6905;position: relative;}
 .nav-pills #toggle_section .nav-link.active::after{content: "";position: absolute;bottom: 0;top: 0;margin: auto;right: 0;width: 100%;height: 2px;background: url("https://dev.technians.com/shared/caviar/images/right_vector.png");background-position: right center;background-size: contain;height: 12px;width: 15px;background-repeat: no-repeat;}
 .ad_bg.bg_1{background: url("https://dev.technians.com/shared/caviar/images/bg_1.png");background-size: cover;background-repeat: no-repeat;text-align: center;padding: 5px;padding-bottom: 0px; height: 100%; width: 100%;}
 .ad_bg.bg_2{background: url("https://dev.technians.com/shared/caviar/images/bg_2.png");background-size: cover;background-repeat: no-repeat;text-align: center;padding: 5px;padding-bottom: 0px;margin-top: 15px; height: 100%; width: 100%;}
@@ -71,7 +71,7 @@
 .trending-product.active {display: block; }
 /*  Product category */
 .main-title h2, .main-title h3, .main-title h1{font-family: "Montserrat" !important;font-weight: 600;font-size: 28px;line-height: 35px; ;text-transform: capitalize; margin-bottom: 15px; color: #000;}
-.product_category .nav-pills #toggle_section .nav-link{padding: 18px 20px !important; font-weight: 600; font-size: 14px; text-transform: capitalize;}
+.product_category .nav-pills .toggle_section .nav-link, .product_category .nav-pills #toggle_section .nav-link{padding: 18px 20px !important; font-weight: 600; font-size: 14px; text-transform: capitalize;}
 .product_category .nav-pills #toggle_section .nav-link.active::after{content: unset;}
 .product_category .nav-pills{padding: 10px;}
 .Product_category .main-title{display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;}
@@ -81,7 +81,7 @@
 .swiper-button-prev::after{color: #000 !important; font-size: 8px !important; }
 .swiper-button-prev::after,
 .swiper-button-next::after {font-size: 8px !important;color: #fff;font-weight: 600 !important;}
-.Product_category .nav-pills #toggle_section .nav-link img{margin-right: 30px !important;}
+.Product_category .nav-pills #toggle_section .nav-link img, .Product_category .nav-pills .toggle_section .nav-link img{margin-right: 30px !important;}
 section.banner-section{padding-top: 50px; padding-bottom: 50px;}
 .banner-section {position: relative;border-radius: 8px;overflow: hidden}
 .banner-img {width: 100%; height: 300px;  object-fit: cover;  filter: brightness(50%);  border-radius: 5px}
@@ -302,7 +302,7 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .banner-subtitle{margin-bottom: 5px;}
     section.banner-section{margin: 25px 0px;border-radius: 0px;}
     .banner-img{border-radius: 0px;}
-    .product_category .nav-pills #toggle_section .nav-link{padding: 15px 5px !important;}
+    .product_category .nav-pills .toggle_section .nav-link, .product_category .nav-pills #toggle_section .nav-link{padding: 15px 5px !important;}
     .product_category {margin-bottom: 15px;}
     .product-card, .sale-box{margin-bottom: 0px;}
     .logo_slider .slider_bg{padding: 10px;}
@@ -314,7 +314,7 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .copyright{padding: 5px;}
     .sales_banner{bottom: 0;margin: auto;display: flex;flex-direction: column;align-items: center;justify-content: center;top: 0;}
     .category_menu{margin-top: 15px;}
-    .nav-pills #toggle_section .nav-link{padding: 15px;}
+    .nav-pills .toggle_section .nav-link, .nav-pills #toggle_section .nav-link{padding: 15px;}
     .spacial_trend{margin-top: 20px;}
 } 
 @media (max-width: 991px){
