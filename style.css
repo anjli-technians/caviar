@@ -322,7 +322,7 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .offers_sale{flex-direction: row;margin-top: 10px;}
     .product_category .nav-pills{overflow: auto;}
     .toggle_section{display: flex; flex-direction: row; gap: 10px;}
- 
+  
     .ad_bg.bg_2{margin-top: 0px;}
     .ad_bg.bg_1{margin-right: 5px;}
     .ad_bg span{font-size: 9px;}
