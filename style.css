@@ -6,7 +6,7 @@
 #toggle_section{display: none;}
 /* .category_menu{border: 1px solid #E4E4E4;border-radius: 5px;overflow: hidden;} */
 .category_menu{border:unset;overflow: hidden;}
-.top_category{background: #FA6905;color: #fff;padding: 10px 15px;border: 0px;width: -webkit-fill-available;text-align: left;font-size: 16px;font-weight: 400;font-family: "Poppins", sans-serif;text-transform: uppercase;}
+.top_category{background: #FA6905;color: #fff;padding: 10px 15px;border: 0px;width: -webkit-fill-available;text-align: left;font-size: 15px;font-weight: 400;font-family: "Poppins", sans-serif;text-transform: uppercase;}
 .top_category img{width: 16px;height: 16px;object-fit: contain;margin-right:18px;}
 .nav-pills #toggle_section .nav-link{ font-size: 11px;font-weight: 600;font-family: "Montserrat", sans-serif;text-transform: uppercase;color: #000;background: transparent;padding: 25px 20px 17px 20px;padding-left: 15px;width: -webkit-fill-available;text-align: left;}
 .nav-pills #toggle_section .nav-link img{width: 24px;height: 24px;object-fit: contain;margin-right:18px;}   
@@ -219,33 +219,34 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
             /* -------------------------------------------------- */
 /* .best_seller .product_detail p{font-weight: 700;} */
 .main-title h4{color: #000000;font-family: "Montserrat", sans-serif;font-size: 13px;font-weight: 600;text-transform: capitalize;text-align: center;}
-            .best_seller h4, .enquiry h4{width: 80%;margin: auto;padding: 10px;border-bottom: 1px solid #E4E4E4;}
-            .best_seller{margin-top:20px; border: 1px solid #E4E4E4;border-radius: 5px;padding: 15px;}
-            .product_detail h6, .product_detail p{font-family: "Montserrat", sans-serif;font-size: 12px;font-weight: 600;margin-bottom: 0px;text-transform: capitalize;}
-            .product_detail p{font-family: "Poppins";}
-            .services .main-title {margin-bottom: 30px;}
-            /* .best_seller.services .product_detail:nth-child(1){margin-top: 30px;} */
-            .product_detail {text-align: center;margin-top: 15px;}
-            .product_detail::after{content: "";  display: block; margin-top: 20px !important;  width: 70px;  height: 1px;  background: #E4E4E4;  margin: 2px auto 0;}
-            .product_detail:last-child:after{content: unset;}
-            .product_detail .product_img{width: 65px; margin-bottom: 7px;}
-            .enquiry{margin-top: 20px; background: #FA6905;padding: 10px 25px 25px;text-align: center;color: #fff;}
-            .enquiry a, .enquiry span{display: block;color: #fff;}
-            .enquiry h4{border-color: #FCFCFC;color: #fff;margin-bottom: 15px;}
-            .enquiry span{font-family: "Poppins", sans-serif;font-size: 10px;font-weight: 400;}
-            .enquiry a{font-family: "Poppins", sans-serif;font-size: 14px;font-weight: 500;text-decoration: none;}
-            .offer-card-side{margin-top: 20px;}
-            .enquiry .enquiry_now{background-color: #fff;color: #000000;padding: 7px 15px;text-align: center;text-transform: uppercase;font-size: 10px;font-weight: 600;border-radius: 3px;}
+.best_seller h4, .enquiry h4{width: 80%;margin: auto;padding: 10px;border-bottom: 1px solid #E4E4E4;}
+.best_seller{margin-top:20px; border: 1px solid #E4E4E4;border-radius: 5px;padding: 15px;}
+.product_detail h6, .product_detail p{font-family: "Montserrat", sans-serif;font-size: 12px;font-weight: 600;margin-bottom: 0px;text-transform: capitalize;}
+.product_detail p{font-family: "Poppins";}
+.services .main-title {margin-bottom: 30px;}
+/* .best_seller.services .product_detail:nth-child(1){margin-top: 30px;} */
+.product_detail {text-align: center;margin-top: 15px;}
+.product_detail::after{content: "";  display: block; margin-top: 20px !important;  width: 70px;  height: 1px;  background: #E4E4E4;  margin: 2px auto 0;}
+.product_detail:last-child:after{content: unset;}
+.product_detail .product_img{width: 65px; margin-bottom: 7px;}
+.enquiry{margin-top: 20px; background: #FA6905;padding: 10px 25px 25px;text-align: center;color: #fff;}
+.enquiry a, .enquiry span{display: block;color: #fff;}
+.enquiry h4{border-color: #FCFCFC;color: #fff;margin-bottom: 15px;}
+.enquiry span{font-family: "Poppins", sans-serif;font-size: 10px;font-weight: 400;}
+.enquiry a{font-family: "Poppins", sans-serif;font-size: 14px;font-weight: 500;text-decoration: none;}
+.offer-card-side{margin-top: 20px;}
+.enquiry .enquiry_now{background-color: #fff;color: #000000;padding: 7px 15px;text-align: center;text-transform: uppercase;font-size: 10px;font-weight: 600;border-radius: 3px;}
 
-            .sales_banner{position: absolute;top: 30px;left: 0;right: 0;text-align: center;}
-            .sales_banner>img{width: 150px;}
-            .sales_banner .sales_text span{font-size: 10px;color: #fff;font-weight: 300;font-family: "Poppins", sans-serif;text-transform: uppercase;letter-spacing: 0.5px;}
-            .sales_banner .sales_text h5{font-family: "Montserrat", sans-serif;font-size: 24px;font-weight: 500;text-transform: capitalize;color: #fff;margin-top: 5px;}
-            .sales_banner .sales_text a{border-bottom: 2px solid #fff;color: #fff;text-decoration: none;font-family: "Poppins", sans-serif;font-size: 11px;letter-spacing: 0.75px;}
-            .offers_sale{display: flex; flex-direction: column; justify-content: space-between; height: 100%;}
-             #navbarNavDropdown .nav-item .nav-link,.flex_icon li{position: relative;  }
-             
-            .cart-count {position: absolute;top: -8px;     right: -8px; background: orange;color: white;  font-size: 8px;font-weight: bold;padding: 2px 6px;}
+.sales_banner{position: absolute;top: 30px;left: 0;right: 0;text-align: center;}
+.sales_banner>img{width: 150px;}
+.sales_banner .sales_text span{font-size: 10px;color: #fff;font-weight: 300;font-family: "Poppins", sans-serif;text-transform: uppercase;letter-spacing: 0.5px;}
+.sales_banner .sales_text h5{font-family: "Montserrat", sans-serif;font-size: 24px;font-weight: 500;text-transform: capitalize;color: #fff;margin-top: 5px;}
+.sales_banner .sales_text a{border-bottom: 2px solid #fff;color: #fff;text-decoration: none;font-family: "Poppins", sans-serif;font-size: 11px;letter-spacing: 0.75px;}
+.offers_sale{display: flex; flex-direction: column; justify-content: space-between; height: 100%;}
+  #navbarNavDropdown .nav-item .nav-link,.flex_icon li{position: relative;  }
+  
+.cart-count {position: absolute;top: -8px; right: 0px; background: orange;color: white;  font-size: 8px;font-weight: 500;padding: 2px 6px;text-transform: uppercase;}
+.offer_price_badge{background-color: #FA6905;}
 
  .top-category-bar {
     background-color: #FA6905;  
@@ -266,7 +267,7 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
     background: #FFFFFF59;
     border-radius: 50px;
     overflow: hidden;
-    height: 32px;
+    height: 35px;
   }
 
   .search-input {
@@ -274,7 +275,7 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
     outline: none;
     background: transparent;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 20px;
     flex: 1;font-family: "poppins", sans-serif;font-size: 11px;letter-spacing: 0.5px;
     font-weight: 300;
   }
@@ -291,10 +292,10 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
     background: transparent;
     color: #fff;
     font-size: 14px;
-    padding: 0 10px;
-    width: 30%;font-family: "poppins", sans-serif;font-size: 11px;letter-spacing: 0.5px;
-    font-weight: 300;
-  }
+    padding: 10px;
+    width: 20%;font-family: "poppins", sans-serif;font-size: 11px;letter-spacing: 0.5px;
+    font-weight: 300;position: relative;appearance: auto;margin-right: 10px;
+  } 
 
   .category-select option {
     color: #000; /* black text inside dropdown */
@@ -303,7 +304,7 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
   .search-btn {
     background: #fff;
     border-radius: 80px;
-    padding: 2px 20px;
+    padding: 5px 20px;
   }
 
   .search-btn i {
