@@ -285,6 +285,11 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
 
 @media (max-width:575px) {
     .footer .col{flex: 1 0 50% !important;margin-bottom: 10px;}
+    .offers_sale{flex-direction: row; gap: 10px; }
+    .ad_bg.bg_1{margin-top: 15px;}
+    .ad_bg span{font-size: 9px;}
+    .ad_bg h4{font-size: 12px;}
+    .ad_bg img{width: 80px;}
 }
 
 @media (max-width: 767px){
