@@ -275,7 +275,8 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
     background: transparent;
     color: #fff;
     padding: 10px 15px;
-    flex: 1;
+    flex: 1;font-family: "poppins", sans-serif;font-size: 11px;letter-spacing: 0.5px;
+    font-weight: 300;
   }
 
   .search-input::placeholder {
@@ -291,7 +292,8 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
     color: #fff;
     font-size: 14px;
     padding: 0 10px;
-    width: 30%;
+    width: 30%;font-family: "poppins", sans-serif;font-size: 11px;letter-spacing: 0.5px;
+    font-weight: 300;
   }
 
   .category-select option {
