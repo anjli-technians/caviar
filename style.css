@@ -3,8 +3,9 @@
 .navbar-expand-lg .navbar-nav{gap: 12px;}
 .flex_icon{display: flex;list-style: none;gap: 15px;}
 .flex_icon li a img{width: 17px;height: 17px;object-fit: contain;}
-#toggle_section{display: block;}
-.category_menu{border: 1px solid #E4E4E4;border-radius: 5px;overflow: hidden;}
+#toggle_section{display: none;}
+/* .category_menu{border: 1px solid #E4E4E4;border-radius: 5px;overflow: hidden;} */
+.category_menu{border:unset;overflow: hidden;}
 .top_category{background: #FA6905;color: #fff;padding: 10px 15px;border: 0px;width: -webkit-fill-available;text-align: left;font-size: 16px;font-weight: 400;font-family: "Poppins", sans-serif;text-transform: uppercase;}
 .top_category img{width: 16px;height: 16px;object-fit: contain;margin-right:18px;}
 .nav-pills #toggle_section .nav-link{ font-size: 11px;font-weight: 600;font-family: "Montserrat", sans-serif;text-transform: uppercase;color: #000;background: transparent;padding: 25px 20px 17px 20px;padding-left: 15px;width: -webkit-fill-available;text-align: left;}
@@ -21,7 +22,7 @@
 .product_slider .swiper-slide img{height: 100%;}
 .product_slider .swiper-pagination-bullet{height: 13px;width: 13px;background: #fff;border-radius: 50%;opacity: 1;}
 .product_slider .swiper-pagination-bullet-active{background: #FA6905;}
-.spacial_trend{border: 1px solid #E4E4E4;padding: 15px; margin-top: 60px;}
+.spacial_trend{border: 1px solid #E4E4E4;padding: 15px; margin-top: 0;}
 .spacial_trend h5{font-size: 13px;font-weight: 600;font-family: "Montserrat", sans-serif;border-bottom: 1px solid #E4E4E4;text-align: center;text-transform: capitalize;padding: 0px 15px 15px 15px;width: max-content;margin: auto;}
 .time_countdown{font-family: "Poppins", sans-serif;text-align: center;width: fit-content;}
 .time_countdown div{background: #FA6905;height: 35px;width: 35px;border-radius: 5px;display: flex;align-items: center;justify-content: center;color: #fff;font-size: 12px;}
@@ -58,8 +59,7 @@
 .discount-badge { position: absolute; top: 5px; left: 5px; background: #ff6b35;  color: white; padding: 0px 4px; font-size: 9px;  font-weight: 300;font-family: "Poppins" }
 .discount-percent{ position: absolute; top: 5px; right: 5px; background: #F9BF33;  color: #000; padding: 0px 4px; font-size: 9px;  font-weight: 400; font-family: "Poppins"}
 .product-actions { position: absolute;top: auto;left: 0;right: 0;bottom: -100%; display: flex; gap: 5px; opacity: 0; transition: all 0.3s ease-in-out; justify-content: center; align-items: flex-end; height: fit-content; }
- .product-actions img{width: 13px !important;height: auto;object-fit: cover;}
- .swiper-free-mode > .swiper-wrapper { transition-timing-function: linear !important; }
+ .product-actions img{width: 13px;height: auto;object-fit: cover;}
 
         /* .product-card .product-actions:hover img{
             filter: invert(1);
@@ -79,6 +79,17 @@
  .original-price { font-size: 13px; font-weight: 400; color: #7E7E7E; text-decoration: line-through; font-family: "Poppins" }
 .trending-product { display: none;}
  .trending-product.active {display: block; }
+        @media (max-width: 768px) {
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .tab-buttons {
+                flex-wrap: wrap;
+            }
+        }
 
         /*  Product category */
 .main-title h2, .main-title h3, .main-title h1{font-family: "Montserrat" !important;font-weight: 600;font-size: 28px;line-height: 35px; ;text-transform: capitalize; margin-bottom: 15px; color: #000;}
@@ -98,7 +109,7 @@
   font-weight: 600 !important;
 }
 .Product_category .nav-pills #toggle_section .nav-link img{margin-right: 30px !important;}
-section.banner-section{margin-top: 50px; margin-bottom: 50px;padding: 0px;}
+section.banner-section{padding-top: 50px; padding-bottom: 50px;}
 .banner-section {position: relative;border-radius: 8px;overflow: hidden}
 .banner-img {width: 100%; height: 300px;  object-fit: cover;  filter: brightness(50%);  border-radius: 5px}
 /* .banner-img::before{ content: "";
@@ -148,10 +159,12 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
 
 .swiper-pagination-bullet-active {background: #ff6600 !important;  opacity: 1;}
 
-.topbar .dropdown-toggle {background: transparent; border: unset;font-family: "poppins";font-size: 11px;}
+.topbar .dropdown-toggle {background: transparent; border: unset;}
 
-
-
+.dropdown-toggle::after{content: "";  position: absolute;  bottom: 0;  top: -6px;  margin: auto;  right: -5px;  width: 100%;  height: 2px;  background: url(https://dev.technians.com/shared/caviar/images/right_vector.png);  background-position: right center;  background-size: contain;  height: 7px;  width: 10px;  background-repeat: no-repeat;  border: none;  transform: rotate(89deg);}
+.order-tracker{align-items: center; justify-content: center; gap: 5px;}
+.order-tracker img{width: 25px; height: auto;}
+.order-tracker p{margin-bottom: 0;font-family: "Poppins"; font-weight: 400; font-size: 11px; line-height: 100%; text-transform: capitalize;}
 /* --------------------------------------------- */
  .footer{padding-bottom: 30px;}
             .footer ul{list-style: none;padding: 0;font-family: "Poppins", sans-serif;font-weight: 400;}
@@ -230,113 +243,78 @@ background: url(./images/Ellipse.png);  background-position: bottom;  background
             .sales_banner .sales_text h5{font-family: "Montserrat", sans-serif;font-size: 24px;font-weight: 500;text-transform: capitalize;color: #fff;margin-top: 5px;}
             .sales_banner .sales_text a{border-bottom: 2px solid #fff;color: #fff;text-decoration: none;font-family: "Poppins", sans-serif;font-size: 11px;letter-spacing: 0.75px;}
             .offers_sale{display: flex; flex-direction: column; justify-content: space-between; height: 100%;}
-            .topbar p{margin-bottom: 0px;font-family: "poppins", sans-serif;font-size: 11px;line-height: 20px;}
-            .topbar p img{margin-right: 10px;}
-            .dropdown-toggle::after{content: "";position: absolute;bottom: 0;top: -6px;margin: auto;right: -5px;width: 100%;height: 2px;background: url("https://dev.technians.com/shared/caviar/images/right_vector.png");background-position: right center;background-size: contain;height: 7px;width: 10px;background-repeat: no-repeat;border: none; transform: rotate(89deg);}
+             #navbarNavDropdown .nav-item .nav-link,.flex_icon li{position: relative;  }
+             
+            .cart-count {position: absolute;top: -8px;     right: -8px; background: orange;color: white;  font-size: 8px;font-weight: bold;padding: 2px 6px;}
 
+ .top-category-bar {
+    background-color: #FA6905;  
+    padding: 3px 0;
+    margin-bottom: 10px;
+  }
+
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF59;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 32px;
+  }
+
+  .search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    padding: 10px 15px;
+    flex: 1;
+  }
+
+  .search-input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+  }
+.form-control:focus{
+    background-color: unset;
+}
+  .category-select {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+    width: 30%;
+  }
+
+  .category-select option {
+    color: #000; /* black text inside dropdown */
+  }
+
+  .search-btn {
+    background: #fff;
+    border-radius: 80px;
+    padding: 2px 20px;
+  }
+
+  .search-btn i {
+    color: #000;
+    font-size: 16px;
+  }
+  .nav_below_item{position: absolute;
+    background: #fff;
+    border:1px solid #E4E4E4;
+margin-right: 0;
+padding: 0 15px;
+margin-top: 4px;}
 @media (min-width:992px) and (max-width:1240px){
-    .product_category .nav-pills #toggle_section .nav-link{padding: 15px 10px !important; font-size: 12px;}
+    .product_category .nav-pills #toggle_section .nav-link{padding: 15px 10px !important; font-size: 13px;}
     .Product_category .nav-pills #toggle_section .nav-link img{margin-right: 10px !important;}
-    .navbar-brand img{width: 100px;}
-    .top_category img{margin-right: 10px;width: 14px; height: 14px;}
-    .top_category{font-size: 13px;}
-    .nav-pills #toggle_section .nav-link img{width: 20px; height: 20px;margin-right: 10px;}
-    .nav-pills #toggle_section .nav-link{padding: 20px 15px 12px 15px;font-size: 10px;}
-    .ad_bg h4{font-size: 13px;}
-    .ad_bg span{font-size: 10px;}
-    .ad_bg img {width: 110px;}
-    .product_slider .swiper-pagination-bullet{height: 10px; width: 10px;}
-    .spacial_trend h5{font-size: 11px;}
-    .time_countdown div{height: 30px; width: 30px; font-size: 10px;}
-    .time_countdown span{font-size: 8px;}
-    .current-price{font-size: 14px;}
-    .main-title h2, .main-title h3, .main-title h1{font-size: 24px; line-height: 30px;}
-    .tab-btn{padding: 8px 15px; font-size: 10px;}
-    .discount-badge{font-size: 8px;}
-    .action-btn{width: 35px; height: 25px;}
-    .product-actions img{width: 11px;}
-    .product-title{font-size: 10px;}
-    .main-title h4{font-size: 12px;}
-    .services .product_detail h6{font-size: 11px;}
-    .services .product_detail p{font-size: 9px;}
-    .services .product_detail .product_img{width: 27px;}
-    .banner-title{font-size: 38px; line-height: 42px;}
-    .banner-desc{font-size: 9px;}
-    .banner-btn{font-size: 10px;}
-    .testimonial-heading{font-size: 12px;}
-    .product_detail h6, .product_detail p{font-size: 11px;}
-    .offer-title{font-size: 18px;}
-    .offer-price{font-size: 10px;}
-    .offer-card{height: auto;margin-bottom: 0px;}
-    .swiper-button-prev, .swiper-button-next{width: 20px !important; height: 20px !important;}
-    .swiper-button-prev::after, .swiper-button-next::after{ font-size: 6px !important;}
-    .top_product_slider .top_product_section_bg h5{font-size: 12px;}
-    .top_product_slider .top_product_section_bg div span{font-size: 9px;}
-    .top_product_slider .top_product_section_bg div img {width: 22px;}
-    .shop_by_category .category_section_bg ul li h6{font-size: 9px;}
-    .enquiry span{font-size: 9px;}
-    .enquiry a{font-size: 13px;}
-    .enquiry .enquiry_now{font-size: 9px; padding: 5px 10px;margin-top: 5px;}
-    .shop_by_category .category_section_bg a{font-size: 10px;}
-    .blog_slider .blog_section_bg h6{font-size: 9px;}
-    .logo_slider .slider_bg img {width: 70px;}
-    .logo_slider .slider_bg{padding: 20px;}
-    .footer h4{font-size: 10px;}
-    .footer ul li, .footer p{font-size: 9px;}
-    .footer .update_text{font-size: 8px;}
-    .footer form input{font-size: 8px;padding: 8px 10px;}
-    .footer form button img{width: 15px;}
-    .footer form button{padding: 4px 12px;}
-    .copyright p{font-size: 9px;line-height: 18px;}
-    .copyright{padding: 7px;}
-    .copyright ul li img {width: 22px;}
-    .topbar p{font-size: 9px; line-height: 18px;}
-    .topbar p img {margin-right: 5px;width: 12px;}
-    .topbar .dropdown-toggle, .navbar-nav .nav-link{font-size: 11px;} 
-    .navbar-expand-lg .navbar-nav {gap: 8px;}
-    .flex_icon li a img{width: 12px; height: 12px;}
-    .nav-pills #toggle_section .nav-link.active::after{height: 9px; width: 12px;}
-    .product-image img{height: 160px;}
-    .product-card .sale-timer p{font-size: 8px;}
-}
-
-@media (max-width:575px) {
-    .footer .col{flex: 1 0 50% !important;margin-bottom: 10px;}
-}
-
-@media (max-width: 767px){
-    .product_slider .swiper-pagination-bullet{height: 8px; width: 8px;}
-    .trending-section {padding-top: 25px;}
-    .section-header {flex-direction: column;align-items: flex-start;gap: 5px;}
-    .tab-buttons {flex-wrap: wrap;gap: 5px;}
-    .main-title h2, .main-title h3, .main-title h1{font-size: 20px;margin-bottom: 5px;}
-    .tab-btn{font-size: 10px;padding: 5px;letter-spacing: 0px;}
-    .product-image{height: 180px;}
-    .product-info{padding: 10px;}
-    .product-title{font-size: 10px;}
-    .product-image img{width: 150px;height: 150px;object-fit: contain;}
-    .banner-title{font-size: 32px; line-height: 36px;letter-spacing: 1px;}
-    .banner-subtitle{margin-bottom: 5px;}
-    section.banner-section{margin: 25px 0px;border-radius: 0px;}
-    .banner-img{border-radius: 0px;}
-    .product_category .nav-pills #toggle_section .nav-link{padding: 15px 5px !important;}
-    .product_category {margin-bottom: 15px;}
-    .product-card, .sale-box{margin-bottom: 0px;}
-    .logo_slider .slider_bg{padding: 10px;}
-    .offer-title{font-size: 18px;}
-    section{padding: 25px 0px;}
-    .footer .col{flex: 1 0 33.33%;}
-    .footer h4{font-size: 12px;margin-bottom: 5px;}
-    .footer {padding-bottom: 15px;}
-    .copyright{padding: 5px;}
-    .sales_banner{bottom: 0;margin: auto;display: flex;flex-direction: column;align-items: center;justify-content: center;top: 0;}
-    .category_menu{margin-top: 15px;}
-    .nav-pills #toggle_section .nav-link{padding: 15px;}
-    .spacial_trend{margin-top: 20px;}
-} 
-@media (max-width: 991px){
-    .navbar-brand img{width: 100px;}
-    .navbar-toggler{border: none; padding: 0px;}
-    .flex_icon{margin-bottom: 0px;}
-    .navbar.bg-body-tertiary{background: #f3e8db;}
 }

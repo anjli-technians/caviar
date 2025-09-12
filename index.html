@@ -17,6 +17,9 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+  <!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,10 +27,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 p-md-1">
-          <p><img src="images/tag.png" alt="">World's Fastest Online Shopping Destination to our store hear.</p>
+          <img src="images/tag.png" alt="">World's Fastest Online Shopping Destination to our store hear.
         </div>
-        <div class="col-md-6 d-flex justify-content-end">
-          <div class="dropdown">
+        <div class="order-tracker col-md-6 d-flex justify-content-end">
+          <img src="./images/fast-delivery.png" alt="truck">
+          <p class="track-text mb-0">Track Your Order</p>
+          <!-- <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
               aria-expanded="false"><img class="me-2" src="./images/flag.png" alt="flag">English</button>
             <ul class="dropdown-menu">
@@ -35,8 +40,8 @@
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </div>
-          <div class="dropdown">
+          </div> -->
+          <!-- <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
               aria-expanded="false">₹ INR</button>
             <ul class="dropdown-menu">
@@ -44,7 +49,7 @@
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -74,7 +79,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Products</a>
+              aria-expanded="false">Products</a><span class="cart-count">New</span>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Products 1</a></li>
               <li><a class="dropdown-item" href="#">Products 2</a></li>
@@ -121,19 +126,22 @@
           <li><a href="#"><img src="images/search.png" alt="img"></a></li>
           <li><a href="#"><img src="images/user.png" alt="img"></a></li>
           <li><a href="#"><img src="images/wishlist.png" alt="img"></a></li>
-          <li><a href="#"><img src="images/caviar_cart.png" alt="img"></a></li>
+          <li><a href="#"><img src="images/caviar_cart.png" alt="img"><span class="cart-count">3</span></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Top Category Bar -->
+<div class="top-category-bar">
   <div class="container">
-    <div class="row">
-      <div class="col-md-3 order-2 order-md-1">
+    <div class="row align-items-center">
+      <!-- Left Side: Toggle + Title -->
+      <div class="col-md-4 d-flex align-items-center">
         <div class="category_menu">
           <button onclick="toggleMyDiv()" class="top_category"><img src="images/toggle.png" alt=""> Top
             Category</button>
-          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div class="nav_below_item nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <div id="toggle_section">
               <button class="nav-link active" id="v-pills-new_product-tab" data-bs-toggle="pill"
                 data-bs-target="#v-pills-new_product" type="button" role="tab" aria-controls="v-pills-new_product"
@@ -159,6 +167,36 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Right Side: Search Bar -->
+      <div class="col-md-8">
+        <form class="d-flex search-form">
+          <input 
+            type="text" 
+            class="form-control search-input" 
+            placeholder="Search For Products"
+          >
+          <select class="form-select category-select">
+            <option>All Categories</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Sports</option>
+          </select>
+          <button class="btn search-btn" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        
         <div class="spacial_trend ">
           <div>
             <h5>Special Trend Products</h5>
@@ -394,7 +432,7 @@
                 </div>
 
       </div>
-      <div class="col-md-9 order-1 order-md-2">
+      <div class="col-md-9">
         <div class="row">
           <div class="col-md-8">
             <div class="tab-content" id="v-pills-tabContent">
@@ -517,7 +555,7 @@
             <!-- New Products Tab Content -->
             <div class="tab-content trending-product active" id="new-products">
               <div class="row">
-                <div class="col-lg-4 col-md-6 p-2">
+                <div class="col-lg-4 col-md-6">
                   <div class="product-card">
                     <div class="product-image">
                       <img class="product-img" src="./images/wireless-charger.png" alt="New Phone Holder">
@@ -557,7 +595,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 p-2">
+                <div class="col-lg-4 col-md-6">
                   <div class="product-card">
                     <div class="product-image">
                       <img class="product-img" src="./images/TV.png" alt="New Smart TV">
@@ -597,7 +635,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 p-2">
+                <div class="col-lg-4 col-md-6">
                   <div class="product-card">
                     <div class="product-image">
                       <img class="product-img" src="./images/Watch.png" alt="New Headphones">
@@ -1821,7 +1859,7 @@
               </div>
             </div>
           </div>
-          <!-- Latest Blog end -->
+           <!-- Latest Blog end -->
         </div>
       </div>
     </div>
@@ -2031,23 +2069,17 @@
 
   <script>
     const logo_slider = new Swiper('.logo_slider', {
-      loop: true, slidesPerView: 6,freeMode: true,
+      loop: true, slidesPerView: 6,
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
-      }, spaceBetween: 10,
+      }, spaceBetween: 20,
       autoplay: {
-        delay: 0,disableOnInteraction: false,
+        delay: 300,
       }, speed: 3000,
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
-      },
-      breakpoints: {
-        0:{slidesPerView: 2}, // mobile
-        480:{slidesPerView: 3.5}, // tablet
-        575:{slidesPerView:4}, // tablet
-        768: { slidesPerView: 6 }, // tablet & desktop
       },
     });
   </script>
@@ -2072,12 +2104,6 @@
       scrollbar: {
         el: '.swiper-scrollbar',
       },
-      breakpoints: {
-        0:{slidesPerView: 1}, // mobile
-        480:{slidesPerView: 1.5}, // tablet
-        575:{slidesPerView:2}, // tablet
-        768: { slidesPerView: 3 }, // tablet & desktop
-      },
     });
   </script>
   <script>
@@ -2100,12 +2126,6 @@
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
-      },
-      breakpoints: {
-        0:{slidesPerView: 1}, // mobile
-        480:{slidesPerView: 1.5}, // tablet
-        575:{slidesPerView:2}, // tablet
-        768: { slidesPerView: 3 }, // tablet & desktop
       },
     });
   </script>
@@ -2130,12 +2150,6 @@
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
-      },
-      breakpoints: {
-        0:{slidesPerView: 1}, // mobile
-        480:{slidesPerView: 1.5}, // tablet
-        575:{slidesPerView:2}, // tablet
-        768: { slidesPerView: 3 }, // tablet & desktop
       },
     });
   </script>
