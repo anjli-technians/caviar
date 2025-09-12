@@ -325,6 +325,7 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .nav-pills .toggle_section .nav-link.active, .product_category .nav-pills .toggle_section .nav-link{color: #fff;}
     .Product_category .nav-pills .toggle_section .nav-link img{filter: invert(1);}
     .offers_sale{flex-direction: row;}
+  
     .ad_bg.bg_2{margin-top: 0px;}
     .ad_bg.bg_1{margin-right: 5px;}
     .ad_bg span{font-size: 9px;}
