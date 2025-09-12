@@ -285,12 +285,15 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
 
 @media (max-width:575px) {
     .footer .col{flex: 1 0 50% !important;margin-bottom: 10px;}
+    .tag_size{width: 12px;}
+    .topbar{font-size: 10px;padding: 5px}
+    .flex_icon li a img{width: 13px; height: 13px;}
 }
 
 @media (max-width: 767px){
     .product_slider .swiper-pagination-bullet{height: 8px; width: 8px;}
     .trending-section {padding-top: 25px;}
-    .section-header {flex-direction: column;align-items: flex-start;gap: 5px;}
+    .section-header {flex-direction: column;align-items: center;gap: 5px;}
     .tab-buttons {flex-wrap: wrap;gap: 5px;}
     .main-title h2, .main-title h3, .main-title h1{font-size: 20px;margin-bottom: 5px;}
     .tab-btn{font-size: 10px;padding: 5px;letter-spacing: 0px;}
@@ -316,18 +319,19 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .category_menu{margin-top: 15px;}
     .nav-pills .toggle_section .nav-link, .nav-pills #toggle_section .nav-link{padding: 15px;}
     .spacial_trend{margin-top: 20px;}
-    .offers_sale{flex-direction: row;}
+    .offers_sale{flex-direction: row;margin-top: 10px;}
     .ad_bg.bg_2{margin-top: 0px;}
     .ad_bg.bg_1{margin-right: 5px;}
     .ad_bg span{font-size: 9px;}
     .ad_bg h4{font-size: 11px;}
     .ad_bg img{width: 110px;}
     .ad_bg {display: flex;flex-direction: column;justify-content: flex-end;align-items: center;}
+    .remove_padding{padding: 0px  !important;}
+    .cart_count_badge{right: -5px;}
 } 
 @media (max-width: 991px){
     .navbar-brand img{width: 100px;}
     .navbar-toggler{border: none; padding: 0px;}
-    .flex_icon{margin-bottom: 0px;}
-    .navbar.bg-body-tertiary{background: #f3e8db;}
-    .top-category-bar {display: none;}
+    .flex_icon{margin-bottom: 0px;} 
+    .top-category-bar, .order-tracker {display: none !important;}
 }
