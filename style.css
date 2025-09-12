@@ -4,7 +4,7 @@
 .flex_icon{display: flex;list-style: none;gap: 15px;}
 .flex_icon li a img{width: 17px;height: 17px;object-fit: contain;}
 #toggle_section{display: none;}
-/* .category_menu{border: 1px solid #E4E4E4;border-radius: 5px;overflow: hidden;} */
+.Product_category .category_menu{border: 1px solid #E4E4E4;border-radius: 5px;overflow: hidden;}
 .category_menu{border:unset;overflow: hidden;}
 .top_category{background: #FA6905;color: #fff;padding: 10px 15px;border: 0px;width: -webkit-fill-available;text-align: left;font-size: 15px;font-weight: 400;font-family: "Poppins", sans-serif;text-transform: uppercase;}
 .top_category img{width: 16px;height: 16px;object-fit: contain;margin-right:18px;}
