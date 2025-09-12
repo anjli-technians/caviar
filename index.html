@@ -2386,7 +2386,7 @@
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
+   <script>
     function toggleMyDiv() {
       const div = document.getElementById("toggle_section");
       if (div.style.display === "block" || div.style.display === "") {
@@ -2456,17 +2456,23 @@
 
   <script>
     const logo_slider = new Swiper('.logo_slider', {
-      loop: true, slidesPerView: 6,
+      loop: true, slidesPerView: 6,freeMode: true,
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
-      }, spaceBetween: 20,
+      }, spaceBetween: 10,
       autoplay: {
-        delay: 300,
+        delay: 0,disableOnInteraction: false,
       }, speed: 3000,
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
+      },
+      breakpoints: {
+        0:{slidesPerView: 2}, // mobile
+        480:{slidesPerView: 3.5}, // tablet
+        575:{slidesPerView:4}, // tablet
+        768: { slidesPerView: 6 }, // tablet & desktop
       },
     });
   </script>
@@ -2491,6 +2497,12 @@
       scrollbar: {
         el: '.swiper-scrollbar',
       },
+      breakpoints: {
+        0:{slidesPerView: 1}, // mobile
+        480:{slidesPerView: 1.5}, // tablet
+        575:{slidesPerView:2}, // tablet
+        768: { slidesPerView: 3 }, // tablet & desktop
+      },
     });
   </script>
   <script>
@@ -2513,6 +2525,12 @@
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
+      },
+      breakpoints: {
+        0:{slidesPerView: 1}, // mobile
+        480:{slidesPerView: 1.5}, // tablet
+        575:{slidesPerView:2}, // tablet
+        768: { slidesPerView: 3 }, // tablet & desktop
       },
     });
   </script>
@@ -2538,20 +2556,26 @@
       scrollbar: {
         el: '.swiper-scrollbar',
       },
-    });
-  </script>
-
-
-  <script>
-    var swiper = new Swiper(".testimonialSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      breakpoints: {
+        0:{slidesPerView: 1}, // mobile
+        480:{slidesPerView: 1.5}, // tablet
+        575:{slidesPerView:2}, // tablet
+        768: { slidesPerView: 3 }, // tablet & desktop
       },
     });
   </script>
+
+
+<script>
+  var swiper = new Swiper(".testimonialSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
 
   <!-- mobile swiper script -->
   <script>

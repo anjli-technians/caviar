@@ -220,7 +220,114 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
 .search-btn {background: #fff;border-radius: 80px;padding: 5px 20px;}
 .search-btn i {color: #000;font-size: 16px;}
 .nav_below_item{position: absolute;background: #fff;border:1px solid #E4E4E4;margin-right: 0;padding: 0 15px;margin-top: 4px;}
+ 
+
+
+
+
 @media (min-width:992px) and (max-width:1240px){
-  .product_category .nav-pills #toggle_section .nav-link{padding: 15px 10px !important; font-size: 13px;}
-  .Product_category .nav-pills #toggle_section .nav-link img{margin-right: 10px !important;}
+    .product_category .nav-pills #toggle_section .nav-link{padding: 15px 10px !important; font-size: 12px;}
+    .Product_category .nav-pills #toggle_section .nav-link img{margin-right: 10px !important;}
+    .navbar-brand img{width: 100px;}
+    .top_category img{margin-right: 10px;width: 14px; height: 14px;}
+    .top_category{font-size: 13px;}
+    .nav-pills #toggle_section .nav-link img{width: 20px; height: 20px;margin-right: 10px;}
+    .nav-pills #toggle_section .nav-link{padding: 20px 15px 12px 15px;font-size: 10px;}
+    .ad_bg h4{font-size: 13px;}
+    .ad_bg span{font-size: 10px;}
+    .ad_bg img {width: 110px;}
+    .product_slider .swiper-pagination-bullet{height: 10px; width: 10px;}
+    .spacial_trend h5{font-size: 11px;}
+    .time_countdown div{height: 30px; width: 30px; font-size: 10px;}
+    .time_countdown span{font-size: 8px;}
+    .current-price{font-size: 14px;}
+    .main-title h2, .main-title h3, .main-title h1{font-size: 24px; line-height: 30px;}
+    .tab-btn{padding: 8px 15px; font-size: 10px;}
+    .discount-badge{font-size: 8px;}
+    .action-btn{width: 35px; height: 25px;}
+    .product-actions img{width: 11px;}
+    .product-title{font-size: 10px;}
+    .main-title h4{font-size: 12px;}
+    .services .product_detail h6{font-size: 11px;}
+    .services .product_detail p{font-size: 9px;}
+    .services .product_detail .product_img{width: 27px;}
+    .banner-title{font-size: 38px; line-height: 42px;}
+    .banner-desc{font-size: 9px;}
+    .banner-btn{font-size: 10px;}
+    .testimonial-heading{font-size: 12px;}
+    .product_detail h6, .product_detail p{font-size: 11px;}
+    .offer-title{font-size: 18px;}
+    .offer-price{font-size: 10px;}
+    .offer-card{height: auto;margin-bottom: 0px;}
+    .swiper-button-prev, .swiper-button-next{width: 20px !important; height: 20px !important;}
+    .swiper-button-prev::after, .swiper-button-next::after{ font-size: 6px !important;}
+    .top_product_slider .top_product_section_bg h5{font-size: 12px;}
+    .top_product_slider .top_product_section_bg div span{font-size: 9px;}
+    .top_product_slider .top_product_section_bg div img {width: 22px;}
+    .shop_by_category .category_section_bg ul li h6{font-size: 9px;}
+    .enquiry span{font-size: 9px;}
+    .enquiry a{font-size: 13px;}
+    .enquiry .enquiry_now{font-size: 9px; padding: 5px 10px;margin-top: 5px;}
+    .shop_by_category .category_section_bg a{font-size: 10px;}
+    .blog_slider .blog_section_bg h6{font-size: 9px;}
+    .logo_slider .slider_bg img {width: 70px;}
+    .logo_slider .slider_bg{padding: 20px;}
+    .footer h4{font-size: 10px;}
+    .footer ul li, .footer p{font-size: 9px;}
+    .footer .update_text{font-size: 8px;}
+    .footer form input{font-size: 8px;padding: 8px 10px;}
+    .footer form button img{width: 15px;}
+    .footer form button{padding: 4px 12px;}
+    .copyright p{font-size: 9px;line-height: 18px;}
+    .copyright{padding: 7px;}
+    .copyright ul li img {width: 22px;}
+    .topbar p{font-size: 9px; line-height: 18px;}
+    .topbar p img {margin-right: 5px;width: 12px;}
+    .topbar .dropdown-toggle, .navbar-nav .nav-link{font-size: 11px;} 
+    .navbar-expand-lg .navbar-nav {gap: 8px;}
+    .flex_icon li a img{width: 12px; height: 12px;}
+    .nav-pills #toggle_section .nav-link.active::after{height: 9px; width: 12px;}
+    .product-image img{height: 160px;}
+    .product-card .sale-timer p{font-size: 8px;}
+}
+
+@media (max-width:575px) {
+    .footer .col{flex: 1 0 50% !important;margin-bottom: 10px;}
+}
+
+@media (max-width: 767px){
+    .product_slider .swiper-pagination-bullet{height: 8px; width: 8px;}
+    .trending-section {padding-top: 25px;}
+    .section-header {flex-direction: column;align-items: flex-start;gap: 5px;}
+    .tab-buttons {flex-wrap: wrap;gap: 5px;}
+    .main-title h2, .main-title h3, .main-title h1{font-size: 20px;margin-bottom: 5px;}
+    .tab-btn{font-size: 10px;padding: 5px;letter-spacing: 0px;}
+    .product-image{height: 180px;}
+    .product-info{padding: 10px;}
+    .product-title{font-size: 10px;}
+    .product-image .product-img{width: 150px;height: 150px;object-fit: contain;}
+    .banner-title{font-size: 32px; line-height: 36px;letter-spacing: 1px;}
+    .banner-subtitle{margin-bottom: 5px;}
+    section.banner-section{margin: 25px 0px;border-radius: 0px;}
+    .banner-img{border-radius: 0px;}
+    .product_category .nav-pills #toggle_section .nav-link{padding: 15px 5px !important;}
+    .product_category {margin-bottom: 15px;}
+    .product-card, .sale-box{margin-bottom: 0px;}
+    .logo_slider .slider_bg{padding: 10px;}
+    .offer-title{font-size: 18px;}
+    section{padding: 25px 0px;}
+    .footer .col{flex: 1 0 33.33%;}
+    .footer h4{font-size: 12px;margin-bottom: 5px;}
+    .footer {padding-bottom: 15px;}
+    .copyright{padding: 5px;}
+    .sales_banner{bottom: 0;margin: auto;display: flex;flex-direction: column;align-items: center;justify-content: center;top: 0;}
+    .category_menu{margin-top: 15px;}
+    .nav-pills #toggle_section .nav-link{padding: 15px;}
+    .spacial_trend{margin-top: 20px;}
+} 
+@media (max-width: 991px){
+    .navbar-brand img{width: 100px;}
+    .navbar-toggler{border: none; padding: 0px;}
+    .flex_icon{margin-bottom: 0px;}
+    .navbar.bg-body-tertiary{background: #f3e8db;}
 }
