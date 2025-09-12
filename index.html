@@ -2003,7 +2003,7 @@
 
           <div class="col-md-12">
             <!-- <div class="container "> -->
-            <div class="row text-center sale-box">
+            <div class="row text-center sale-box d-none d-md-flex">
 
               <!-- Card 1 -->
               <div class="col-md-4">
@@ -2029,6 +2029,32 @@
                   <h5 class="offer-title">Branded Product</h5>
                   <p class="offer-price">$999.00</p>
                   <img src="./images/fridge.png" class="offer-product" alt="Fridge">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper mobile_offer_box sale-box d-block d-md-none">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="offer-card">
+                  <h5 class="offer-title">Limited Offer</h5>
+                  <p class="offer-price">$999.00</p>
+                  <img src="./images/headphone_black.png" class="offer-product" alt="Headphones">
+                </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="offer-card">
+                  <h5 class="offer-title">Hurry Up Sale</h5>
+                  <p class="offer-price">$999.00</p>
+                  <img src="./images/iphone.png" class="offer-product" alt="iPhone">
+                </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="offer-card">
+                  <h5 class="offer-title">Branded Product</h5>
+                  <p class="offer-price">$999.00</p>
+                  <img src="./images/fridge.png" class="offer-product" alt="Fridge">
+                </div>
                 </div>
               </div>
             </div>
@@ -2580,6 +2606,22 @@
   <!-- mobile swiper script -->
   <script>
     var mobile_product_swiper = new Swiper(".product-swiper", {
+      slidesPerView: 1.4,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2, // show 2 cards on bigger mobiles
+        }
+      }
+    });
+  </script>
+    <!-- mobile swiper script -->
+  <script>
+    var mobile_offer_box = new Swiper(".mobile_offer_box", {
       slidesPerView: 1.4,
       spaceBetween: 15,
       pagination: {
