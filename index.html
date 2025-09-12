@@ -18,7 +18,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
   <!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 
@@ -133,70 +133,68 @@
   </nav>
 
   <!-- Top Category Bar -->
-<div class="top-category-bar">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left Side: Toggle + Title -->
-      <div class="col-md-3 d-flex align-items-center">
-        <div class="category_menu">
-          <button onclick="toggleMyDiv()" class="top_category"><img src="images/toggle.png" alt=""> Top
-            Category</button>
-          <div class="nav_below_item nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <div id="toggle_section">
-              <button class="nav-link active" id="v-pills-new_product-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-new_product" type="button" role="tab" aria-controls="v-pills-new_product"
-                aria-selected="true"><img src="images/tv_icon.png" alt="">new product</button>
-              <button class="nav-link" id="v-pills-kitchen_appliance-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-kitchen_appliance" type="button" role="tab"
-                aria-controls="v-pills-kitchen_appliance" aria-selected="false"><img src="images/fridge_icon.png"
-                  alt="">kitchen appliance</button>
-              <button class="nav-link" id="v-pills-electronic_home-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-electronic_home" type="button" role="tab"
-                aria-controls="v-pills-electronic_home" aria-selected="false"><img src="images/headphone_icon.png"
-                  alt="">electronic & home</button>
-              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false"><img src="images/washing-machine_icon.png" alt="">home accessorise</button>
-              <button class="nav-link" id="v-pills-desktop_product-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-desktop_product" type="button" role="tab"
-                aria-controls="v-pills-desktop_product" aria-selected="false"><img src="images/press.png" alt="">desktop
-                product</button>
-              <button class="nav-link" id="v-pills-all_category-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-all_category" type="button" role="tab" aria-controls="v-pills-all_category"
-                aria-selected="false"><img src="images/phone_icon.png" alt="">see all category</button>
+  <div class="top-category-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Toggle + Title -->
+        <div class="col-md-3 d-flex align-items-center">
+          <div class="category_menu">
+            <button onclick="toggleMyDiv()" class="top_category"><img src="images/toggle.png" alt=""> Top
+              Category</button>
+            <div class="nav_below_item nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+              aria-orientation="vertical">
+              <div id="toggle_section">
+                <button class="nav-link active" id="v-pills-new_product-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-new_product" type="button" role="tab" aria-controls="v-pills-new_product"
+                  aria-selected="true"><img src="images/tv_icon.png" alt="">new product</button>
+                <button class="nav-link" id="v-pills-kitchen_appliance-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-kitchen_appliance" type="button" role="tab"
+                  aria-controls="v-pills-kitchen_appliance" aria-selected="false"><img src="images/fridge_icon.png"
+                    alt="">kitchen appliance</button>
+                <button class="nav-link" id="v-pills-electronic_home-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-electronic_home" type="button" role="tab"
+                  aria-controls="v-pills-electronic_home" aria-selected="false"><img src="images/headphone_icon.png"
+                    alt="">electronic & home</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                  aria-selected="false"><img src="images/washing-machine_icon.png" alt="">home accessorise</button>
+                <button class="nav-link" id="v-pills-desktop_product-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-desktop_product" type="button" role="tab"
+                  aria-controls="v-pills-desktop_product" aria-selected="false"><img src="images/press.png"
+                    alt="">desktop
+                  product</button>
+                <button class="nav-link" id="v-pills-all_category-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-all_category" type="button" role="tab" aria-controls="v-pills-all_category"
+                  aria-selected="false"><img src="images/phone_icon.png" alt="">see all category</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right Side: Search Bar -->
-      <div class="col-md-9">
-        <form class="d-flex search-form">
-          <input 
-            type="text" 
-            class="form-control search-input" 
-            placeholder="Search For Products"
-          >
-          <select class="form-select category-select">
-            <option>All Categories</option>
-            <option>Electronics</option>
-            <option>Fashion</option>
-            <option>Sports</option>
-          </select>
-          <button class="btn search-btn" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
+        <!-- Right Side: Search Bar -->
+        <div class="col-md-9">
+          <form class="d-flex search-form">
+            <input type="text" class="form-control search-input" placeholder="Search For Products">
+            <select class="form-select category-select">
+              <option>All Categories</option>
+              <option>Electronics</option>
+              <option>Fashion</option>
+              <option>Sports</option>
+            </select>
+            <button class="btn search-btn" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
   <div class="container">
     <div class="row">
       <div class="col-md-3 order-2 order-md-1">
-        
+
         <div class="spacial_trend ">
           <div>
             <h5>Special Trend Products</h5>
@@ -222,48 +220,48 @@
           </div>
 
           <div class="product-info">
-                      <div class="product-rating">
-                        <div class="stars">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i> 
-                        </div>
-                      </div>
-                      <h5 class="product-title">Bluetooth headphone</h5>
-                      <div class="product-price">
-                        <span class="current-price">₹1226.00</span>
-                        <span class="original-price">₹1250.99</span>
-                      </div>
-                    </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <h5 class="product-title">Bluetooth headphone</h5>
+            <div class="product-price">
+              <span class="current-price">₹1226.00</span>
+              <span class="original-price">₹1250.99</span>
+            </div>
+          </div>
         </div>
 
         <!-- services start -->
-                <div class="best_seller services">
-                    <div class="main-title">
-                        <h4>Our Services</h4>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/shipping.png" alt="img" class="img-fluid product_img">
-                        <h6>Free shipping</h6>
-                        <!-- <img src="images/shipping_time.png" alt="img" class="img-fluid"> -->
-                        <p>Free Shipping On Order ₹19</p>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/shipping_time.png" alt="img" class="img-fluid product_img">
-                        <h6>Free shipping</h6>
-                        <!-- <img src="images/stars.png" alt="img" class="img-fluid"> -->
-                        <p>Free Shipping On Order ₹19</p>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/Delivery.png" alt="img" class="img-fluid product_img">
-                        <h6>Free shipping</h6>
-                        <!-- <img src="images/stars.png" alt="img" class="img-fluid"> -->
-                        <p>Free Shipping On Order ₹19</p>
-                    </div>
-                </div>
-                <!--Services end -->
+        <div class="best_seller services">
+          <div class="main-title">
+            <h4>Our Services</h4>
+          </div>
+          <div class="product_detail">
+            <img src="images/shipping.png" alt="img" class="img-fluid product_img">
+            <h6>Free shipping</h6>
+            <!-- <img src="images/shipping_time.png" alt="img" class="img-fluid"> -->
+            <p>Free Shipping On Order ₹19</p>
+          </div>
+          <div class="product_detail">
+            <img src="images/shipping_time.png" alt="img" class="img-fluid product_img">
+            <h6>Free shipping</h6>
+            <!-- <img src="images/stars.png" alt="img" class="img-fluid"> -->
+            <p>Free Shipping On Order ₹19</p>
+          </div>
+          <div class="product_detail">
+            <img src="images/Delivery.png" alt="img" class="img-fluid product_img">
+            <h6>Free shipping</h6>
+            <!-- <img src="images/stars.png" alt="img" class="img-fluid"> -->
+            <p>Free Shipping On Order ₹19</p>
+          </div>
+        </div>
+        <!--Services end -->
 
         <div class="testimonial_swiper">
           <div class="swiper testimonialSwiper">
@@ -337,99 +335,99 @@
         </div>
 
         <!-- Latest product start -->
-                <div class="best_seller">
-                    <div class="main-title">
-                        <h4>Latest product</h4>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/camera.png" alt="img" class="img-fluid product_img">
-                        <h6>Smart watch</h6>
-                        <img src="images/stars.png" alt="img" class="img-fluid">
-                        <p>₹26.00</p>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/twodoor_fridge.png" alt="img" class="img-fluid product_img">
-                        <h6>Smart watch</h6>
-                        <img src="images/stars.png" alt="img" class="img-fluid">
-                        <p>₹26.00</p>
-                    </div>
-                </div>
-                <!-- Latest product end -->
+        <div class="best_seller">
+          <div class="main-title">
+            <h4>Latest product</h4>
+          </div>
+          <div class="product_detail">
+            <img src="images/camera.png" alt="img" class="img-fluid product_img">
+            <h6>Smart watch</h6>
+            <img src="images/stars.png" alt="img" class="img-fluid">
+            <p>₹26.00</p>
+          </div>
+          <div class="product_detail">
+            <img src="images/twodoor_fridge.png" alt="img" class="img-fluid product_img">
+            <h6>Smart watch</h6>
+            <img src="images/stars.png" alt="img" class="img-fluid">
+            <p>₹26.00</p>
+          </div>
+        </div>
+        <!-- Latest product end -->
 
 
-                <!-- sales banner start -->
-                 <div class="position-relative mt-4">
-                    <img src="images/sales_banner_bg.png" alt="img" class="img-fluid mt-4">
-                    <div class="sales_banner">
-                        <img src="images/headphone_white.png" alt="img" class="img-fluid">
-                        <div class="sales_text">
-                            <span>sale up to 30% off</span>
-                            <h5>apple watch <br>series</h5>
-                            <a href="#">₹999.00</a>
-                        </div>
-                    </div>
-                 </div>
-                <!-- sales banner end -->
+        <!-- sales banner start -->
+        <div class="position-relative mt-4">
+          <img src="images/sales_banner_bg.png" alt="img" class="img-fluid mt-4">
+          <div class="sales_banner">
+            <img src="images/headphone_white.png" alt="img" class="img-fluid">
+            <div class="sales_text">
+              <span>sale up to 30% off</span>
+              <h5>apple watch <br>series</h5>
+              <a href="#">₹999.00</a>
+            </div>
+          </div>
+        </div>
+        <!-- sales banner end -->
 
-                <!-- Featured product start -->
-                <div class="best_seller">
-                    <div class="main-title">
-                        <h4>featured product</h4>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/hometheater.png" alt="img" class="img-fluid product_img">
-                        <h6>Smart watch</h6>
-                        <img src="images/stars.png" alt="img" class="img-fluid">
-                        <p>₹1226.00</p>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/camera.png" alt="img" class="img-fluid product_img">
-                        <h6>Smart watch</h6>
-                        <img src="images/stars.png" alt="img" class="img-fluid">
-                        <p>₹1226.00</p>
-                    </div>
-                </div>
-                <!-- Featured product end -->
+        <!-- Featured product start -->
+        <div class="best_seller">
+          <div class="main-title">
+            <h4>featured product</h4>
+          </div>
+          <div class="product_detail">
+            <img src="images/hometheater.png" alt="img" class="img-fluid product_img">
+            <h6>Smart watch</h6>
+            <img src="images/stars.png" alt="img" class="img-fluid">
+            <p>₹1226.00</p>
+          </div>
+          <div class="product_detail">
+            <img src="images/camera.png" alt="img" class="img-fluid product_img">
+            <h6>Smart watch</h6>
+            <img src="images/stars.png" alt="img" class="img-fluid">
+            <p>₹1226.00</p>
+          </div>
+        </div>
+        <!-- Featured product end -->
 
-                <!-- Enquiry start -->
-                <div class="enquiry">
-                    <div class="main-title">
-                        <h4>enquiry number</h4>
-                    </div>
-                    <span>Call Us:</span>
-                    <a href="tel:(055)  888 8888">(055) 888 8888</a>
-                    <span>Or</span>
-                    <a href="#" class="enquiry_now">enquiry Now</a>
-                </div>
-                <!-- Enquiry end -->
+        <!-- Enquiry start -->
+        <div class="enquiry">
+          <div class="main-title">
+            <h4>enquiry number</h4>
+          </div>
+          <span>Call Us:</span>
+          <a href="tel:(055)  888 8888">(055) 888 8888</a>
+          <span>Or</span>
+          <a href="#" class="enquiry_now">enquiry Now</a>
+        </div>
+        <!-- Enquiry end -->
 
-                <!-- best seller product start -->
-                <div class="best_seller">
-                    <div class="main-title">
-                        <h4>best seller product</h4>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/camera.png" alt="img" class="img-fluid product_img">
-                        <h6>Smart watch</h6>
-                        <img src="images/stars.png" alt="img" class="img-fluid">
-                        <p>₹26.00</p>
-                    </div>
-                    <div class="product_detail">
-                        <img src="images/buds.png" alt="img" class="img-fluid product_img">
-                        <h6>Smart watch</h6>
-                        <img src="images/stars.png" alt="img" class="img-fluid">
-                        <p>₹26.00</p>
-                    </div>
-                </div>
-                <!-- best seller product end -->
-                <div class="offer-card-side">
-                  <div class="offer-card">
-                      <!-- <img src="images/bg_2.png" alt=""> -->
-                      <h5 class="offer-title">Hurry Up Sale</h5>
-                      <p class="offer-price">$999.00</p>
-                      <img src="./images/iphone7.png" class="offer-product" alt="iPhone">
-                  </div>
-                </div>
+        <!-- best seller product start -->
+        <div class="best_seller">
+          <div class="main-title">
+            <h4>best seller product</h4>
+          </div>
+          <div class="product_detail">
+            <img src="images/camera.png" alt="img" class="img-fluid product_img">
+            <h6>Smart watch</h6>
+            <img src="images/stars.png" alt="img" class="img-fluid">
+            <p>₹26.00</p>
+          </div>
+          <div class="product_detail">
+            <img src="images/buds.png" alt="img" class="img-fluid product_img">
+            <h6>Smart watch</h6>
+            <img src="images/stars.png" alt="img" class="img-fluid">
+            <p>₹26.00</p>
+          </div>
+        </div>
+        <!-- best seller product end -->
+        <div class="offer-card-side">
+          <div class="offer-card">
+            <!-- <img src="images/bg_2.png" alt=""> -->
+            <h5 class="offer-title">Hurry Up Sale</h5>
+            <p class="offer-price">$999.00</p>
+            <img src="./images/iphone7.png" class="offer-product" alt="iPhone">
+          </div>
+        </div>
 
       </div>
       <div class="col-md-9 order-1 order-md-2">
@@ -525,14 +523,14 @@
           <div class="col-md-4">
             <div class="offers_sale">
               <div class="ad_bg bg_1">
-              <span>offer sale!</span>
-              <h4>best offer week <br>new deals</h4>
-              <img src="images/earbud.png" alt="img" class="img-fluid">
+                <span>offer sale!</span>
+                <h4>best offer week <br>new deals</h4>
+                <img src="images/earbud.png" alt="img" class="img-fluid">
               </div>
               <div class="ad_bg bg_2">
-              <span>offer sale!</span>
-              <h4>best offer summer <br>deals sale</h4>
-              <img src="images/smartwatch.png" alt="img" class="img-fluid">
+                <span>offer sale!</span>
+                <h4>best offer summer <br>deals sale</h4>
+                <img src="images/smartwatch.png" alt="img" class="img-fluid">
               </div>
             </div>
           </div>
@@ -554,7 +552,8 @@
 
             <!-- New Products Tab Content -->
             <div class="tab-content trending-product active" id="new-products">
-              <div class="row">
+              <!-- Desktop product -->
+              <div class="row d-none d-md-flex">
                 <div class="col-lg-4 col-md-6">
                   <div class="product-card">
                     <div class="product-image">
@@ -640,11 +639,11 @@
                     <div class="product-image">
                       <img class="product-img" src="./images/Watch.png" alt="New Headphones">
                       <!-- <span class="discount-badge">40%</span> -->
-                       <span class="discount-percent" >-25%</span>
-                       <div class="sale-timer">
-                          <img src="./images/watch-icon.png" alt="watch icon" >
-                         <p>223 : 23 : 56 : <span>56</span></p>
-                       </div>
+                      <span class="discount-percent">-25%</span>
+                      <div class="sale-timer">
+                        <img src="./images/watch-icon.png" alt="watch icon">
+                        <p>223 : 23 : 56 : <span>56</span></p>
+                      </div>
                       <div class="product-actions">
                         <button class="action-btn" title="Quick View">
                           <img src="./images/eye.png" alt="">
@@ -680,8 +679,8 @@
                   </div>
                 </div>
               </div>
-
-              <div class="row">
+              <!-- Desktop product next row -->
+              <div class="row d-none d-md-flex">
                 <div class="col-lg-4 col-md-6">
                   <div class="product-card">
                     <div class="product-image">
@@ -727,7 +726,7 @@
                     <div class="product-image">
                       <img class="product-img" src="./images/speaker.png" alt="New Smart TV">
                       <!-- <span class="discount-badge">NEW</span> -->
-                        <span class="discount-percent" >-25%</span>
+                      <span class="discount-percent">-25%</span>
                       <div class="product-actions">
                         <button class="action-btn" title="Quick View">
                           <img src="./images/eye.png" alt="">
@@ -803,11 +802,146 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Mobile Swiper product -->
+              <div class="swiper product-swiper d-md-none">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/wireless-charger.png" alt="New Phone Holder">
+                        <span class="discount-badge">New</span>
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="star-qty">(3)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">NEW WIRELESS PHONE HOLDER</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹250</span>
+                          <span class="original-price">₹350</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/TV.png" alt="New Smart TV">
+                        <span class="discount-badge">New</span>
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="star-qty">(4)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">NEW 4K SMART TV</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹15000</span>
+                          <span class="original-price">₹20000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/Watch.png" alt="New Headphones">
+                        <!-- <span class="discount-badge">40%</span> -->
+                        <span class="discount-percent">-25%</span>
+                        <div class="sale-timer">
+                          <img src="./images/watch-icon.png" alt="watch icon">
+                          <p>223 : 23 : 56 : <span>56</span></p>
+                        </div>
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="star-qty">(3)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">NEW WIRELESS HEADPHONES</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹1200</span>
+                          <span class="original-price">₹2000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+
+
             </div>
 
             <!-- Featured Products Tab Content -->
             <div class="tab-content trending-product" id="featured-products">
-              <div class="row">
+              <div class="row d-none d-md-flex">
                 <div class="col-lg-4 col-md-6">
                   <div class="product-card">
                     <div class="product-image">
@@ -928,11 +1062,139 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Mobile Swiper -->
+              <div class="swiper product-swiper d-md-none">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/wireless-charger.png" alt="New Phone Holder">
+                        <span class="discount-badge">New</span>
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="star-qty">(3)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">NEW WIRELESS PHONE HOLDER</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹250</span>
+                          <span class="original-price">₹350</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/speaker.png" alt="New Smart TV">
+                        <span class="discount-badge">New</span>
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="star-qty">(4)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">Most Popular Smart Phone</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹15000</span>
+                          <span class="original-price">₹20000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/iron.png" alt="New Headphones">
+                        <!-- <span class="discount-badge">40%</span> -->
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="star-qty">(3)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">Most Popular Smart Phone</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹1200</span>
+                          <span class="original-price">₹2000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
 
             <!-- Best Seller Products Tab Content -->
             <div class="tab-content trending-product" id="bestseller-products">
-              <div class="row">
+              <!-- Desktop product  -->
+              <div class="row d-none d-md-flex">
                 <div class="col-lg-4 col-md-6">
                   <div class="product-card">
                     <div class="product-image">
@@ -1052,6 +1314,133 @@
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <!-- Mobile Swiper product -->
+              <div class="swiper product-swiper d-md-none">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/wireless-charger.png" alt="New Phone Holder">
+                        <span class="discount-badge">New</span>
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="star-qty">(3)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">NEW WIRELESS PHONE HOLDER</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹250</span>
+                          <span class="original-price">₹350</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/speaker.png" alt="New Smart TV">
+                        <span class="discount-badge">New</span>
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="star-qty">(4)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">Most Popular Smart Phone</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹15000</span>
+                          <span class="original-price">₹20000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img class="product-img" src="./images/iron.png" alt="New Headphones">
+                        <!-- <span class="discount-badge">40%</span> -->
+                        <div class="product-actions">
+                          <button class="action-btn" title="Quick View">
+                            <img src="./images/eye.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Wishlist">
+                            <img src="./images/heart.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Compare">
+                            <img class="shuffle" src="./images/shuffle.png" alt="">
+                          </button>
+                          <button class="action-btn" title="Add to Cart">
+                            <img src="./images/cart.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-rating">
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="star-qty">(3)</p>
+                          </div>
+                        </div>
+                        <h5 class="product-title">Most Popular Smart Phone</h5>
+                        <div class="product-price">
+                          <span class="current-price">₹1200</span>
+                          <span class="original-price">₹2000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -1859,7 +2248,7 @@
               </div>
             </div>
           </div>
-           <!-- Latest Blog end -->
+          <!-- Latest Blog end -->
         </div>
       </div>
     </div>
@@ -2155,16 +2544,51 @@
   </script>
 
 
-<script>
-  var swiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script>
+  <script>
+    var swiper = new Swiper(".testimonialSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+  <!-- mobile swiper script -->
+  <script>
+    var mobile_product_swiper = new Swiper(".product-swiper", {
+      slidesPerView: 1.2,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2, // show 2 cards on bigger mobiles
+        }
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Init all product swipers at once
+      document.querySelectorAll(".product-swiper").forEach(function (swiperEl) {
+        new Swiper(swiperEl, {
+          slidesPerView: 1.2,
+          spaceBetween: 15,
+          pagination: {
+            el: swiperEl.querySelector(".swiper-pagination"),
+            clickable: true,
+          },
+          breakpoints: {
+            576: { slidesPerView: 2 }
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
