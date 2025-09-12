@@ -221,27 +221,6 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
 .search-btn i {color: #000;font-size: 16px;}
 .nav_below_item{position: absolute;background: #fff;border:1px solid #E4E4E4;margin-right: 0;padding: 0 15px;margin-top: 4px;}
 @media (min-width:992px) and (max-width:1240px){
-<<<<<<< HEAD
-    .product_category .nav-pills #toggle_section .nav-link{padding: 15px 10px !important; font-size: 13px;}
-    .Product_category .nav-pills #toggle_section .nav-link img{margin-right: 10px !important;}
-}
-
-@media (max-width:575px){
-    .offers_sale {display: flex; flex-direction: row; gap: 5px; align-items: center; justify-content: center; }
-    .trending-section{padding-top: 30px;}
-    .tab-btn{padding: 10px 11px; font-size: 9px;}
-    .ad_bg.bg_1{margin-top: 15px;}
-    .product-swiper {
-  padding-bottom: 40px; /* space for pagination */
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-
-=======
   .product_category .nav-pills #toggle_section .nav-link{padding: 15px 10px !important; font-size: 13px;}
   .Product_category .nav-pills #toggle_section .nav-link img{margin-right: 10px !important;}
->>>>>>> fda957f4e5b415938a4343e8aa6382401acdda5c
 }
