@@ -194,7 +194,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 order-2 order-md-1 padding_on_mob">
-
+<div class="position_sticky">
         <div class="spacial_trend ">
           <div>
             <h5>Special Trend Products</h5>
@@ -359,7 +359,7 @@
 
         <!-- sales banner start -->
         <div class="position-relative mt-lg-4">
-          <img src="images/sales_banner_bg.png" alt="img" class="img-fluid mt-4">
+          <img src="images/sales_banner_bg.png" alt="img" class="img-fluid mt-4 sale_banner_height">
           <div class="sales_banner">
             <img src="images/headphone_white.png" alt="img" class="img-fluid">
             <div class="sales_text">
@@ -434,7 +434,7 @@
             <img src="./images/iphone7.png" class="offer-product" alt="iPhone">
           </div>
         </div>
-
+        </div>
       </div>
       <div class="col-md-9 order-1 order-md-2">
         <div class="row">
@@ -2332,7 +2332,7 @@
     <!-- footer start -->
     <div class="footer">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-lg-9">
           <div class="row">
             <div class="col">
               <h4>Store Information</h4>
@@ -2383,7 +2383,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <h4>Your Account</h4>
           <form>
             <input type="email" placeholder="Enter Email Address" name="footer_email">
@@ -2460,6 +2460,7 @@
         },
         breakpoints: {
           0: { slidesPerView: 1.4 }, // mobile
+          575: { slidesPerView: 2 }, // tabs
           768: { slidesPerView: 2, spaceBetween: 10, }, // tablet & desktop
         },
       });
