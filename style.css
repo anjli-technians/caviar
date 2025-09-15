@@ -339,6 +339,8 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .product_category .nav-pills .toggle_section .nav-link{width: max-content;}
     .padding_on_mob{padding: 0px 25px;}
     .banner-section{padding: 0px !important;} 
+    /* .best_seller{    display: flex;gap: 10px;align-items: center;justify-content: space-around;} */
+    .best_seller .main-div-product{display: flex; flex-direction: row; align-items: center; justify-content: space-around;}
     
 } 
 @media (max-width: 991px){
