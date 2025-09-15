@@ -344,6 +344,7 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .product_detail::after{content: unset;}
     .best_seller{border: unset;}
     .services{border:1px solid #E4E4E4;}
+    .swiper-pagination{display: none;}
 } 
 @media (max-width: 991px){
     .navbar-brand img{width: 100px;}
