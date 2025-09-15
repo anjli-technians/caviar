@@ -339,17 +339,19 @@
           <div class="main-title">
             <h4>Latest product</h4>
           </div>
-          <div class="product_detail">
-            <img src="images/camera.png" alt="img" class="img-fluid product_img">
-            <h6>Smart watch</h6>
-            <img src="images/stars.png" alt="img" class="img-fluid">
-            <p>₹26.00</p>
-          </div>
-          <div class="product_detail">
-            <img src="images/twodoor_fridge.png" alt="img" class="img-fluid product_img">
-            <h6>Smart watch</h6>
-            <img src="images/stars.png" alt="img" class="img-fluid">
-            <p>₹26.00</p>
+          <div class="main-div-product">
+            <div class="product_detail">
+              <img src="images/camera.png" alt="img" class="img-fluid product_img">
+              <h6>Smart watch</h6>
+              <img src="images/stars.png" alt="img" class="img-fluid">
+              <p>₹26.00</p>
+            </div>
+            <div class="product_detail">
+              <img src="images/twodoor_fridge.png" alt="img" class="img-fluid product_img">
+              <h6>Smart watch</h6>
+              <img src="images/stars.png" alt="img" class="img-fluid">
+              <p>₹26.00</p>
+            </div>
           </div>
         </div>
         <!-- Latest product end -->
@@ -374,6 +376,7 @@
           <div class="main-title">
             <h4>featured product</h4>
           </div>
+          <div class="main-div-product">
           <div class="product_detail">
             <img src="images/hometheater.png" alt="img" class="img-fluid product_img">
             <h6>Smart watch</h6>
@@ -385,6 +388,7 @@
             <h6>Smart watch</h6>
             <img src="images/stars.png" alt="img" class="img-fluid">
             <p>₹1226.00</p>
+          </div>
           </div>
         </div>
         <!-- Featured product end -->
@@ -406,6 +410,7 @@
           <div class="main-title">
             <h4>best seller product</h4>
           </div>
+          <div class="main-div-product">
           <div class="product_detail">
             <img src="images/camera.png" alt="img" class="img-fluid product_img">
             <h6>Smart watch</h6>
@@ -417,6 +422,7 @@
             <h6>Smart watch</h6>
             <img src="images/stars.png" alt="img" class="img-fluid">
             <p>₹26.00</p>
+          </div>
           </div>
         </div>
         <!-- best seller product end -->
@@ -2446,7 +2452,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const categoryswiper = new Swiper(".productSwiper", {
-        slidesPerView: 1, // mobile
+        slidesPerView: 1.4, // mobile
         spaceBetween: 20,
         navigation: {
           nextEl: ".swiper-button-next",
@@ -2527,7 +2533,7 @@
         el: '.swiper-scrollbar',
       },
       breakpoints: {
-        0:{slidesPerView: 1}, // mobile
+        0:{slidesPerView: 1.4}, // mobile
         480:{slidesPerView: 1.5}, // tablet
         575:{slidesPerView:2}, // tablet
         768: { slidesPerView: 3 }, // tablet & desktop
@@ -2556,7 +2562,7 @@
         el: '.swiper-scrollbar',
       },
       breakpoints: {
-        0:{slidesPerView: 1}, // mobile
+        0:{slidesPerView: 1.2}, // mobile
         480:{slidesPerView: 1.5}, // tablet
         575:{slidesPerView:2}, // tablet
         768: { slidesPerView: 3 }, // tablet & desktop
@@ -2586,7 +2592,7 @@
         el: '.swiper-scrollbar',
       },
       breakpoints: {
-        0:{slidesPerView: 1}, // mobile
+        0:{slidesPerView: 1.4}, // mobile
         480:{slidesPerView: 1.5}, // tablet
         575:{slidesPerView:2}, // tablet
         768: { slidesPerView: 3 }, // tablet & desktop

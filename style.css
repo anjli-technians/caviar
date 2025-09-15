@@ -284,7 +284,7 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
 }
 
 @media (max-width:575px) {
-    .footer .col{flex: 1 0 50% !important;margin-bottom: 10px;}
+    .footer .col{flex: 1 0 50% !important;margin-bottom: 25px;}
     .tag_size{width: 12px;}
     .topbar{font-size: 10px;padding: 5px}
     .flex_icon li a img{width: 13px; height: 13px;}
@@ -348,7 +348,11 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .product_category .nav-pills .toggle_section .nav-link{width: max-content;}
     .padding_on_mob{padding: 0px 25px;}
     .banner-section{padding: 0px !important;} 
-    
+    /* .best_seller{    display: flex;gap: 10px;align-items: center;justify-content: space-around;} */
+    .best_seller .main-div-product{display: flex; flex-direction: row; align-items: center; justify-content: space-around;}
+    .product_detail::after{content: unset;}
+    .best_seller{border: unset;}
+    .services{border:1px solid #E4E4E4;}
 } 
 @media (min-width: 768px) and (max-width: 991px){
     .ad_bg img {width: 90px;}
