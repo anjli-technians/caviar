@@ -295,28 +295,36 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .trending-section {padding-top: 25px;}
     .section-header {flex-direction: column;align-items: center;gap: 5px;}
     .tab-buttons {flex-wrap: wrap;gap: 5px;}
-    .main-title h2, .main-title h3, .main-title h1{font-size: 20px;margin-bottom: 5px;}
-    .tab-btn{font-size: 10px;padding: 5px;letter-spacing: 0px;}
+    .main-title h2, .main-title h3, .main-title h1{font-size: 24px;margin-bottom: 5px;line-height: 30px}
+    .tab-btn{font-size: 10px;padding: 5px 8px;letter-spacing: 0.1px;background-color: transparent;border-radius: 3px;}
     .product-image{height: 180px;}
     .product-info{padding: 10px;}
     .product-title{font-size: 10px;}
-    .product-image .product-img{width: 150px;height: 150px;object-fit: contain;}
+    .product-image .product-img{width: 185px;height: 185px;object-fit: contain;}
     .banner-title{font-size: 32px; line-height: 36px;letter-spacing: 1px;}
     .banner-subtitle{margin-bottom: 5px;}
-    section.banner-section{margin: 25px 0px;border-radius: 0px;}
-    .banner-img{border-radius: 0px;}
-    .product_category .nav-pills .toggle_section .nav-link, .product_category .nav-pills #toggle_section .nav-link{padding: 15px 5px !important; display: flex; flex-direction: row;}
-    .product_category {margin-bottom: 15px;}
+    section.banner-section{margin: 25px 0px 15px 0;border-radius: 0px;}
+    .banner-img{border-radius: 0px;height: 250px;}
+    .swiper-nav {display: none;}
+    .product_category .nav-pills .toggle_section .nav-link, .product_category .nav-pills #toggle_section .nav-link{padding: 5px !important; display: flex; flex-direction: row;font-weight: 500;font-size:13px;}
+    .product_category {margin-bottom: 20px;}
+    .current-price{font-size: 15px;}
+    .original-price{font-size: 12px;}
     .product-card, .sale-box{margin-bottom: 0px;}
     .logo_slider .slider_bg{padding: 10px;}
-    .offer-title{font-size: 18px;}
+    .offer-title{font-size: 20px;}
+    .offer-price{font-size: 13px;}
+    .offer-card{margin-bottom: 0px;}
+    .top_product_slider, .blog_slider {margin-top: 15px;}
+    .product-swiper .swiper-pagination{display: none;}
+    .shop_by_category{display: none;}
     section{padding: 25px 0px;}
     .footer .col{flex: 1 0 33.33%;}
     .footer h4{font-size: 12px;margin-bottom: 5px;}
     .footer {padding-bottom: 15px;}
     .copyright{padding: 5px;}
     .sales_banner{bottom: 0;margin: auto;display: flex;flex-direction: column;align-items: center;justify-content: center;top: 0;}
-    .category_menu{margin-top: 15px;}
+    .category_menu{margin-top: 5px;}
     .nav-pills .toggle_section .nav-link, .nav-pills #toggle_section .nav-link{padding: 15px;}
     .spacial_trend{margin-top: 20px;}
     .offers_sale{flex-direction: row;margin-top: 10px;}
@@ -335,7 +343,8 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .remove_padding{padding: 0px  !important;}
     .cart_count_badge{right: -5px;padding: 1px 3px; top: -5px;}
     .Product_category .category_menu{border-radius: unset;}
-    .Product_category .nav-pills .toggle_section .nav-link img{margin-right: 10px !important;}
+    .Product_category .nav-pills .toggle_section .nav-link img{margin-right: 5px !important;height: 22px;}
+    .Product_category .main-title{justify-content:center;}
     .product_category .nav-pills .toggle_section .nav-link{width: max-content;}
     .padding_on_mob{padding: 0px 25px;}
     .banner-section{padding: 0px !important;} 
@@ -346,9 +355,53 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .services{border:1px solid #E4E4E4;}
     .swiper-pagination{display: none;}
 } 
+@media (min-width: 768px) and (max-width: 991px){
+    .ad_bg img {width: 90px;}
+    .product_slider .swiper-slide img{object-fit: cover;}
+    .spacial_trend{padding: 5px;}
+    .time_countdown div{height: 28px;width: 28px; font-size: 9px;}
+    .spacial_trend h5{padding: 0px 5px 5px 5px;}
+    .time_countdown_section{gap: 3px;}
+    .spacial_trend h5{font-size:11px}
+    .product-image{height: 200px;}
+    .product-image .product-img{width: 160px;height: 160px;object-fit: contain;}
+    .testimonial-text br{display: none;}
+    .testimonial-text{font-size: 10px;}
+    .best_seller h4, .enquiry h4{padding: 8px;width: 100%;}
+    .Product_category{padding: 20px 0;}
+    .product-info{padding: 15px;}
+    .product-title{font-size: 11px;}
+    .current-price{font-size: 14px;}
+    .ad_bg h4{font-size: 12px;}
+    .ad_bg span{font-size: 10px;}
+    .best_seller{padding: 5px;}
+    .services .product_detail p{font-size: 9px;}
+    .testimonial-card{padding: 15px 5px 15px;}
+    .product_slider .swiper-pagination-bullet{height: 9px; width: 9px;}
+    .original-price{font-size: 13px;}
+    .tab-btn{font-size: 10px;padding: 5px;border-radius: 3px;}
+    .main-title h2, .main-title h3, .main-title h1{font-size: 22px; line-height: 32px;margin-bottom: 0px}
+    .banner-title{font-size: 34px; line-height: 36px;letter-spacing: 1px;}
+    .banner-btn{font-size: 11px;}
+    .sales_banner>img {width: 80px;}
+    .sales_banner .sales_text h5{font-size: 14px;margin: 5px 0px 0;}
+    .sales_banner .sales_text span, .sales_banner .sales_text a{font-size: 9px;}
+    .banner-subtitle{margin-bottom: 7px;}
+    section.banner-section{margin: 0;border-radius: 5px;padding-top: 10px; padding-bottom: 10px;}
+    .banner-img{border-radius: 5px;height: 280px;}
+    .product_category .nav-pills .toggle_section .nav-link, .product_category .nav-pills #toggle_section .nav-link{padding: 10px !important; display: flex; flex-direction: row;font-weight: 500;font-size:14px;}
+    .product_category {margin-bottom: 25px;}
+    .offer-title{font-size: 19px;}
+    .offer-price{font-size: 12px;}
+    .offer-card{margin-bottom: 0px;}
+    .top_product_slider, .blog_slider {margin-top: 20px;}
+    .shop_by_category{display: block;}
+    .footer .col{flex: 1 0 25%;}
+}
 @media (max-width: 991px){
-    .navbar-brand img{width: 100px;}
+    .navbar-brand img{width: 80px;}
     .navbar-toggler{border: none; padding: 0px;}
+    .navbar-toggler .navbar-toggler-icon{width: 20px;}
     .flex_icon{margin-bottom: 0px;} 
     .top-category-bar, .order-tracker {display: none !important;}
 }
