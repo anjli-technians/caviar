@@ -303,7 +303,7 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
     .product-image{height: 180px;}
     .product-info{padding: 10px;}
     .product-title{font-size: 10px;}
-    .product-image .product-img{width: 185px;height: 185px;object-fit: contain;}
+    .product-image .product-img{width: 165px;height: 165px;object-fit: contain;}
     .banner-title{font-size: 32px; line-height: 36px;letter-spacing: 1px;}
     .banner-subtitle{margin-bottom: 5px;}
     section.banner-section{margin: 25px 0px 15px 0;border-radius: 0px;}
