@@ -213,6 +213,23 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
 .search-btn {background: #fff;border-radius: 80px;padding: 5px 20px;}
 .search-btn i {color: #000;font-size: 16px;}
 .nav_below_item{position: absolute;background: #fff;border:1px solid #E4E4E4;margin-right: 0;padding: 0 15px;margin-top: 4px;}
+
+/* about us page css start */
+.bg_overlay .position-relative{z-index: 1;border-radius: 5px;overflow: hidden;}
+.bg_overlay .position-relative::before{content: "";position: absolute;background: rgba(0, 0, 0, 0.55);z-index: 0;top: 0;bottom: 0;left: 0;right: 0;}
+.breadcrumb span{font-family: "Montserrat",sans-serif;font-size: 19px;color: #7a7a7a;}
+.breadcrumb span a{color: #000;text-decoration: none;font-weight: 600;}
+.breadcrumb{gap: 10px;padding: 20px 0px;}
+.vision_mission p{font-size: 12px;font-weight: 500;font-family: "Montserrat",sans-serif;line-height: 22px;}
+.quality_warranty ul{list-style: none;padding: 0;display: flex; align-items: flex-start;gap: 15px;width: 80%;margin: auto;}
+.quality_warranty h5{font-family: "Montserrat",sans-serif;font-size: 18px;font-weight: 600;color: #000;text-transform: capitalize;margin-bottom: 5px;position: relative;}
+.quality_warranty h5::after{content: "";display: block;width: 50px;height: 1px;background: #000;margin: 5px 0 0;}
+.quality_warranty .col{border-right: 1px solid #000;}
+.quality_warranty .col:last-child{border-right: unset;}
+.quality_warranty ul p{font-size: 13px;font-family: "Montserrat",sans-serif;font-weight: 600;}
+.quality_warranty {padding-top: 20px;}
+/* about us page css end */
+
  
 
 
