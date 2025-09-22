@@ -227,7 +227,10 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
 .quality_warranty .col{border-right: 1px solid #000;}
 .quality_warranty .col:last-child{border-right: unset;}
 .quality_warranty ul p{font-size: 13px;font-family: "Montserrat",sans-serif;font-weight: 600;}
-.quality_warranty {padding-top: 20px;}
+.quality_warranty, .trending_product {padding-top: 20px;}
+.top_selling_product .offer-card{box-shadow: 0px 4.91px 45.43px 0px #0000001A;}
+.top_selling_product .offer-card .offer-title{font-size: 24px;}
+.top_selling_product .offer-card .offer-price{font-size: 14px;}
 /* about us page css end */
 
  
