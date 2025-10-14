@@ -28,9 +28,9 @@
         border: none;
         border-radius: 15px;
         box-shadow: 0px 2.22px 22.15px 5.54px #0000001A;
-        padding: 15px;
+        padding: 20px;
         text-align: center;
-        height: 360px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -41,14 +41,15 @@
     }
  
     .wish-card img {
-        height: 190px;
-        object-fit: cover;
+        height: 160px;
+    object-fit: contain;
+    width: 100%;
     }
 
     .wish_card-body .product-title {
         font-family: "Poppins" !important;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 15px;
         text-align: left;
         text-transform: none;
         letter-spacing: 0px;
@@ -60,18 +61,18 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: flex-start;width: -webkit-fill-available;
     }
 
     .quick-add {
-        border: 1.11px solid #FA6905;
+        border: 1px solid #FA6905;
         background-color: #FA6905;
         color: #fff;
         font-weight: 500;
-        border-radius: 20px;
-        padding: 6px 15px;
+        border-radius: 7px;
+        padding: 8px 10px;
         font-family: "Poppins";
-        font-weight: 400;
+        font-weight: 300;
         font-size: 13px;
     }
  
@@ -79,12 +80,11 @@
         display: inline-flex;
         flex-direction: row;
         align-items: center;
-        font-size: 14px;
-        margin-left: 35px;
+        font-size: 14px; 
         font-family: "Poppins";
         font-weight: 400;
         color: #000;
-        font-size: 12px;
+        font-size: 11px;
         vertical-align: middle;
 
     }
@@ -100,11 +100,11 @@
         background-color: #FA6905;
         color: #fff;
         border: none;
-        padding: 6px 60px;
-        margin-top: 50px;
+        padding: 6px 70px;
+        margin: 80px 0 60px;
         font-family: "Poppins";
-        font-weight: 500;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 12px;
         border-radius: 4px;
 
     }
@@ -307,17 +307,17 @@
 
 
     <!-- ==================== Code here =================== -->
-    <section class="wishlist-section">
+    <section class="wishlist-section pt-0">
         <div class="container">
-            <div class="row g-4">
+            <div class="row ">
                 <!-- Product 1 -->
-                <div class="col-lg-3  col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-md-2 m-0">
                     <div class="wish-card wish_product-card">
                         <img src="./images/wishlist/Product -1.png" class="card-img-top" alt="">
                         <div class="wish_card-body">
                             <h5 class="product-title">Canon EOS 90D</h5>
                             <p class="product-price">₹1,90,000</p>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mb-md-3">
                                 <button class="quick-add">+ Quick Add</button>
                                 <div class="rating">4.2 <img class="star_img" src="./images/wishlist/star.png" alt="">
                                 </div>
@@ -327,13 +327,13 @@
                 </div>
 
                 <!-- Product 2 -->
-                <div class="col-lg-3  col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-md-2 m-0">
                     <div class="wish-card wish_product-card">
                         <img src="./images/wishlist/Product -2.png" class="card-img-top" alt="">
                         <div class="wish_card-body">
                             <h5 class="product-title">Sony a1 Mirrorless Camera</h5>
                             <p class="product-price">₹1,90,000</p>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mb-md-3">
                                 <button class="quick-add">+ Quick Add</button>
                                 <div class="rating">4.9 <img class="star_img" src="./images/wishlist/star.png" alt="">
                                 </div>
@@ -343,13 +343,13 @@
                 </div>
 
                 <!-- Product 3 -->
-                <div class="col-lg-3  col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-md-2 m-0">
                     <div class="wish-card wish_product-card">
                         <img src="./images/wishlist/Product -3.png" class="card-img-top" alt="">
                         <div class="wish_card-body">
                             <h5 class="product-title">Sony a7 III Mirrorless</h5>
                             <p class="product-price">₹1,90,000</p>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mb-md-3" style="width: -webkit-fill-available;">
                                 <button class="quick-add">+ Quick Add</button>
                                 <div class="rating">3.5 <img class="star_img" src="./images/wishlist/star.png" alt="">
                                 </div>
@@ -359,13 +359,13 @@
                 </div>
 
                 <!-- Product 4 -->
-                <div class="col-lg-3  col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-md-2 m-0">
                     <div class="wish-card wish_product-card">
                         <img src="./images/wishlist/Product -4.png" class="card-img-top" alt="">
                         <div class="wish_card-body">
                             <h5 class="product-title">Canon EOS 90D</h5>
                             <p class="product-price">₹1,90,000</p>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mb-md-3" style="width: -webkit-fill-available;">
                                 <button class="quick-add">+ Quick Add</button>
                                 <div class="rating">4.2 <img class="star_img" src="./images/wishlist/star.png" alt="">
                                 </div>
@@ -375,13 +375,13 @@
                 </div>
 
                 <!-- Product 5 -->
-                <div class="col-lg-3  col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-md-2 m-0">
                     <div class="wish-card wish_product-card">
                         <img src="./images/wishlist/Product -1.png" class="card-img-top" alt="">
                         <div class="wish_card-body">
                             <h5 class="product-title">Canon EOS 90D</h5>
                             <p class="product-price">₹1,90,000</p>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mb-md-3" style="width: -webkit-fill-available;">
                                 <button class="quick-add">+ Quick Add</button>
                                 <div class="rating">4.2 <img class="star_img" src="./images/wishlist/star.png" alt="">
                                 </div>
@@ -391,13 +391,13 @@
                 </div>
 
                 <!-- Product 6 -->
-                <div class="col-lg-3  col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-md-2 m-0">
                     <div class="wish-card wish_product-card">
                         <img src="./images/wishlist/Product -2.png" class="card-img-top" alt="">
                         <div class="wish_card-body">
                             <h5 class="product-title">Sony a1 Mirrorless Camera</h5>
                             <p class="product-price">₹1,90,000</p>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mb-md-3" style="width: -webkit-fill-available;">
                                 <button class="quick-add">+ Quick Add</button>
                                 <div class="rating">4.9 <img class="star_img" src="./images/wishlist/star.png" alt="">
                                 </div>
@@ -407,13 +407,13 @@
                 </div>
 
                 <!-- Product 7 -->
-                <div class="col-lg-3  col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-md-2 m-0">
                     <div class="wish-card wish_product-card">
                         <img src="./images/wishlist/Product -3.png" class="card-img-top" alt="">
                         <div class="wish_card-body">
                             <h5 class="product-title">Sony a7 III Mirrorless</h5>
                             <p class="product-price">₹1,90,000</p>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mb-md-3" style="width: -webkit-fill-available;">
                                 <button class="quick-add">+ Quick Add</button>
                                 <div class="rating">3.5 <img class="star_img" src="./images/wishlist/star.png" alt="">
                                 </div>
@@ -423,13 +423,13 @@
                 </div>
 
                 <!-- Product 8 -->
-                <div class="col-lg-3  col-sm-6">
+                <div class="col-lg-3 col-sm-6 p-md-2 m-0">
                     <div class="wish-card wish_product-card">
                         <img src="./images/wishlist/Product -4.png" class="card-img-top" alt="">
                         <div class="wish_card-body">
                             <h5 class="product-title">Canon EOS 90D</h5>
                             <p class="product-price">₹1,90,000</p>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-between align-items-center mb-md-3" style="width: -webkit-fill-available;">
                                 <button class="quick-add">+ Quick Add</button>
                                 <div class="rating">4.2 <img class="star_img" src="./images/wishlist/star.png" alt="">
                                 </div>
