@@ -44,16 +44,15 @@
         color: #FA6905;
         margin-bottom: 1rem;
         font-family: "Poppins";
-        font-weight: 900;
-        font-style: Black;
-        font-size: 22px;
+        font-weight: 900; 
+        font-size: 16px;
         text-align: center;
 
     }
 
     /* Vertical nav pills styled as rounded tiles */
     .privacy-nav_pills .nav-link {
-        border-radius: var(--radius-pill);
+        border-radius: 10px;
         background: #D9D9D9;
         color: var(--neutral-4);
         box-shadow: 0px 4.86px 4.86px 0px #00000040;
@@ -63,9 +62,9 @@
         justify-content: flex-start;  
         font-family: "Poppins";
         font-weight: 400;
-        font-size: 12px;
+        font-size: 9px;
         line-height: 100%;
-        letter-spacing: 0%;
+        padding: 6px;
         text-align: center;
     }
  
@@ -80,12 +79,12 @@
     }
  
     .pill-icon .policy-vector {
-        width: 100%;
+        width:30px;
         height: auto;
     }
  
     .pill-label {
-        font-weight: 600;
+        font-weight: 300;
         line-height: 1.1;
     }
 
@@ -137,10 +136,10 @@
     }
 
     .policy em.section-ref {
-        color: var(--neutral-3);
-        font-style: italic;
+        color: #000;
+        font-style: normal;
         display: inline-block;
-        margin-bottom: .5rem;
+        margin-bottom: .5rem;margin: 5px 0 15px;
     }
 
     .policy p {
@@ -153,22 +152,22 @@
     #policy-tabContent p {
         font-family: "Poppins";
         font-weight: 400;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 12px;
+        line-height: 22px;
         letter-spacing: 0%;
         color: #000;
 
     }
 
     .nav.privacy-nav_pills {
-        margin-top: 50px;
+        margin-top: 20px;gap: 17px !important;
     }
 
     .policy-wrapper {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-
+.tab_padd{padding: 5px;width: -webkit-fill-available;text-align: center;}
      
 </style>
 
@@ -352,7 +351,7 @@
     <section class="policy-wrapper container">
         <div class="row g-4">
             <!-- Sidebar -->
-            <aside class="col-lg-3">
+            <aside class="col-lg-2">
                 <div class="sidebar privacy-sidebar">
                     <div class="sidebar-title">Legal Information</div>
 
@@ -368,7 +367,7 @@
                                         alt="policy img">
 
                                 </span>
-                                <div style="padding: 5px 20px;">
+                                <div class="tab_padd">
                                     <span class="pill-label">URBO Studio Software Terms & Conditions</span>
                                  </div>
                             </button>
@@ -382,7 +381,7 @@
                                     <img class="policy-vector" src="./images/privacy-policy/contact-vector-2.png"
                                         alt="privacy img">
                                 </span>
-                                <div style="padding: 5px 20px;">
+                                <div class="tab_padd">
                                     <span class="pill-label">Cookies Policy</span>
                                  </div>
                             </button>
@@ -395,7 +394,7 @@
                                     <img class="policy-vector" src="./images/privacy-policy/contact-vector-3.png"
                                         alt="usage img">
                                 </span>
-                                <div style="padding: 5px 20px;">
+                                <div class="tab_padd">
                                     <span class="pill-label">URBO Pay Terms & Conditions</span>
                                  </div>
                             </button>
@@ -408,7 +407,7 @@
                                     <img class="policy-vector" src="./images/privacy-policy/contact-vector-4.png"
                                         alt="rights img">
                                 </span>
-                                <div style="padding: 5px 20px;">
+                                <div class="tab_padd">
                                     <span class="pill-label">Distribution Channels Terms & Conditions</span>
                                  </div>
                             </button>
@@ -422,7 +421,7 @@
                                     <img class="policy-vector" src="./images/privacy-policy/contact-vector-5.png"
                                         alt="sharing img">
                                 </span>
-                                <div style="padding: 5px 20px;">
+                                <div class="tab_padd">
                                     <span class="pill-label">Website Terms of Use</span>
                                  </div>
                             </button>
@@ -434,7 +433,7 @@
             </aside>
 
             <!-- Content -->
-            <div class="col-lg-9">
+            <div class="col-lg-10">
                 <div class="tab-content policy" id="policy-tabContent">
                     <!-- Collect -->
                     <div class="tab-pane fade show active" id="pane-collect" role="tabpanel"
@@ -451,81 +450,25 @@
 
                         <em class="section-ref">Section 13.2.3 of the “Fictum Boremum et Meorum”, written by Cicero in
                             45 BC</em>
+                        <p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
                         <p>
-                            “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque
-                            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            Nemo enim ipsam voluptatem quia
-                            voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-                            ratione voluptatem sequi nesciunt.”
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere pulvinar congue.
-                            Quisque ultricies sapien at tempor
-                            aliquam. Integer eget fermentum arcu. Pellentesque non nisl eget lacus vulputate egestas.
-                            Nunc id ligula orci. Cras aenean
-                            dictum ex id dignissim.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+                        <em class="section-ref">Section 13.2.3 of the “Fictum Boremum et Meorum”, written by Cicero in
+                            45 BC</em>
+                        <p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
 
-                            Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC
-
-                            “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur, adipisci velit, sed quia non.
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-
-                            Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC
-
-                            “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur, adipisci velit, sed quia non.
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-
-                            Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC
-
-                            “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur, adipisci velit, sed quia non.
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-
-                            Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC
-
-                            “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur, adipisci velit, sed quia non.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+                        
                     </div>
 
                     <!-- Cookies -->
