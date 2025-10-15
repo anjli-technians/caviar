@@ -20,193 +20,57 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-
     <style>
-        .swiper {
-            width: 100%;
-            height: 500px;
+        .checkout-steps {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            font-size: 15px;
         }
 
-        .swiper-slide img {
-            width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
+        .checkout-steps img {
+            width: 20px
         }
 
-        .thumbs-swiper {
-            height: 500px;
-            width: 120px;
-            margin-right: 20px;
-        }
-
-        .thumbs-swiper .swiper-slide {
-            height: 90px !important;
-            cursor: pointer;
-        }
-
-        .thumbs-swiper .swiper-slide-thumb-active {
-            opacity: 1;
-            border-bottom: 1px solid #000000;
-            border-radius: unset;
-        }
-
-        .thumbs-swiper img {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .single-product-details .product-heading h2 {
-            font-family: "Poppins";
-            font-weight: 700;
-            font-size: 28px;
+        .checkout-heading{
+            font-family: 'Poppins', sans-serif;
+font-weight: 600; 
+font-size: 26px; 
 
         }
-
-        .single-product-price {
-            color: #FA6905;
-            margin-bottom: 15px;
-
-            font-family: "Poppins";
-            font-weight: 800;
-            font-size: 22px;
-
-        }
-
-
-        .rating {
-            font-family: "Poppins";
-            font-weight: 600;
-            font-size: 12px;
-        }
-
-        .rating .star-img {
-            width: 14px;
-        }
-
-        .single-product-details p {
-            margin-bottom: 0;
-            font-family: "Poppins";
+        .checkout-steps p span {
+            font-family: 'Poppins', sans-serif;
             font-weight: 400;
             font-size: 16px;
 
         }
 
-        .options-box {
-            display: flex;
-            gap: 4px;
-            margin-bottom: 15px;
+        .checkout-steps i {
+            font-size: 14px;
+            color: #ff6600;
         }
 
-        .options-box .option-btn {
-            border: 1px solid #ddd;
-            padding: 6px 12px;
-            border-radius: 6px;
-            background: #fff;
-            cursor: pointer;
-            font-family: "Poppins";
-            font-weight: 400;
-            font-size: 11px;
-            border: 1px solid #000;
-        }
-
-        .option-btn.active {
-            box-shadow: 0px 4.43px 22.15px 0px #00000040;
-            background: #FA6905;
-            border-color: #FA6905;
-            color: #fff;
-        }
-
-        .single-product-details .stock {
-            margin-bottom: 10px;
-            font-family: "Poppins";
-            font-weight: 400;
-            font-size: 12px;
-            color: #000;
-        }
-
-        .single-product-details .stock img {
-            width: 18px;
-        }
-
-        .specs {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-
-        .specs li {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            margin-bottom: 5px;
-            font-family: "Poppins";
-            font-weight: 400;
-            font-size: 12px;
-
-        }
-
-        .specs li .single-product-link {
-            font-family: "Poppins";
-            font-weight: 400;
-            font-size: 12px;
-            text-decoration: underline;
-            color: #000000;
-
-        }
-
-        .specs li img {
-            width: 25px;
-        }
-
-        .quantity-box {
-            display: flex;
-            align-items: center;
-            border: 1px solid #0000004D;
-            border-radius: 20px;
-            width: 160px;
-            height: 30px;
-            margin-bottom: 15px;
-            overflow: hidden;
-        }
-
-        .quantity-btn {
-            width: 20px;
-            height: 40px;
-            border: none;
-            background-color: #fff;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        .quantity-number {
-            width: 110px;
-            text-align: left;
+        .checkout-steps span.active {
+            color: #ff6600;
             font-weight: 500;
-            padding-left: 10px;
+            padding-left: 5px;
         }
 
-        .btn-orange {
-            background-color: #ff6b00;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            padding: 10px 20px;
-            font-weight: 500;
-        }
+        .accordion-button { 
+            border: 1.6px solid #E7E9EB;
+            border-radius: 8px;
+            border-top-right-radius:8px;
+            border-top-left-radius:8px;
 
-        .btn-outline-orange {
-            border: 1px solid #ff6b00;
-            color: #ff6b00;
-            border-radius: 6px;
-            padding: 10px 20px;
-            background: #fff;
-            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+color: #696969;
         }
-
         .accordion-button:not(.collapsed) {
-            background-color: #fff;
+            background: #fff;
+            border: 1.6px solid #E7E9EB;
             color: #000;
             box-shadow: none;
         }
@@ -216,69 +80,260 @@
         }
 
         .accordion-item {
-            border: 1px solid #ddd;
+            /* border-radius: 10px; */
+            border: unset;
+            /* border: 1.6px solid #E7E9EB; */
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .accordion-body {
+            margin-top: 10px;
+            /* background: #f9f9f9; */
+            padding: 15px 20px;
+            border: 1.6px solid #E7E9EB;
             border-radius: 8px;
+        }
+        .accordion-body h6{
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+color: #696969;
+
+        }
+
+        .accordion-body .body-text{
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+color: #696969;
+
+        }
+
+        .card-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .card-option img {
+            width: 40px;
+            height: 25px;
+            object-fit: contain;
+        }
+
+        .add-new {
+            display: flex;
+            align-items: center;
+            /* color: #ff6600; */
+            font-weight: 500;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+color: #696969;
+
+        }
+
+        .add-new i {
+            font-size: 18px;
+            margin-right: 5px;
+            background-color: #FA6905;
+            color: #434343; 
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            padding: 3px;
+        }
+
+        .add-method-btn {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            color: #696969;
+            font-weight: 500;
+            margin-top: 15px;
+
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+
+        }
+        .add-method-btn i{
+             font-size: 18px;
+            margin-right: 5px;
+            background-color: #FA6905;
+            color: #434343; 
+            width: 25px;
+            height: 25px; 
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            padding: 3px;
+        }
+
+        .summary-card {
+            background: #408BFC0D;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            /* border-radius: 15px; */
+            padding: 80px;
+        }
+
+        .summary-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            /* margin-top: 30px; */
+        }
+
+        .summary-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .summary-item .info {
+            flex: 1;
+        }
+
+        .summary-item .info h6 {
+            font-family: "Poppins";
+font-weight: 400;
+font-size: 14px;
+
+            margin: 0;
+        }
+
+        .summary-item .info p {
+            font-family: "Poppins";
+font-weight: 700; 
+font-size: 14px; 
+padding-top: 5px;
+            margin: 0;
+            color: #000;
+        }
+
+        .summary-item .checkout-cross-icon i{
+            cursor: pointer;
+            color: #fff;
+            font-size: 18px;
+            background-color: #FA6905;
+            width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+
+        .offer-box {
+            border: 1px solid #eee;
+            background: #fff;
+            border-radius: 10px;
+            padding: 12px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .offer-box span{
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+
+        }
+
+        .offer-box a {
+            color: #ff6600;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        .payment-details {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            border: 1px solid #eee;
+        }
+        .payment-details p{
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+padding-bottom: 10px;
+border-bottom: 1px solid #E7E9EB;
+color: #696969;
+
+        }
+
+
+        .payment-details .row{
             margin-bottom: 10px;
         }
-
-        .info-text {
-            margin-top: 20px;
-            border-top: 1px solid #000;
-            padding-top: 10px;
-            font-size: 14px;
-            color: #555;
-
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+        .payment-details .row .col { 
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+color: #696969;
         }
 
-        .info-text p {
-            font-family: "Poppins";
-            font-weight: 400;
-            font-size: 14px;
+        .payment-details .total {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .address-box {
+            margin-top: 15px;
+            border: 1px solid #eee;
+            background: #fff;
+            border-radius: 10px;
+            padding: 12px;
+        }
+        .address-box p{
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px; 
+margin-bottom: 0;
 
         }
 
-        .info-text img {
-            width: 20px;
+        .address-box span{
+            font-family: 'Poppins', sans-serif;
+font-weight: 400; 
+font-size: 16px;
+
         }
 
-        .button-group {
-            gap: 15px;
-        }
-
-        .button-group .add-to-cart {
-            background: #FF8D28;
-            box-shadow: 0px 4.43px 22.15px 0px #00000040;
+        .pay-btn {
+            background: #FA6905;
             color: #fff;
-            font-family: 'Poppins';
-            font-weight: 400;
-            font-size: 14px;
-            padding: 7px 40px;
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+            width: 100%; 
+            margin-top: 15px;
 
-        }
+            font-family: 'Poppins', sans-serif;
+font-weight: 600; 
+font-size: 16px; 
 
-        .button-group .buy-now {
-            border: 1.11px solid #F9BF33;
-            background-color: #F9BF33;
-            color: #fff;
-            box-shadow: 0px 4.43px 22.15px 0px #00000040;
-            font-family: "Poppins";
-            font-weight: 400;
-            font-size: 14px;
-            padding: 7px 40px;
-        }
-
-        .button-group .bulk-order {
-            border: 1.11px solid #000000;
-            background-color: #000000;
-            box-shadow: 0px 4.43px 22.15px 0px #00000040;
-            color: #fff;
-            font-family: "Poppins";
-            font-weight: 400;
-            font-size: 14px;
-            padding: 7px 40px;
         }
     </style>
 </head>
@@ -460,151 +515,133 @@
     <!-- </div> -->
 
 
-    <!-- ================================== Product single code here ====================================================== -->
+    <!-- ================================ Checkout code here ======================================================== -->
 
-    <section class="single_product-page">
-        <div class="container product-page">
-            <div class="row">
-                <!-- Left Section -->
-                <div class="col-lg-6 d-flex">
-                    <!-- Thumbnails -->
-                    <div class="swiper thumbs-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./images/product-single/Main Image.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./images/wishlist/Product -2.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./images/wishlist/Product -3.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./images/wishlist/Product -4.png" alt=""></div>
-                            <div class="swiper-slide"><img
-                                    src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg" alt=""></div>
-                        </div>
-                    </div>
 
-                    <!-- Main Swiper -->
-                    <div class="swiper main-swiper flex-grow-1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./images/product-single/Main Image.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./images/wishlist/Product -2.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./images/wishlist/Product -3.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./images/wishlist/Product -4.png" alt=""></div>
-                            <div class="swiper-slide"><img
-                                    src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg" alt=""></div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Right Section -->
-                <div class="col-lg-6 single-product-details">
-                    <div class="product-heading d-flex justify-content-between align-items-center">
-                        <h2>Nikon Z5</h2>
-                        <div class="rating">4.2 (1653) <img class="star-img" src="./images/wishlist/star.png" alt="">
-                            <img class="star-img" src="./images/wishlist/star.png" alt="">
-                            <img class="star-img" src="./images/wishlist/star.png" alt="">
-                            <img class="star-img" src="./images/wishlist/star.png" alt="">
-                        </div>
-                    </div>
-                    <div class="single-product-price">₹1,99,900</div>
-                    <p>Options</p>
-                    <div class="options-box">
-                        <button class="option-btn active">Z5 Body Only</button>
-                        <button class="option-btn">24–50mm Lens Kit</button>
-                    </div>
+    <section class="checkout-page-section">
+        <div class="container">
+            <!-- Checkout Steps -->
+            <div class="checkout-steps">
 
-                    <div class="stock"><img src="./images/product-single/InStock.png" alt=""> Currently in Stock</div>
+                <p><img src="./images/checkout/checkmark-square-02.png" alt=""> <span>Cart</span></p>
+                <!-- <i class="fa-regular fa-circle-check"></i> -->
 
-                    <ul class="specs">
-                        <li><img src="./images/product-single/Chip.png" alt=""> Expeed 6 Chip</li>
-                        <li><img src="./images/product-single/Lens.png" alt=""> Works with 24–50mm Lens</li>
-                        <li><img src="./images/product-single/megapixels 1.png" alt=""> 24.3 Million Effective Pixels
-                        </li>
-                        <li><img src="./images/product-single/Battery.png" alt=""> EN-EL15c rechargeable Li-ion battery
-                        </li>
-                        <li><a href="#" class="single-product-link ">View All Tech Specs</a></li>
-                    </ul>
+                <p><img src="./images/checkout/checkmark-square-02.png" alt=""> <span>Shipping</span></p>
 
-                    <!-- <a href="#" class="text-decoration-none fw-semibold d-block mb-3">View All Tech Specs</a> -->
+                <!-- <i class="fa-regular fa-circle-check"></i> -->
+                <p> <i class="fa-regular fa-square"></i><span class="active">Checkout</span></p>
 
-                    <div class="quantity-box">
-                        <span id="qty" class="quantity-number">1</span>
-                        <button class="quantity-btn" onclick="decreaseQty()">-</button>
-                        <button class="quantity-btn" onclick="increaseQty()">+</button>
-                    </div>
 
-                    <div class="button-group d-flex mb-3">
-                        <button class="btn add-to-cart">Add To Cart</button>
-                        <button class="btn buy-now">Buy It Now</button>
-                        <button class="btn bulk-order">Bulk Order</button>
-                    </div>
-
-                    <div class="info-text">
-                        <p>
-                            <img src="./images/product-single/Help.png" alt="">
-                            <!-- <i class="fa-regular fa-message"></i> -->
-                            Got any questions? <a href="#">Contact us</a>
-                        </p>
-                        <p>
-                            <img src="./images/product-single/Frame.png" alt="">
-                            <!-- <i class="fa-solid fa-truck"></i>  -->
-                            Free Shipping over ₹700
-                        </p>
-                        <p>
-                            <img src="./images/product-single/Frame (1).png" alt="">
-                            <!-- <i class="fa-solid fa-share-nodes"></i> -->
-                            Share
-                        </p>
-                    </div>
-                </div>
             </div>
+            <div class="row g-4">
+                <!-- Left Column -->
+                <div class="col-lg-6 px-5">
+                    <h4 class="checkout-heading mb-4 ">Payment Method</h4>
 
-            <!-- Accordion Section -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="accordion" id="productAccordion">
+                    <div class="accordion" id="paymentAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="descHeading">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#googlePay">
+                                    Google Pay
+                                </button>
+                            </h2>
+                            <div id="googlePay" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                                <div class="accordion-body">
+                                    <p class="body-text mb-0">Use your Google Pay account for secure payment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#descCollapse">
-                                    Description
+                                    data-bs-target="#debitCard">
+                                    Debit Card
                                 </button>
                             </h2>
-                            <div id="descCollapse" class="accordion-collapse collapse show"
-                                data-bs-parent="#productAccordion">
+                            <div id="debitCard" class="accordion-collapse collapse show"
+                                data-bs-parent="#paymentAccordion">
                                 <div class="accordion-body">
-                                    Your full-frame journey begins with the Z5. Simple yet sophisticated, compact yet
-                                    powerful, this is a build-to-grow-with camera.
+                                    <h6 class="mb-3">Debit Card</h6>
+                                    <label class="card-option">
+                                        <div class="d-flex align-items-center">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                                                alt="Axim Bank">
+                                            <div class="ms-2">
+                                                <p class="m-0 fw-semibold">Axim Bank</p>
+                                                <small>**** **** **** 4578</small>
+                                            </div>
+                                        </div>
+                                        <input type="radio" name="card" checked>
+                                    </label>
+
+                                    <label class="card-option">
+                                        <div class="d-flex align-items-center">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+                                                alt="HDFC Bank">
+                                            <div class="ms-2">
+                                                <p class="m-0 fw-semibold">HDFC Bank</p>
+                                                <small>**** **** **** 4521</small>
+                                            </div>
+                                        </div>
+                                        <input type="radio" name="card">
+                                    </label>
+
+                                    <div class="add-new mt-2">
+                                        <i class="fa-solid fa-plus"></i> Add New Cards
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-method-btn"><i class="fa-solid fa-plus"></i> Add New Method</div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-6">
+                    <div class="summary-card px-5">
+                        <div class="summary-item ">
+                            <img src="https://m.media-amazon.com/images/I/71an9eiBxpL._SL1500_.jpg" alt="Laptop">
+                            <div class="info">
+                                <h6>Apple MacBook Pro Core i9...</h6>
+                                <p>₹1,00,200.00</p>
+                            </div>
+                            <div class="checkout-cross-icon">
+                                  <i class="fa-solid fa-xmark"></i>
+                            </div>
+                          
+                        </div>
+
+                        <div class="offer-box">
+                            <span>Offers</span>
+                            <a href="#">Add Code</a>
+                        </div>
+
+                        <div class="payment-details">
+                            <p>Payment Details</p>
+                            <div class="row ">
+                                <div class="col">Order</div>
+                                <div class="col text-end">₹1,00,200.00</div>
+                            </div>
+                            <div class="row ">
+                                <div class="col">Delivery</div>
+                                <div class="col text-end">₹52.00</div>
+                            </div>
+                            <div class="row total">
+                                <div class="col">Total</div>
+                                <div class="col text-end">₹1,00,252.00</div>
                             </div>
                         </div>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="techHeading">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#techCollapse">
-                                    Tech Specs
-                                </button>
-                            </h2>
-                            <div id="techCollapse" class="accordion-collapse collapse"
-                                data-bs-parent="#productAccordion">
-                                <div class="accordion-body">
-                                    Sensor: Full-frame CMOS | Processor: Expeed 6 | Battery: EN-EL15c | Display: 3.2”
-                                    Tilting LCD
-                                </div>
-                            </div>
+                        <div class="address-box d-flex justify-content-between align-items-center">
+                            <p>Address</p>
+                            <span>12, WLS Regency <i class="fa-solid fa-chevron-down ms-1"></i></span>
                         </div>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="shippingHeading">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#shippingCollapse">
-                                    Shipping & Warranty
-                                </button>
-                            </h2>
-                            <div id="shippingCollapse" class="accordion-collapse collapse"
-                                data-bs-parent="#productAccordion">
-                                <div class="accordion-body">
-                                    Free shipping on orders above ₹700. 1-year manufacturer warranty included.
-                                </div>
-                            </div>
-                        </div>
+                        <button class="pay-btn">Pay Now</button>
                     </div>
                 </div>
             </div>
@@ -718,39 +755,6 @@
         }
     </script>
 
-
-
-
-    <!--  -->
-    <script>
-        // Swiper Initialization
-        var thumbSwiper = new Swiper(".thumbs-swiper", {
-            direction: "vertical",
-            slidesPerView: 5,
-            spaceBetween: 10,
-            watchSlidesProgress: true,
-        });
-
-        var mainSwiper = new Swiper(".main-swiper", {
-            spaceBetween: 10,
-            thumbs: {
-                swiper: thumbSwiper,
-            },
-        });
-
-        // Quantity Logic
-        function increaseQty() {
-            let qty = document.getElementById("qty");
-            qty.innerText = parseInt(qty.innerText) + 1;
-        }
-
-        function decreaseQty() {
-            let qty = document.getElementById("qty");
-            if (parseInt(qty.innerText) > 1) {
-                qty.innerText = parseInt(qty.innerText) - 1;
-            }
-        }
-    </script>
 </body>
 
 </html>
