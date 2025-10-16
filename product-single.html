@@ -585,6 +585,51 @@ text-align: center;
         width: 250px;
       }
     }
+
+    /* ============= camera slider================ */
+ 
+.camera-section .swiper {
+  padding-bottom: 30px;
+  padding-left: 200px;
+}
+
+.camera-section .swiper-slide {
+  width: 250px !important;
+}
+.camera-Swiper .card-title{
+    color: #000;
+    font-family: 'Poppins';
+font-weight: 500; 
+font-size: 14px !important; 
+
+}
+.camera-Swiper .card-price{
+    font-family: 'Poppins';
+font-weight: 400; 
+font-size: 12px; 
+color: #00000099;
+
+}
+.camera-Swiper .camera-card{
+    box-shadow: 0px 2.22px 22.15px 5.54px #0000001A;
+    border-radius: 15px;
+
+}
+.card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.camera-section .swiper-button-next,
+.camera-section .swiper-button-prev {
+  position: static;
+  width: auto;
+  height: auto;
+  color: #000;
+  font-size: 20px;
+}
+ 
+
     </style>
 </head>
 
@@ -1042,6 +1087,119 @@ text-align: center;
     <h2>Built for the real world.</h2>
   </section>
 
+  <!-- ===========camera swiper ================= -->
+   <section class="camera-section">
+    <div class=" my-5">
+        <div class="container">
+  <h4 class="mb-4 fw-bold">You may also like</h4>
+  </div>
+
+  <div class="swiper camera-Swiper">
+    <div class="swiper-wrapper">
+      <!-- Card 1 -->
+      <div class="swiper-slide">
+        <div class="camera-card p-3 border-0 shadow-sm">
+          <img src="./images/product-single/Product Img (1).png" class="card-img-top mb-3" alt="Canon EOS 90D">
+          <div class="card-body p-0">
+            <h6 class="card-title">Canon EOS 90D</h6>
+            <p class="card-price text-muted mb-2">₹1,90,000</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-warning btn-sm">+ Quick Add</button>
+              <div class="text-end">
+                <span class="me-1">4.2</span>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duplicate for more cards -->
+      <!-- Card 2 -->
+      <div class="swiper-slide">
+        <div class="card p-3 border-0 shadow-sm">
+          <img src="https://via.placeholder.com/200x150" class="card-img-top mb-3" alt="Sony a1 Mirrorless">
+          <div class="card-body p-0">
+            <h6 class="card-title">Sony a1 Mirrorless</h6>
+            <p class="text-muted mb-2">₹1,90,000</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-warning btn-sm">+ Quick Add</button>
+              <div class="text-end">
+                <span class="me-1">4.9</span>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more swiper-slide cards as needed -->
+        <!-- Card 2 -->
+      <div class="swiper-slide">
+        <div class="card p-3 border-0 shadow-sm">
+          <img src="https://via.placeholder.com/200x150" class="card-img-top mb-3" alt="Sony a1 Mirrorless">
+          <div class="card-body p-0">
+            <h6 class="card-title">Sony a1 Mirrorless</h6>
+            <p class="text-muted mb-2">₹1,90,000</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-warning btn-sm">+ Quick Add</button>
+              <div class="text-end">
+                <span class="me-1">4.9</span>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="swiper-slide">
+        <div class="card p-3 border-0 shadow-sm">
+          <img src="https://via.placeholder.com/200x150" class="card-img-top mb-3" alt="Sony a1 Mirrorless">
+          <div class="card-body p-0">
+            <h6 class="card-title">Sony a1 Mirrorless</h6>
+            <p class="text-muted mb-2">₹1,90,000</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-warning btn-sm">+ Quick Add</button>
+              <div class="text-end">
+                <span class="me-1">4.9</span>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="swiper-slide">
+        <div class="card p-3 border-0 shadow-sm">
+          <img src="https://via.placeholder.com/200x150" class="card-img-top mb-3" alt="Sony a1 Mirrorless">
+          <div class="card-body p-0">
+            <h6 class="card-title">Sony a1 Mirrorless</h6>
+            <p class="text-muted mb-2">₹1,90,000</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-warning btn-sm">+ Quick Add</button>
+              <div class="text-end">
+                <span class="me-1">4.9</span>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper Navigation -->
+  <div class="d-flex justify-content-end mt-3">
+    <div class="swiper-button-prev me-2"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  </div>
+
+  
+</div>
+
+   </section>
+
 
 
     <!-- footer start -->
@@ -1185,6 +1343,25 @@ text-align: center;
             }
         }
     </script>
+
+
+<script>
+  const cameraswiper = new Swiper('.camera-Swiper', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 }
+    }
+  });
+</script>
+
 </body>
 
 </html>
