@@ -22,12 +22,12 @@
 
 
     <style>
-        .swiper {
+        .swiper.main-swiper {
             width: 100%;
             height: 500px;
         }
 
-        .swiper-slide img {
+        .thumbs-swiper .swiper-slide img , .main-swiper .swiper-slide img {
             width: 100%;
             border-radius: 10px;
             object-fit: cover;
@@ -474,162 +474,201 @@
 
 
         /* =============== Camera Out Section ================= */
-              /* ======= Got a Question Section ======= */
-    .help-section {
-      background-color: #F9BF33;
-      border-radius: 12px;
-      padding: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      overflow: visible;
-    }
+        /* ======= Got a Question Section ======= */
+        .help-section {
+            background-color: #F9BF33;
+            border-radius: 12px;
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            overflow: visible;
+        }
 
-    .help-text {
-      max-width: 55%;
-    }
+        .help-text {
+            max-width: 55%;
+        }
 
-  .camera-out-section  .help-text h2 { 
-    font-family: 'Poppins';
-font-weight: 700; 
-font-size: 35px; 
+        .camera-out-section .help-text h2 {
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 35px;
 
-      color: #fff;
-    }
+            color: #fff;
+        }
 
-    .help-text p {
-      color: #fff;
-      margin-top: 10px; 
-      font-family: 'Poppins';
-font-weight: 400; 
-font-size: 10px; 
+        .help-text p {
+            color: #fff;
+            margin-top: 10px;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 10px;
 
-    }
+        }
 
-    .team-avatars img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: -15px;
-      border: 1.23px solid #FFFFFF;
-    }
+        .team-avatars img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: -15px;
+            border: 1.23px solid #FFFFFF;
+        }
 
-    .contact-btn {
-      display: flex;
-      align-items: center;
-      margin-top: 15px;
-      gap: 10px;
-    }
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            gap: 10px;
+        }
 
-    .contact-btn small{
-        font-family: 'Poppins';
-font-weight: 400; 
-font-size: 10px;  
-color: #fff;
+        .contact-btn small {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 10px;
+            color: #fff;
 
-    }
+        }
 
-   .camera-out-section .contact-btn .btn {
-      background-color: #fff;
-      color: #F9BF33; 
-      border-radius: 10px;
-      padding: 8px 20px;
-      border: 1.11px solid #FFFFFF;
-      box-shadow: 0px 4.43px 22.15px 0px #FFFFFF40;
-      font-family: 'Poppins';
-font-weight: 400; 
-font-size: 12px; 
+        .camera-out-section .contact-btn .btn {
+            background-color: #fff;
+            color: #F9BF33;
+            border-radius: 10px;
+            padding: 8px 20px;
+            border: 1.11px solid #FFFFFF;
+            box-shadow: 0px 4.43px 22.15px 0px #FFFFFF40;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 12px;
 
 
-    }
+        }
 
-    .help-image {
-      position: absolute;
-      right: 30px;
-      top: 30%;
-      transform: translateY(-50%);
-      width: 350px;
-    }
+        .help-image {
+            position: absolute;
+            right: 30px;
+            top: 30%;
+            transform: translateY(-50%);
+            width: 350px;
+        }
 
-    /* ======= Built for the Real World Section ======= */ 
-   .full-image-section.real-world {
-      background: url('./images/product-single/full-image.jpg') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
-    }
+        /* ======= Built for the Real World Section ======= */
+        .full-image-section.real-world {
+            background: url('./images/product-single/full-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
 
-    .full-image-section.real-world h2 {
-        font-family: 'Poppins';
-font-weight: 900; 
-font-size: 40px; 
-text-align: center; 
+        .full-image-section.real-world h2 {
+            font-family: 'Poppins';
+            font-weight: 900;
+            font-size: 40px;
+            text-align: center;
 
-    }
+        }
 
-    @media (max-width: 992px) {
-      .help-section {
-        flex-direction: column;
-        text-align: center;
-      }
+        @media (max-width: 992px) {
+            .help-section {
+                flex-direction: column;
+                text-align: center;
+            }
 
-      .help-text {
-        max-width: 100%;
-      }
+            .help-text {
+                max-width: 100%;
+            }
 
-      .help-image {
-        position: static;
-        transform: none;
-        margin-top: 30px;
-        width: 250px;
-      }
-    }
+            .help-image {
+                position: static;
+                transform: none;
+                margin-top: 30px;
+                width: 250px;
+            }
+        }
 
-    /* ============= camera slider================ */
- 
-.camera-section .swiper {
-  padding-bottom: 30px;
-  padding-left: 200px;
-}
+        /* ============= camera slider================ */
 
-.camera-section .swiper-slide {
-  width: 250px !important;
-}
-.camera-Swiper .card-title{
-    color: #000;
-    font-family: 'Poppins';
-font-weight: 500; 
-font-size: 14px !important; 
+        .camera-section .swiper {
+            padding-bottom: 30px;
+            padding-left: 200px;
+            padding-top: 20px;
+        }
 
-}
-.camera-Swiper .card-price{
-    font-family: 'Poppins';
-font-weight: 400; 
-font-size: 12px; 
-color: #00000099;
+        .camera-section .swiper-slide {
+            width: 250px !important;
+        }
 
-}
-.camera-Swiper .camera-card{
-    box-shadow: 0px 2.22px 22.15px 5.54px #0000001A;
-    border-radius: 15px;
+        .camera-Swiper .swiper-wrapper{
+            height: auto !important;
+        }
 
-}
-.card img {
-  height: 150px;
-  object-fit: cover;
-}
+        .camera-Swiper .card-title {
+            color: #000;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 14px !important;
 
-.camera-section .swiper-button-next,
-.camera-section .swiper-button-prev {
-  position: static;
-  width: auto;
-  height: auto;
-  color: #000;
-  font-size: 20px;
-}
- 
+        }
 
+        .camera-Swiper .card-price {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 12px;
+            color: #00000099;
+
+        }
+
+        .camera-swiper-button{
+            margin-top: 60px;
+            padding-right: 200px;
+        }
+        .camera-swiper-button .camera-swiper-button-prev img,
+        .camera-swiper-button .camera-swiper-button-next img {
+            width: 20px;
+            height: auto;
+        }
+
+        .camera-Swiper .camera-card {
+            box-shadow: 0px 2.22px 22.15px 5.54px #0000001A;
+            border-radius: 15px;
+            padding: 20px;
+
+        }
+
+        .camera-Swiper .camera-card .card-body .rating {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 10px;
+            color: #000;
+
+        }
+
+        .camera-Swiper .camera-card .card-body .star-image {
+            width: 15px;
+        }
+
+        .camera-Swiper .camera-card .card-body .add-cart {
+            background-color: #FA6905;
+            color: #fff;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 12px;
+
+        }
+
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .camera-section .swiper-button-next,
+        .camera-section .swiper-button-prev {
+            position: static;
+            width: auto;
+            height: auto;
+            color: #000;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -1063,142 +1102,153 @@ color: #00000099;
 
 
     <!-- ======= Got a Question Section ======= -->
-  <section class="camera-out-section container position-relative">
-    <div class="help-section">
-      <div class="help-text">
-        <h2>Got a question? We are here to help</h2>
-        <p>If you don’t find an answer in our FAQ page, please contact us below, our customer support is available Monday to Friday: 9am- 5pm.</p>
-        <div class="team-avatars">
-          <img src="./images/product-single/big-review.jpg" alt="">
-          <img src="./images/product-single/big-review.jpg" alt="">
-          <img src="./images/product-single/big-review.jpg" alt="">
-        </div>
-        <div class="contact-btn">
-          <button class="btn">Contact us</button>
-          <small>You’ll get a response within 24 hours</small>
-        </div>
-      </div>
-      <img src="./images/product-single/big-camera.png" alt="Camera" class="help-image">
-    </div>
-  </section>
-
-  <!-- ======= Built for the Real World Section ======= -->
-  <section class="full-image-section real-world">
-    <h2>Built for the real world.</h2>
-  </section>
-
-  <!-- ===========camera swiper ================= -->
-   <section class="camera-section">
-    <div class=" my-5">
-        <div class="container">
-  <h4 class="mb-4 fw-bold">You may also like</h4>
-  </div>
-
-  <div class="swiper camera-Swiper">
-    <div class="swiper-wrapper">
-      <!-- Card 1 -->
-      <div class="swiper-slide">
-        <div class="camera-card p-3 border-0 shadow-sm">
-          <img src="./images/product-single/Product Img (1).png" class="card-img-top mb-3" alt="Canon EOS 90D">
-          <div class="card-body p-0">
-            <h6 class="card-title">Canon EOS 90D</h6>
-            <p class="card-price text-muted mb-2">₹1,90,000</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-warning btn-sm">+ Quick Add</button>
-              <div class="text-end">
-                <span class="me-1">4.2</span>
-                <i class="fas fa-star text-warning"></i>
-              </div>
+    <section class="camera-out-section container position-relative">
+        <div class="help-section">
+            <div class="help-text">
+                <h2>Got a question? We are here to help</h2>
+                <p>If you don’t find an answer in our FAQ page, please contact us below, our customer support is
+                    available Monday to Friday: 9am- 5pm.</p>
+                <div class="team-avatars">
+                    <img src="./images/product-single/big-review.jpg" alt="">
+                    <img src="./images/product-single/big-review.jpg" alt="">
+                    <img src="./images/product-single/big-review.jpg" alt="">
+                </div>
+                <div class="contact-btn">
+                    <button class="btn">Contact us</button>
+                    <small>You’ll get a response within 24 hours</small>
+                </div>
             </div>
-          </div>
+            <img src="./images/product-single/big-camera.png" alt="Camera" class="help-image">
         </div>
-      </div>
+    </section>
 
-      <!-- Duplicate for more cards -->
-      <!-- Card 2 -->
-      <div class="swiper-slide">
-        <div class="card p-3 border-0 shadow-sm">
-          <img src="https://via.placeholder.com/200x150" class="card-img-top mb-3" alt="Sony a1 Mirrorless">
-          <div class="card-body p-0">
-            <h6 class="card-title">Sony a1 Mirrorless</h6>
-            <p class="text-muted mb-2">₹1,90,000</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-warning btn-sm">+ Quick Add</button>
-              <div class="text-end">
-                <span class="me-1">4.9</span>
-                <i class="fas fa-star text-warning"></i>
-              </div>
+    <!-- ======= Built for the Real World Section ======= -->
+    <section class="full-image-section real-world">
+        <h2>Built for the real world.</h2>
+    </section>
+
+    <!-- ===========camera swiper ================= -->
+    <section class="camera-section">
+        <div>
+            <div class="container">
+                <h4 class="fw-bold">You may also like</h4>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Add more swiper-slide cards as needed -->
-        <!-- Card 2 -->
-      <div class="swiper-slide">
-        <div class="card p-3 border-0 shadow-sm">
-          <img src="https://via.placeholder.com/200x150" class="card-img-top mb-3" alt="Sony a1 Mirrorless">
-          <div class="card-body p-0">
-            <h6 class="card-title">Sony a1 Mirrorless</h6>
-            <p class="text-muted mb-2">₹1,90,000</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-warning btn-sm">+ Quick Add</button>
-              <div class="text-end">
-                <span class="me-1">4.9</span>
-                <i class="fas fa-star text-warning"></i>
-              </div>
+            <div class="swiper camera-Swiper">
+                <div class="swiper-wrapper">
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div class="camera-card">
+                            <img src="./images/product-single/Product Img (1).png" class="card-img-top mb-3"
+                                alt="Canon EOS 90D">
+                            <div class="card-body p-0">
+                                <h6 class="card-title">Canon EOS 90D</h6>
+                                <p class="card-price text-muted mb-2">₹1,90,000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn add-cart">+ Quick Add</button>
+                                    <div class="text-end">
+                                        <span class="rating">4.2</span>
+                                        <img class="star-image" src="./images/wishlist/star.png" alt="">
+                                        <!-- <i class="fas fa-star text-warning"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for more cards -->
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div class="camera-card">
+                            <img src="./images/product-single/Product Img (2).png" class="card-img-top mb-3"
+                                alt="Canon EOS 90D">
+                            <div class="card-body p-0">
+                                <h6 class="card-title">Sony a1 Mirrorless Camera</h6>
+                                <p class="card-price text-muted mb-2">₹1,90,000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn add-cart">+ Quick Add</button>
+                                    <div class="text-end">
+                                        <span class="rating">4.2</span>
+                                        <img class="star-image" src="./images/wishlist/star.png" alt="">
+                                        <!-- <i class="fas fa-star text-warning"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more swiper-slide cards as needed -->
+                    <!-- Card 3 -->
+                   <div class="swiper-slide">
+                        <div class="camera-card">
+                            <img src="./images/product-single/Product Img (3).png" class="card-img-top mb-3"
+                                alt="Canon EOS 90D">
+                            <div class="card-body p-0">
+                                <h6 class="card-title">Sony a7 III Mirrorless</h6>
+                                <p class="card-price text-muted mb-2">₹1,90,000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn add-cart">+ Quick Add</button>
+                                    <div class="text-end">
+                                        <span class="rating">4.2</span>
+                                        <img class="star-image" src="./images/wishlist/star.png" alt="">
+                                        <!-- <i class="fas fa-star text-warning"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div class="camera-card">
+                            <img src="./images/product-single/Product Img (4).png" class="card-img-top mb-3"
+                                alt="Canon EOS 90D">
+                            <div class="card-body p-0">
+                                <h6 class="card-title">Canon EOS 90D</h6>
+                                <p class="card-price text-muted mb-2">₹1,90,000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn add-cart">+ Quick Add</button>
+                                    <div class="text-end">
+                                        <span class="rating">4.2</span>
+                                        <img class="star-image" src="./images/wishlist/star.png" alt="">
+                                        <!-- <i class="fas fa-star text-warning"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide">
+                        <div class="camera-card">
+                            <img src="./images/product-single/Product Img (1).png" class="card-img-top mb-3"
+                                alt="Canon EOS 90D">
+                            <div class="card-body p-0">
+                                <h6 class="card-title">Canon EOS 90D</h6>
+                                <p class="card-price text-muted mb-2">₹1,90,000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn add-cart">+ Quick Add</button>
+                                    <div class="text-end">
+                                        <span class="rating">4.2</span>
+                                        <img class="star-image" src="./images/wishlist/star.png" alt="">
+                                        <!-- <i class="fas fa-star text-warning"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Navigation -->
+                <div class="camera-swiper-button d-flex justify-content-end ">
+                    <div class="camera-swiper-button-prev me-2"> <img src="./images/product-single/Previous.png" alt=""></div>
+                    <div class="camera-swiper-button-next"><img src="./images/product-single/Next.png" alt=""></div>
+                </div>
             </div>
-          </div>
+
+
         </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="swiper-slide">
-        <div class="card p-3 border-0 shadow-sm">
-          <img src="https://via.placeholder.com/200x150" class="card-img-top mb-3" alt="Sony a1 Mirrorless">
-          <div class="card-body p-0">
-            <h6 class="card-title">Sony a1 Mirrorless</h6>
-            <p class="text-muted mb-2">₹1,90,000</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-warning btn-sm">+ Quick Add</button>
-              <div class="text-end">
-                <span class="me-1">4.9</span>
-                <i class="fas fa-star text-warning"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="swiper-slide">
-        <div class="card p-3 border-0 shadow-sm">
-          <img src="https://via.placeholder.com/200x150" class="card-img-top mb-3" alt="Sony a1 Mirrorless">
-          <div class="card-body p-0">
-            <h6 class="card-title">Sony a1 Mirrorless</h6>
-            <p class="text-muted mb-2">₹1,90,000</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-warning btn-sm">+ Quick Add</button>
-              <div class="text-end">
-                <span class="me-1">4.9</span>
-                <i class="fas fa-star text-warning"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Swiper Navigation -->
-  <div class="d-flex justify-content-end mt-3">
-    <div class="swiper-button-prev me-2"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-  </div>
-
-  
-</div>
-
-   </section>
+    </section>
 
 
 
@@ -1345,22 +1395,22 @@ color: #00000099;
     </script>
 
 
-<script>
-  const cameraswiper = new Swiper('.camera-Swiper', {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      0: { slidesPerView: 1 },
-      576: { slidesPerView: 2 },
-      768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 }
-    }
-  });
-</script>
+    <script>
+        const cameraswiper = new Swiper('.camera-Swiper', {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".camera-swiper-button-next",
+                prevEl: ".camera-swiper-button-prev",
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                992: { slidesPerView: 4 }
+            }
+        });
+    </script>
 
 </body>
 
