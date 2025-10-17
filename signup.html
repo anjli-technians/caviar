@@ -38,8 +38,7 @@
         font-family: 'Poppins', sans-serif;
 font-weight: 700; 
 font-size: 28px;  
-color: #232323;
-      margin-bottom: 10px;
+color: #232323; 
     }
 
     .login-left p {
@@ -47,8 +46,7 @@ color: #232323;
 font-weight: 400; 
 font-size: 13px; 
 
-      color: #969696; 
-      margin-bottom: 25px;
+      color: #969696;  
     }
 
     .form-control {
@@ -61,13 +59,19 @@ font-size: 13px;
 font-weight: 400; 
 font-size: 14px; 
 color: #232323;
+margin-top: -13px;
     }
 
+    form .form-label {
+        margin-bottom: 0;
+        z-index: 999;
+    }
     .form-control:focus {
       border-color: #FA6905 !important;
       box-shadow: 0 0 0 0.15rem rgba(255, 102, 0, 0.25);
     }
 
+    form .form-div{position: relative;}
     .form-check .form-check-label{
         font-family: 'Poppins', sans-serif;
 font-weight: 500; 
@@ -371,7 +375,7 @@ text-align: center;
         <p>Please login to continue to your account.</p>
 
         <form>
-          <div class="mb-3">
+          <div class="form-div">
             <label for="email" class="form-label fw-semibold">Email</label>
             <input type="email" id="email" class="form-control" placeholder="jonas_kahnwald@gmail.com" required>
           </div>
