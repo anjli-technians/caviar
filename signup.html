@@ -65,11 +65,23 @@ margin-top: -13px;
     form .form-label {
         margin-bottom: 0;
         z-index: 999;
+        background: #fff;
+        padding: 5px;
+        margin-left: 20px;
+
+        font-family: 'Poppins', sans-serif;
+font-weight: 500; 
+font-size: 11px; 
+
     }
-    .form-control:focus {
+    .form-div .form-control:focus {
       border-color: #FA6905 !important;
       box-shadow: 0 0 0 0.15rem rgba(255, 102, 0, 0.25);
     }
+
+    .form-div .form-control:focus .form-label{
+        color: #FA6905;
+    } 
 
     form .form-div{position: relative;}
     .form-check .form-check-label{
@@ -380,11 +392,11 @@ text-align: center;
             <input type="email" id="email" class="form-control" placeholder="jonas_kahnwald@gmail.com" required>
           </div>
 
-          <div class="mb-3">
+          <div class="form-div">
             <label for="password" class="form-label fw-semibold">Password</label>
-            <div class="input-group">
+            <!-- <div class="input-group"> -->
               <input type="password" id="password" class="form-control" placeholder="Password" required>
-            </div>
+            <!-- </div> -->
           </div>
 
           <div class="form-check mb-3">
