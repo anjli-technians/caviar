@@ -1,3 +1,4 @@
+body{font-family: 'Poppins',sans-serif;}
 .topbar{background: #FF9000;color: #fff;font-family: "poppins", sans-serif;font-size: 11px; font-weight: 400;}
 .navbar-nav .nav-link{font-size: 12px;font-weight: 500;font-family: "Poppins", sans-serif;color: #000;text-transform: capitalize;}
 .navbar-expand-lg .navbar-nav{gap: 12px;}
@@ -217,8 +218,8 @@ div#v-pills-tabContent, .tab-pane, .product_slider {height: 100%;}
 /* about us page css start */
 .bg_overlay .position-relative{z-index: 1;border-radius: 5px;overflow: hidden;}
 .bg_overlay .position-relative::before{content: "";position: absolute;background: rgba(0, 0, 0, 0.55);z-index: 0;top: 0;bottom: 0;left: 0;right: 0;}
-.breadcrumb span{font-family: "Montserrat",sans-serif;font-size: 19px;color: #7a7a7a;}
-.breadcrumb span a{color: #000;text-decoration: none;font-weight: 600;}
+.breadcrumb span{font-family: "Montserrat",sans-serif;font-size: 19px;color: #000;}
+.breadcrumb span a{color: #667085;text-decoration: none;font-weight: 600;}
 .breadcrumb{gap: 10px;padding: 20px 0px;}
 .vision_mission p{font-size: 12px;font-weight: 500;font-family: "Montserrat",sans-serif;line-height: 22px;}
 .quality_warranty ul{list-style: none;padding: 0;display: flex; align-items: flex-start;gap: 15px;width: 80%;margin: auto;}
@@ -478,6 +479,40 @@ text-transform: capitalize;
     #field_1_4 {
         grid-column: span 6;
     }
+    .order_id_title{font-family: "Poppins",sans-serif;color: #344054;font-size: 21px;font-weight: 500;line-height: 30px;}
+    .order_detail ul li{color:#667085;font-family: 'Poppins', sans-serif;font-size: 11px;position: relative;}
+    .order_detail ul li:first-child:before{content: "";position: absolute;right: -18px;top: 0; width: 1px;height: 12px;background-color: #D0D5DD;margin: auto;bottom: 0;}
+    .order_detail ul li span{color:#1D2939;font-weight: 600;}
+    .order_detail ul{padding-left: 0px;display: flex;list-style: none;gap: 35px;}
+    .order_detail ul li img{width: 15px;margin-right: 8px;}
+    .order_detail ul li.estimate_delivery{color: #12B76A;font-weight: 500; font-size: 12px;}
+    .track_products ul{ list-style: none;padding-left: 0px;width: 100%;gap: 20px;display: flex;flex-direction: column;}
+    .track_products ul li{display: flex;justify-content: space-between;}
+    .track_products ul li .flex{display: flex; align-items: center;}
+    .track_products ul li .flex img{margin-right: 20px;width: 80px;}
+    .track_products ul li .flex h4{font-weight: 400; font-size: 18px;color: #344054;}
+    .track_products ul li .flex span{font-size: 11px; font-weight: 300;padding: 0 10px;border-right: 1px solid #D0D5DD;}
+     .track_products ul li .flex span:first-child{padding-left: 0px;}
+    .track_products ul li .flex span:last-child{border-right: unset; padding-right: 0px;}
+    .track_products ul li .price{font-weight: 600;color: #1D2939;font-size: 14px;text-align: right;margin-bottom: 3px;}
+    .track_products ul li .qty{color: #667085;font-size: 11px;text-align: right;width: -webkit-fill-available;display: block;}
+    .track_products .payment_delivery{flex-direction: row !important;justify-content: space-between;border-top: 1px solid #D0D5DD;padding-top: 25px;margin-top: 20px;}
+    .track_products .payment_delivery li{flex-direction: column; height: fit-content;}
+    .track_products .payment_delivery li:last-child{width: 22%;}
+    .track_products .payment_delivery li h5{font-size: 14px;font-weight: 500;color: #000;}
+    .track_products .payment_delivery li span{color: #667085;font-size: 10px;}
+    .track_products .payment_delivery li span img{width: 18px;}
+    .track_products .payment_delivery li p{color: #667085;font-size: 12px;font-weight: 500;}
+    .track_products .order_summary.payment_delivery li ul li{flex-direction: row;align-items: center;font-size: 12px; color: #667085;justify-content: flex-start;font-weight: 500;}
+    .track_products .order_summary.payment_delivery li ul li img{width: 13px; margin-right: 5px;}
+    .track_products .order_summary.payment_delivery li ul li img.arrow{width: 8px; margin-left: 10px;}
+    .track_products .order_summary.payment_delivery table tr th, .track_products .order_summary.payment_delivery table tr td{padding: 5px 25px;}
+    .track_products .order_summary.payment_delivery table tr th:first-child, .track_products .order_summary.payment_delivery table tr td:first-child{padding-left: 0;}
+    .track_products .order_summary.payment_delivery table tr td:last-child, .track_products .order_summary.payment_delivery table tr th:last-child{padding-right: 0;}
+    .track_products .order_summary.payment_delivery li ul {gap: 10px}
+    .track_products .order_summary.payment_delivery table tr td{font-size: 12px;color: #667085;font-weight: 400;}
+    .track_products .order_summary.payment_delivery table tr th{color: #475467; font-weight: 500;}
+    .track_products .order_summary.payment_delivery{padding-bottom: 60px;}
 
  @media (min-width:650px) and (max-width:767px) {
         .stay_in_touch .card {
