@@ -101,11 +101,11 @@ z-index: 1;} */
 .banner-desc { font-size: 10px;   font-family: "Poppins" !important; font-weight: 200;}
 .banner-btn { background-color: #FA6905;   font-family: "Poppins" !important;  border: none;  color: #fff !important;  padding: 5px 15px;  border-radius: 5px;  font-size: 12px;}
 .banner-btn:hover{background-color: #FA6905;}
-.offer-card {position: relative;  background: #fff;  border-radius: 3px;  padding: 10px 10px 140px;  height: 190px;  overflow: hidden;  border: 1px solid #E4E4E4;  margin-bottom: 20px;  background-image: url(./images/Ellipse.png);  background-position: bottom;  background-repeat: no-repeat;  background-size: 100%;}
+.offer-card {position: relative;  background: #fff;  border-radius: 3px;  padding: 10px 10px 140px;  height: 250px;  overflow: hidden;  border: 1px solid #E4E4E4;  margin-bottom: 20px;  background-image: url(./images/Ellipse.png);  background-position: bottom;  background-repeat: no-repeat;  background-size: 100%;}
 .offer-title { margin-bottom: 5px;  font-family: "Montserrat" !important;font-weight: 700; font-size: 20px;  text-align: center;text-transform: capitalize; color: #000; letter-spacing: 1px;}
 .offer-price { color: #7E7E7E;  margin-bottom: 10px;  position: relative;text-align: center;  font-family: "Poppins" !important;font-weight: 600; font-size: 12px; line-height: 16px; text-transform: uppercase;}
 .offer-price::after {  content: "";  display: block;  width: 40px;  height: 1px;  background: #000;  margin: 2px auto 0;}
-.offer-product {  position: absolute;  bottom: 10px;  top: 70px;  left: 0;  right: 0;  margin: auto;  max-height: 120px; z-index: 2;}
+.offer-product {  position: absolute;  bottom: 10px;  top: 70px;  left: 0;  right: 0;  margin: auto;  max-height: 170px; z-index: 2;}
 .testimonialSwiper{margin-top: 20px; border-radius: 5px;}
 .testimonialSwiper .swiper-slide{background-color:#FA6905 ;}
 .testimonial-card {  background-color: #FA6905;  color: #fff;   text-align: center;  padding: 20px 10px 20px;  position: relative;  overflow: hidden;   
@@ -155,6 +155,7 @@ section{padding: 50px 0;}
 .swiper-button-lock {display: flex;}
 .top_product_slider .top_product_section_bg h5{font-family: "Montserrat", sans-serif; font-size: 15px;font-weight: 600;text-transform: capitalize;margin-bottom: 0px;padding: 15px 15px 5px; }
 .top_product_slider .top_product_section_bg{border: 1px solid #E4E4E4;border-radius: 5px;overflow: hidden;position: relative;transition: all 0.5s;}
+.top_product_slider .top_product_section_bg > img{width: 100%;}
 .top_product_slider .top_product_section_bg div{padding: 0px 15px 15px;}
 .top_product_slider .top_product_section_bg div span{color: #7E7E7E;font-size: 11px;font-weight: 400;font-family: "Poppins", sans-serif;}
 .top_product_slider .top_product_section_bg div img{width: 28px;}
@@ -625,7 +626,7 @@ text-transform: capitalize;
             margin-top: -35px
         }
 }
-
+.about_banner{padding: 30px 0;}
 @media (max-width: 767px){
     .product_slider .swiper-pagination-bullet{height: 8px; width: 8px;}
     .trending-section {padding-top: 25px;}
@@ -637,7 +638,16 @@ text-transform: capitalize;
     .product-info{padding: 10px;}
     .product-title{font-size: 10px;}
     .product-image .product-img{width: 165px;height: 165px;object-fit: contain;}
-    .banner-title{font-size: 32px; line-height: 36px;letter-spacing: 1px;}
+    .banner-title{font-size: 23px; line-height: 30px;letter-spacing: 1px;}
+    .banner-btn{font-size: 10px;}
+    .breadcrumb{gap: 5px; padding: 5px 0px;}
+    .breadcrumb span{font-size: 10px;}
+    .about_banner{padding: 8px 0;}
+    .vision_mission img{border-radius: 10px;}
+    .vision_mission .col-md-6:nth-child(2){margin-top: 15px;}
+    .quality_warranty .col{flex: 1 0 100%;margin: 0px 0px 30px;}
+    .quality_warranty .col:last-child{margin-bottom: 0px;}
+    .about_banner img{border-radius: 4px;}
     .banner-subtitle{margin-bottom: 5px;}
     section.banner-section{margin: 25px 0px 15px 0;border-radius: 0px;}
     .banner-img{border-radius: 0px;height: 250px;}
