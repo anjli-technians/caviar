@@ -147,20 +147,26 @@ font-size: 16px;
       font-size: 13px;
     }
 
-    .product-info-category p {
-      font-size: 13px;
+    .product-info-category p { 
       color: #6b7280;
       margin-top: 8px;
+        color: rgba(146, 149, 170, 1);
+
+      font-family: 'Poppins';
+font-weight: 400; 
+font-size: 13px; 
+
     }
 
     .product-buttons {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      margin-right: 30px;
     }
 
     .product-buttons .btn-cart {  
-      padding: 6px 14px;
+      padding: 8px 35px;
       background: rgba(255, 141, 40, 1);
 
       font-family: 'Poppins';
@@ -211,11 +217,11 @@ color: rgba(140, 140, 140, 1);
         font-family: 'Poppins';
 font-weight: 400;
 font-size: 12px; 
-
+text-wrap: nowrap;
     }
     .category-page .filter-section .filter-div input, .category-page .filter-section .filter-div select{
          border: 1px solid rgba(231, 230, 239, 1);
-         font-size: 10px;
+         font-size: 12px;
 
     }
 
@@ -250,6 +256,46 @@ font-size: 12px;
 color: rgba(126, 129, 162, 1);
 
 }
+
+
+/* 222222222222222 */
+
+/* .filter-heading { font-weight: 700; font-size: 1.3rem; margin-bottom: 10px; } */
+ /* .underline { width: 60%; height: 2px; background-color: #000; margin-bottom: 20px; }  */
+ .color-item { display: flex; align-items: center; margin-bottom: 10px; } 
+ .color-dot { width: 12px; height: 12px; border-radius: 50%; margin-right: 10px; } /* Colors */ 
+ .blue { background-color: #4c38e4; } 
+ .orange { background-color: #ff9f40; } 
+ .brown { background-color: #f5c6a5; } 
+ .green { background-color: #22cc22; }
+  .purple { background-color: #e654f2; } 
+  .sky { background-color: #2ecfff; } 
+  .color-combo .color-name { color: rgba(126, 129, 162, 1); font-family: 'Poppins';
+font-weight: 400;
+font-size: 12px;  
+text-align: center;
+}
+
+.sidebar .color-combo{
+    display: flex;
+justify-content: left;
+gap: 5px;
+align-items: center;
+}
+
+
+ .load-more {
+        background-color: #FA6905;
+        color: #fff;
+        border: none;
+        padding: 6px 70px;
+        margin: 80px 0 60px;
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 12px;
+        border-radius: 4px;
+
+    }
 </style>
 </head>
 
@@ -484,8 +530,15 @@ color: rgba(126, 129, 162, 1);
 
 
       <h6>Filter By Color</h6>
-      <label><input type="checkbox" checked> star</label>
-      <label><input type="checkbox"> star</label>
+      <div class="color-combo d-flex flex-wrap "> 
+      <div class="color-item"><div class="color-dot blue"></div><span class="color-name">Blue</span></div>
+<div class="color-item"><div class="color-dot orange"></div><span class="color-name">Orange</span></div>
+<div class="color-item"><div class="color-dot brown"></div><span class="color-name">Brown</span></div>
+<div class="color-item"><div class="color-dot green"></div><span class="color-name">Green</span></div>
+<div class="color-item"><div class="color-dot purple"></div><span class="color-name">Purple</span></div>
+<div class="color-item"><div class="color-dot sky"></div><span class="color-name">Sky</span></div>
+</div>
+ 
     </div>
 
     <!-- Product List -->
@@ -508,7 +561,7 @@ color: rgba(126, 129, 162, 1);
             <span class="old-price">₹225999.00</span>
             <span class="stars">★★★★★</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus non in justo.</p>
         </div>
         <div class="product-buttons">
           <button class="btn btn-cart">Add To Cart</button>
@@ -534,7 +587,7 @@ color: rgba(126, 129, 162, 1);
             <span class="old-price">₹225999.00</span>
             <span class="stars">★★★★★</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus non in justo.</p>
         </div>
         <div class="product-buttons">
           <button class="btn btn-cart">Add To Cart</button>
@@ -560,7 +613,7 @@ color: rgba(126, 129, 162, 1);
             <span class="old-price">₹225999.00</span>
             <span class="stars">★★★★★</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus non in justo.</p>
         </div>
         <div class="product-buttons">
           <button class="btn btn-cart">Add To Cart</button>
@@ -586,7 +639,7 @@ color: rgba(126, 129, 162, 1);
             <span class="old-price">₹225999.00</span>
             <span class="stars">★★★★★</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus non in justo.</p>
         </div>
         <div class="product-buttons">
           <button class="btn btn-cart">Add To Cart</button>
@@ -613,7 +666,7 @@ color: rgba(126, 129, 162, 1);
             <span class="old-price">₹225999.00</span>
             <span class="stars">★★★★★</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus non in justo.</p>
         </div>
         <div class="product-buttons">
           <button class="btn btn-cart">Add To Cart</button>
@@ -639,7 +692,7 @@ color: rgba(126, 129, 162, 1);
             <span class="old-price">₹225999.00</span>
             <span class="stars">★★★★★</span>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus non in justo.</p>
         </div>
         <div class="product-buttons">
           <button class="btn btn-cart">Add To Cart</button>
@@ -648,10 +701,18 @@ color: rgba(126, 129, 162, 1);
       </div>
 
 
-      
+
     </div>
   </div>
+
+
+  <!-- Load More Button -->
+            <div class="text-center">
+                <button class="load-more">Load more</button>
+            </div>
 </div>
+
+
 </section>
 
 
