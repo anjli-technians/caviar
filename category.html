@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caviar</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<style>
+
+/* Heading */
+    .page-header {
+      margin: 30px 0;
+    }
+
+    .page-header h4 {
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    .page-header p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .filter-section select, .filter-section input {
+      font-size: 14px;
+    }
+
+    /* Sidebar */
+    .sidebar h6 {
+      font-weight: 600;
+      margin-bottom: 15px; 
+    }
+
+    .sidebar label { 
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .sidebar input[type="checkbox"] {
+      accent-color: #f97316;
+      margin-right: 8px;
+    }
+
+    /* Product Card */
+    .product-card-category { 
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      box-shadow: 0px 0px 20px 5px rgba(248, 246, 253, 0.75);
+        background: rgba(255, 255, 255, 1);
+
+    }
+
+     
+
+    .product-img { 
+        width: 25%;
+      height: auto; 
+      overflow: hidden;
+    }
+
+    .product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-info-category {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .product-info-category h5 { 
+      margin-bottom: 5px; 
+      color: rgba(52, 64, 84, 1);
+
+
+      font-family: 'Poppins';
+font-weight: 600; 
+font-size: 19px; 
+
+    }
+
+    .color-dots {
+      display: inline-flex;
+      gap: 6px;
+      margin-left: 5px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.red { background-color: #ef4444; }
+    .dot.blue { background-color: #3b82f6; }
+    .dot.yellow { background-color: #facc15; }
+
+    .price {
+      font-weight: 600;
+      font-size: 15px; 
+      color: rgba(29, 41, 57, 1);
+
+
+      font-family: 'Poppins';
+font-weight: 600; 
+font-size: 16px; 
+
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color:  rgba(169, 169, 169, 1); 
+      margin-left: 8px;
+
+      font-family: 'Poppins';
+font-weight: 600; 
+font-size: 16px; 
+
+    }
+
+    .stars {
+      color: rgba(255, 196, 22, 1);
+      font-size: 13px;
+    }
+
+    .product-info-category p {
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    .product-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .product-buttons .btn-cart {  
+      padding: 6px 14px;
+      background: rgba(255, 141, 40, 1);
+
+      font-family: 'Poppins';
+font-weight: 400; 
+font-size: 14px; 
+
+
+    }
+
+    .btn-cart {
+      background-color: #f97316;
+      color: #fff;
+      border: none;
+    }
+
+   .product-buttons .btn-buy {
+      background-color: rgba(249, 191, 51, 1);
+      color: #fff; 
+      border: 1px solid rgba(249, 191, 51, 1);
+         font-family: 'Poppins';
+font-weight: 400; 
+font-size: 14px; 
+    }
+ 
+
+    /* =================================== */
+    .filter-section .filter-div{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .category-page .page-header h4{
+        font-family: 'Poppins';
+font-weight: 700; 
+font-size: 19px; 
+color: #000;
+    }
+    .category-page .page-header p{
+       font-family: 'Poppins';
+font-weight: 400; 
+font-size: 10px;  
+color: rgba(140, 140, 140, 1);
+    }
+
+    .category-page .filter-section .filter-div{
+        font-family: 'Poppins';
+font-weight: 400;
+font-size: 12px; 
+
+    }
+    .category-page .filter-section .filter-div input, .category-page .filter-section .filter-div select{
+         border: 1px solid rgba(231, 230, 239, 1);
+         font-size: 10px;
+
+    }
+
+     
+    .category-page .sidebar h6 {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;  
+  margin-top: 20px;
+}
+
+.category-page .sidebar h6::after {
+  content: "";
+  display: block;
+  width: 100%;  
+  height: 1px;
+  background-color: rgba(0, 0, 0, 1);  
+  margin: 6px auto 0;  
+  border-radius: 2px;
+}
+.category-page {
+    padding-top: 20px;
+}
+
+.category-page .sidebar label{
+    font-family: 'Poppins';
+font-weight: 400; 
+font-size: 12px; 
+color: rgba(126, 129, 162, 1);
+
+}
+</style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6 p-md-1">
+                <img src="images/tag.png" alt="" class="me-md-2 me-1 tag_size">World's Fastest Online Shopping Destination to our store hear.
+            </div>
+            <div class="order-tracker col-md-6 d-flex justify-content-end">
+                <img src="./images/fast-delivery.png" alt="truck">
+                <p class="track-text mb-0">Track Your Order</p>
+                <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><img class="me-2" src="./images/flag.png" alt="flag">English</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </div> -->
+                <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">₹ INR</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </div> -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-lg-3">
+        <div class="container">
+            <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="images/caviar_logo.png" alt="">
+            </a>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">shop</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">shop 1</a></li>
+                    <li><a class="dropdown-item" href="#">shop 2</a></li>
+                    <li><a class="dropdown-item" href="#">shop 3</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Products</a><span class="cart-count">New</span>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Products 1</a></li>
+                    <li><a class="dropdown-item" href="#">Products 2</a></li>
+                    <li><a class="dropdown-item" href="#">Products 3</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">blog</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">blog 1</a></li>
+                    <li><a class="dropdown-item" href="#">blog 2</a></li>
+                    <li><a class="dropdown-item" href="#">blog 3</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">about</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">about 1</a></li>
+                    <li><a class="dropdown-item" href="#">about 2</a></li>
+                    <li><a class="dropdown-item" href="#">about 3</a></li>
+                </ul>
+                </li>
+                <li class="nav-item position-relative">
+                <a class="nav-link" href="#">Offers</a><span class="cart-count offer_price_badge">Pro</span>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Brand</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Brand 1</a></li>
+                    <li><a class="dropdown-item" href="#">Brand 2</a></li>
+                    <li><a class="dropdown-item" href="#">Brand 3</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+                </li>
+            </ul>
+            </div>
+            <div>
+            <ul class="flex_icon">
+                <li><a href="#" class="d-block d-lg-none"><img src="images/search.png" alt="img"></a></li>
+                <li><a href="#"><img src="images/user.png" alt="img"></a></li>
+                <li><a href="#"><img src="images/wishlist.png" alt="img"></a></li>
+                <li><a href="#"><img src="images/caviar_cart.png" alt="img"><span class="cart-count cart_count_badge">3</span></a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Category Bar -->
+    <div class="top-category-bar " >
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Toggle + Title -->
+                <div class="col-md-3 d-flex align-items-center p-md-0">
+                <div class="category_menu">
+                    <button onclick="toggleMyDiv()" class="top_category"><img src="images/toggle.png" alt=""> Top
+                    Category</button>
+                    <div class="nav_below_item nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div id="toggle_section">
+                        <button class="nav-link active" id="v-pills-new_product-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-new_product" type="button" role="tab" aria-controls="v-pills-new_product"
+                        aria-selected="true"><img src="images/tv_icon.png" alt="">new product</button>
+                        <button class="nav-link" id="v-pills-kitchen_appliance-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-kitchen_appliance" type="button" role="tab"
+                        aria-controls="v-pills-kitchen_appliance" aria-selected="false"><img src="images/fridge_icon.png"
+                            alt="">kitchen appliance</button>
+                        <button class="nav-link" id="v-pills-electronic_home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-electronic_home" type="button" role="tab"
+                        aria-controls="v-pills-electronic_home" aria-selected="false"><img src="images/headphone_icon.png"
+                            alt="">electronic & home</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false"><img src="images/washing-machine_icon.png" alt="">home accessorise</button>
+                        <button class="nav-link" id="v-pills-desktop_product-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-desktop_product" type="button" role="tab"
+                        aria-controls="v-pills-desktop_product" aria-selected="false"><img src="images/press.png" alt="">desktop
+                        product</button>
+                        <button class="nav-link" id="v-pills-all_category-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-all_category" type="button" role="tab" aria-controls="v-pills-all_category"
+                        aria-selected="false"><img src="images/phone_icon.png" alt="">see all category</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Right Side: Search Bar -->
+                <div class="col-md-9">
+                    <form class="d-flex search-form">
+                    <input type="text" class="form-control search-input" placeholder="Search For Products">
+                    <select class="form-select category-select">
+                        <option>All Categories</option>
+                        <option>Electronics</option>
+                        <option>Fashion</option>
+                        <option>Sports</option>
+                    </select>
+                    <button class="btn search-btn" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+
+<!-- ================== code here ====================================================================== -->
+  
+<section class="category-page">
+    <div class="container">
+  <!-- Header -->
+  <div class="d-flex justify-content-between align-items-center page-header flex-wrap">
+    <div>
+      <h4>Our products</h4>
+      <p>About 8,920 results (0.62 seconds)</p>
+    </div>
+    <div class="filter-section d-flex align-items-center gap-3">
+      <div class="filter-div">Per Page: <input type="number" class="form-control form-control-sm" style="width:70px;" value="10"></div>
+      <div class="filter-div">Sort By: 
+        <select class="form-select form-select-sm">
+          <option>Best Match</option>
+          <option>Price Low to High</option>
+          <option>Price High to Low</option>
+        </select>
+      </div>
+      <div class="filter-div">View: 
+        <button class="btn btn-light btn-sm border"><i class="bi bi-list"></i></button>
+        <button class="btn btn-light btn-sm border"><i class="bi bi-grid"></i></button>
+      </div>
+      <div class="filter-div">
+        <input class="search-in" type="text">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-lg-2 col-md-4 sidebar">
+      <h6>Categories</h6>
+      <label><input type="checkbox" checked> Laptop</label>
+      <label><input type="checkbox" checked> Phones</label>
+      <label><input type="checkbox"> Camera</label>
+      <label><input type="checkbox"> Smart Watch</label>
+      <label><input type="checkbox"> Head Phones</label>
+
+      <h6>Product Brand</h6>
+      <label><input type="checkbox" checked> Dell</label>
+      <label><input type="checkbox"> Apple</label>
+      <label><input type="checkbox"> HP</label>
+
+      <h6>Discount Offer</h6>
+      <label><input type="checkbox" checked> 20% Cashback</label>
+      <label><input type="checkbox"> 25% Discount Offer</label>
+
+      <h6>Rating Item</h6>
+      <label><input type="checkbox" checked> star</label>
+      <label><input type="checkbox"> star</label>
+
+
+      <h6>Price Filter</h6>
+      <label><input type="checkbox"> ₹0.00 - ₹150.00</label>
+      <label><input type="checkbox" checked> ₹150.00 - ₹350.00</label>
+      <label><input type="checkbox"> ₹150.00 - ₹504.00</label>
+      <label><input type="checkbox"> ₹450.00 +</label>
+
+
+      <h6>Filter By Color</h6>
+      <label><input type="checkbox" checked> star</label>
+      <label><input type="checkbox"> star</label>
+    </div>
+
+    <!-- Product List -->
+    <div class="col-lg-10 col-md-8">
+      <!-- Product Card -->
+      <div class="product-card-category">
+        <div class="product-img">
+          <img src="./images/category-laptop.png" alt="product">
+        </div>
+        <div class="product-info-category">
+          <h5>MacBook Pro 14” 
+            <span class="color-dots">
+              <span class="dot red"></span>
+              <span class="dot blue"></span>
+              <span class="dot yellow"></span>
+            </span>
+          </h5>
+          <div class="d-flex align-items-center gap-2">
+            <span class="price">₹222599.00</span>
+            <span class="old-price">₹225999.00</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+        </div>
+        <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+      </div>
+
+      <!-- Repeat for more cards -->
+     <div class="product-card-category">
+        <div class="product-img">
+          <img src="./images/category-laptop.png" alt="product">
+        </div>
+        <div class="product-info-category">
+          <h5>MacBook Pro 14” 
+            <span class="color-dots">
+              <span class="dot red"></span>
+              <span class="dot blue"></span>
+              <span class="dot yellow"></span>
+            </span>
+          </h5>
+          <div class="d-flex align-items-center gap-2">
+            <span class="price">₹222599.00</span>
+            <span class="old-price">₹225999.00</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+        </div>
+        <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+      </div>
+
+
+      <div class="product-card-category">
+        <div class="product-img">
+          <img src="./images/category-laptop.png" alt="product">
+        </div>
+        <div class="product-info-category">
+          <h5>MacBook Pro 14” 
+            <span class="color-dots">
+              <span class="dot red"></span>
+              <span class="dot blue"></span>
+              <span class="dot yellow"></span>
+            </span>
+          </h5>
+          <div class="d-flex align-items-center gap-2">
+            <span class="price">₹222599.00</span>
+            <span class="old-price">₹225999.00</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+        </div>
+        <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+      </div>
+
+
+      <div class="product-card-category">
+        <div class="product-img">
+          <img src="./images/category-laptop.png" alt="product">
+        </div>
+        <div class="product-info-category">
+          <h5>MacBook Pro 14” 
+            <span class="color-dots">
+              <span class="dot red"></span>
+              <span class="dot blue"></span>
+              <span class="dot yellow"></span>
+            </span>
+          </h5>
+          <div class="d-flex align-items-center gap-2">
+            <span class="price">₹222599.00</span>
+            <span class="old-price">₹225999.00</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+        </div>
+        <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+      </div>
+
+
+
+      <div class="product-card-category">
+        <div class="product-img">
+          <img src="./images/category-laptop.png" alt="product">
+        </div>
+        <div class="product-info-category">
+          <h5>MacBook Pro 14” 
+            <span class="color-dots">
+              <span class="dot red"></span>
+              <span class="dot blue"></span>
+              <span class="dot yellow"></span>
+            </span>
+          </h5>
+          <div class="d-flex align-items-center gap-2">
+            <span class="price">₹222599.00</span>
+            <span class="old-price">₹225999.00</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+        </div>
+        <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+      </div>
+
+
+      <div class="product-card-category">
+        <div class="product-img">
+          <img src="./images/category-laptop.png" alt="product">
+        </div>
+        <div class="product-info-category">
+          <h5>MacBook Pro 14” 
+            <span class="color-dots">
+              <span class="dot red"></span>
+              <span class="dot blue"></span>
+              <span class="dot yellow"></span>
+            </span>
+          </h5>
+          <div class="d-flex align-items-center gap-2">
+            <span class="price">₹222599.00</span>
+            <span class="old-price">₹225999.00</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+        </div>
+        <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- footer start -->
+<div class="footer">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-9">
+        <div class="row">
+        <div class="col">
+            <h4>Store Information</h4>
+            <ul>
+            <li><img src="images/location.png" alt="img" class="img-fluid">Demo Store <br>United States</li>
+            <li><img src="images/call.png" alt="img" class="img-fluid"><a href="tel:(555) 888 8888"> (555) 888
+                8888</a></li>
+            <li><img src="images/mail.png" alt="img" class="img-fluid"><a href="mailto:demo@demo.com">
+                demo@demo.com</a></li>
+            <li><img src="images/printer.png" alt="img" class="img-fluid">(012) 800 456 789</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Our Company</h4>
+            <ul>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Legal Notice</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>our Account</h4>
+            <ul>
+            <li><a href="#">Personal Info</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Credit Slip</a></li>
+            <li><a href="#">Address</a></li>
+            <li><a href="#">My wishlist</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Products</h4>
+            <ul>
+            <li><a href="#">Price Drop</a></li>
+            <li><a href="#">New Product</a></li>
+            <li><a href="#">Best Sales</a></li>
+            <li><a href="#">Latest Product</a></li>
+            <li><a href="#">Discount</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>opening hours</h4>
+            <p>mon - tues : 8AM - 10PM</p>
+            <p>wed - sat : 9AM - 8PM </p>
+            <p>sun : <span>close</span></p>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <h4>Your Account</h4>
+        <form>
+        <input type="email" placeholder="Enter Email Address" name="footer_email">
+        <button type="submit"><img src="images/send_icon.png" alt="img" class="img-fluid"></button>
+        </form>
+        <p class="update_text">Register now to get updates on promotions & coupons.</p>
+    </div>
+    </div>
+    </div>
+</div>
+<!-- footer end -->
+ 
+
+<div class="copyright">
+<div class="container">
+    <div class="row">
+    <div class="col-6">
+        <p>© 2025,Vixo store</p>
+    </div>
+    <div class="col-6">
+        <ul>
+        <li><img src="images/amex_text.jpg" alt="img" class="img-fluid"></li>
+        <li><img src="images/master_card.png" alt="img" class="img-fluid"></li>
+        <li><img src="images/visa.png" alt="img" class="img-fluid"></li>
+        <li><img src="images/discover.png" alt="img" class="img-fluid"></li>
+        </ul>
+    </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+function toggleMyDiv() {
+    const div = document.getElementById("toggle_section");
+    if (div.style.display === "block" || div.style.display === "") {
+    div.style.display = "none";
+
+    } else {
+    div.style.display = "block";
+    }
+}
+</script>  
+</body>
+
+</html>
