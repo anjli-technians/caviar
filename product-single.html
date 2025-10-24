@@ -865,6 +865,22 @@
                 margin-left: 0;
             }
         }
+        @media (max-width:575px){
+            .thumbs-swiper{
+                height: 100px;
+    width: auto; 
+            }
+            .swiper-vertical>.swiper-wrapper{flex-direction: row;}
+            .thumbs-swiper .swiper-slide{    height: 90px !important;
+    cursor: pointer;
+    width: 80px;}
+    .thumbs-swiper img{height: 80%;}
+    .product-page .row .col-lg-6 {flex-direction: column;}
+    .swiper.main-swiper{height: 400px;}
+    .button-group .add-to-cart, .button-group .buy-now, .button-group .bulk-order{font-size: 14px; padding: 7px 20px;}
+    .info-text{padding-top: 20px; padding-bottom:20px;}
+    .card-body .card-title{text-align: left;}
+        }
     </style>
 </head>
 
@@ -1053,7 +1069,7 @@
                 <!-- Left Section -->
                 <div class="col-lg-6 d-flex">
                     <!-- Thumbnails -->
-                    <div class="swiper thumbs-swiper">
+                    <div class="swiper thumbs-swiper order-md-1 order-2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="./images/product-single/Main Image.png" alt=""></div>
                             <div class="swiper-slide"><img src="./images/wishlist/Product -2.png" alt=""></div>
@@ -1065,7 +1081,7 @@
                     </div>
 
                     <!-- Main Swiper -->
-                    <div class="swiper main-swiper flex-grow-1">
+                    <div class="swiper main-swiper flex-grow-1 order-md-2 order-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="./images/product-single/Main Image.png" alt=""></div>
                             <div class="swiper-slide"><img src="./images/wishlist/Product -2.png" alt=""></div>
