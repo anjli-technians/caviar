@@ -627,6 +627,49 @@
                     </div>
                 </div>
             </div>
+
+            <section class="my-lg-3 d-md-none d-block">
+      <div class="row">
+        <div class="container">
+        <div class="col-md-12">
+          <div class="swiper logo_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/dell.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/asus.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/jbl.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/apple.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/samsung.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/LG.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
         </div>
     </section>
 
@@ -746,6 +789,30 @@
     qtyElement.innerText = currentQty + 1;
   }
 </script> -->
+
+
+<script>
+    const logo_slider = new Swiper('.logo_slider', {
+      loop: true, slidesPerView: 6,freeMode: true,
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      }, spaceBetween: 10,
+      autoplay: {
+        delay: 0,disableOnInteraction: false,
+      }, speed: 3000,
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      breakpoints: {
+        0:{slidesPerView: 2}, // mobile
+        480:{slidesPerView: 3.5}, // tablet
+        575:{slidesPerView:4}, // tablet
+        768: { slidesPerView: 6 }, // tablet & desktop
+      },
+    });
+  </script>
 </body>
 
 </html>
