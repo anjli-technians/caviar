@@ -394,6 +394,25 @@ font-weight: 500;
 font-size: 19px; 
 
         }
+
+        @media (max-width:575px){
+            .checkout-steps i, .summary-item .info h6, .summary-item .info p, .offer-box span, .payment-details .row .col, .address-box p, .address-box span, .checkout-steps p span{
+                font-size: 12px;
+            }
+            .payment-details p, .payment-details .total div, .pay-btn, .checkout-page-section .accordion-button, .add-method-btn{
+                font-size: 14px;
+            }
+            .checkout-steps img{
+                width: 12px;
+            }
+            .checkout-steps{margin-bottom: 10px;}
+            .add-method-btn i{font-size: 15px; width: 30px; height: 30px;}
+            .checkout-heading{margin-top: 20px; font-size: 20px;}
+            .summary-card{padding: 30px;}
+            .summary-item img{width: 120px;}
+            .card-option img{width:30px}
+            .card-option img div p, .card-option img div small{font-size: 14px;}
+        }
     </style>
 </head>
 
@@ -595,7 +614,7 @@ font-size: 19px;
             </div>
             <div class="row ">
                 <!-- Left Column -->
-                <div class="col-lg-7 pe-md-5">
+                <div class="col-lg-7 pe-md-5 order-2">
                     <h4 class="checkout-heading ">Payment Method</h4>
 
                     <div class="accordion" id="paymentAccordion">
@@ -662,7 +681,7 @@ font-size: 19px;
                 </div>
 
                 <!-- Right Column -->
-                <div class="col-lg-5">
+                <div class="col-lg-5 order-1">
                     <div class="summary-card ">
                         <div class="summary-item ">
                             <img src="https://m.media-amazon.com/images/I/71an9eiBxpL._SL1500_.jpg" alt="Laptop">
