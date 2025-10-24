@@ -490,7 +490,7 @@ text-transform: capitalize;
     .track_products ul{ list-style: none;padding-left: 0px;width: 100%;gap: 20px;display: flex;flex-direction: column;}
     .track_products ul li{display: flex;justify-content: space-between;}
     .track_products ul li .flex{display: flex; align-items: center;}
-    .track_products ul li .flex img{margin-right: 20px;width: 80px;}
+    .track_products ul li .flex img{margin-right: 20px;width: 60px;}
     .track_products ul li .flex h4{font-weight: 400; font-size: 18px;color: #344054;}
     .track_products ul li .flex span{font-size: 11px; font-weight: 300;padding: 0 10px;border-right: 1px solid #D0D5DD;}
      .track_products ul li .flex span:first-child{padding-left: 0px;}
@@ -822,7 +822,7 @@ text-transform: capitalize;
         .map iframe {
             margin-top: 0px;
         }
-        .track_products ul li{flex-direction: column;border-bottom: 1px solid #ddd;padding-bottom: 5px;margin-bottom: 5px;}
+        .track_products ul li{flex-direction: row;padding-bottom: 5px;margin-bottom: 5px;}
         .track_products .payment_delivery{flex-direction: column !important;gap: 10px;margin: 0;}
         .order_id_title{font-size: 17px;}
         .track_products .payment_delivery li{border-bottom: 0px;}
