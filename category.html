@@ -369,6 +369,15 @@ label input[type="checkbox"]:checked {
 label input[type="checkbox"]:checked::after {
   color: #fff;  
 }
+
+@media (max-width:576px){
+  .category-page .filter-section .filter-div{
+    font-size: 10px;
+  }
+   .category-page .filter-section{
+    gap: 2px !important;
+   }
+}
 </style>
   </head>
 
@@ -604,16 +613,16 @@ label input[type="checkbox"]:checked::after {
               <button class="btn btn-light btn-sm border"><i
                   class="bi bi-grid"></i></button>
             </div>
-            <div class="filter-div">
+            <!-- <div class="filter-div">
               <input class="search-in" type="text">
 
-            </div>
+            </div> -->
           </div>
         </div>
 
         <div class="row">
           <!-- Sidebar -->
-          <div class="col-lg-2 col-md-4 sidebar">
+          <div class="col-lg-2 col-md-4 sidebar d-md-block d-none">
             <h6>Categories</h6>
             <label><input type="checkbox" checked> Laptop</label>
             <label><input type="checkbox" checked> Phones</label>
@@ -678,7 +687,7 @@ label input[type="checkbox"]:checked::after {
           <div class="col-lg-10 col-md-8">
 
             <div class="row">
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -723,7 +732,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -768,7 +777,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -820,7 +829,7 @@ label input[type="checkbox"]:checked::after {
               <!-- </div> -->
               <!-- Desktop product next row -->
               <!-- <div class="row d-none d-md-flex"> -->
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -865,7 +874,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -911,7 +920,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -956,7 +965,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1001,7 +1010,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1046,7 +1055,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 p-2">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
