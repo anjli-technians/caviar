@@ -866,20 +866,25 @@
             }
         }
         @media (max-width:575px){
-            .thumbs-swiper{
-                height: 100px;
-    width: auto; 
-            }
-            .swiper-vertical>.swiper-wrapper{flex-direction: row;}
-            .thumbs-swiper .swiper-slide{    height: 90px !important;
-    cursor: pointer;
-    width: 80px;}
-    .thumbs-swiper img{height: 80%;}
-    .product-page .row .col-lg-6 {flex-direction: column;}
-    .swiper.main-swiper{height: 400px;}
+           
     .button-group .add-to-cart, .button-group .buy-now, .button-group .bulk-order{font-size: 14px; padding: 7px 20px;}
     .info-text{padding-top: 20px; padding-bottom:20px;}
     .card-body .card-title{text-align: left;}
+        }
+
+        @media(max-width:991px){
+             .thumbs-swiper{
+                height: 100px;
+    width: auto; 
+            }
+            .thumbs-swiper .swiper-slide{    height: 90px !important;
+    cursor: pointer;
+    width: 80px;}
+            .swiper-vertical>.swiper-wrapper{flex-direction: row;}
+    .product-page .row .col-lg-6 {flex-direction: column;}
+    
+    .thumbs-swiper img{height: 80%;}
+    .swiper.main-swiper{height: 400px;}
         }
     </style>
 </head>
@@ -1069,7 +1074,7 @@
                 <!-- Left Section -->
                 <div class="col-lg-6 d-flex">
                     <!-- Thumbnails -->
-                    <div class="swiper thumbs-swiper order-sm-1 order-2">
+                    <div class="swiper thumbs-swiper order-lg-1 order-2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="./images/product-single/Main Image.png" alt=""></div>
                             <div class="swiper-slide"><img src="./images/wishlist/Product -2.png" alt=""></div>
@@ -1081,7 +1086,7 @@
                     </div>
 
                     <!-- Main Swiper -->
-                    <div class="swiper main-swiper flex-grow-1 order-sm-2 order-1">
+                    <div class="swiper main-swiper flex-grow-1 order-lg-2 order-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="./images/product-single/Main Image.png" alt=""></div>
                             <div class="swiper-slide"><img src="./images/wishlist/Product -2.png" alt=""></div>
@@ -1407,6 +1412,23 @@
                                 <div class="review-author">Michael T.</div>
                             </div>
 
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="review-stars">
+                                        <img src="./images/product-single/small green star.png" alt="Stars">
+                                        <img src="./images/product-single/small green star.png" alt="Stars">
+                                        <img src="./images/product-single/small green star.png" alt="Stars">
+                                        <img src="./images/product-single/small green star.png" alt="Stars">
+                                        <img src="./images/product-single/small green star.png" alt="Stars">
+                                    </div>
+                                    <span class="review-time">1 week ago</span>
+                                </div>
+                                <div class="review-title">Value for money</div>
+                                <p class="review-text">I love this product because the support is great. Please ...</p>
+                                <div class="review-author">Michael T.</div>
+                            </div>
+
                         </div>
                     </div>
                 </div> 
@@ -1687,6 +1709,7 @@
             slidesPerView: 5,
             spaceBetween: 10,
             watchSlidesProgress: true,
+            loop:true,
         });
 
         var mainSwiper = new Swiper(".main-swiper", {
@@ -1736,12 +1759,12 @@
             slidesPerView: "auto",
             spaceBetween: 20,
             grabCursor: true,
-            //   loop: true,
+              loop: true,
             speed: 600,
-            //   autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            //   },
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
         });
     </script>
 
