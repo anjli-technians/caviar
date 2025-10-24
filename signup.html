@@ -203,14 +203,14 @@ text-align: center; border-bottom: 1px solid;
     @media (max-width: 767px) {
       .login-container {
         flex-direction: column;border-radius: 10px;
+        border: unset;
+        box-shadow: unset;
       }
       .login-left h2{font-weight: 600;font-size: 28px;}
       .login-left {
         padding: 40px 25px;
       }
-      .login-right {
-        display: none;
-      }
+       
     }
     </style>
 </head>
@@ -401,7 +401,7 @@ text-align: center; border-bottom: 1px solid;
                 <div class="row login-container">
                     
                     <!-- Left Side -->
-                    <div class="col-md-5 login-left">
+                    <div class="col-md-5 login-left order-md-1 order-2">
                         <h2>Sign in</h2>
                         <p>Please login to continue to your account.</p>
 
@@ -449,7 +449,7 @@ text-align: center; border-bottom: 1px solid;
                     </div>
 
                     <!-- Right Side -->
-                    <div class="col-md-7 login-right p-0">
+                    <div class="col-md-7 login-right p-0 order-md-2 order-1" >
                         <img src="./images/signin/image 25.png" alt="Shop Image">
                     </div>
                 </div>
