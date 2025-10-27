@@ -258,7 +258,7 @@ font-size: 16px;
     right: -10px;}
 
         .summary-item img {
-            width: 100px;
+            width: 160px;
             height: 100px;
             object-fit: cover;
             border-radius: 10px;
@@ -393,6 +393,25 @@ font-size: 17px;
 font-weight: 500; 
 font-size: 19px; 
 
+        }
+
+        @media (max-width:575px){
+            .checkout-steps i, .summary-item .info h6, .summary-item .info p, .offer-box span, .payment-details .row .col, .address-box p, .address-box span, .checkout-steps p span{
+                font-size: 12px;
+            }
+            .payment-details p, .payment-details .total div, .pay-btn, .checkout-page-section .accordion-button, .add-method-btn{
+                font-size: 14px;
+            }
+            .checkout-steps img{
+                width: 12px;
+            }
+            .checkout-steps{margin-bottom: 10px;}
+            .add-method-btn i{font-size: 15px; width: 30px; height: 30px;}
+            .checkout-heading{margin-top: 20px; font-size: 20px;}
+            .summary-card{padding: 30px;}
+            .summary-item img{width: 120px;}
+            .card-option img{width:30px}
+            .card-option img div p, .card-option img div small{font-size: 14px;}
         }
     </style>
 </head>
@@ -595,7 +614,7 @@ font-size: 19px;
             </div>
             <div class="row ">
                 <!-- Left Column -->
-                <div class="col-lg-6 pe-md-5">
+                <div class="col-lg-7 pe-md-5 order-md-1 order-2">
                     <h4 class="checkout-heading ">Payment Method</h4>
 
                     <div class="accordion" id="paymentAccordion">
@@ -662,7 +681,7 @@ font-size: 19px;
                 </div>
 
                 <!-- Right Column -->
-                <div class="col-lg-6">
+                <div class="col-lg-5 order-md-2 order-1">
                     <div class="summary-card ">
                         <div class="summary-item ">
                             <img src="https://m.media-amazon.com/images/I/71an9eiBxpL._SL1500_.jpg" alt="Laptop">
@@ -706,6 +725,49 @@ font-size: 19px;
                     </div>
                 </div>
             </div>
+
+                <section class="my-lg-3 d-md-none d-block">
+      <div class="row">
+        <div class="container">
+        <div class="col-md-12">
+          <div class="swiper logo_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/dell.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/asus.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/jbl.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/apple.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/samsung.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/LG.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
         </div>
     </section>
     <!-- footer start -->
@@ -815,6 +877,30 @@ font-size: 19px;
             }
         }
     </script>
+
+
+<script>
+    const logo_slider = new Swiper('.logo_slider', {
+      loop: true, slidesPerView: 6,freeMode: true,
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      }, spaceBetween: 10,
+      autoplay: {
+        delay: 0,disableOnInteraction: false,
+      }, speed: 3000,
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      breakpoints: {
+        0:{slidesPerView: 2}, // mobile
+        480:{slidesPerView: 3.5}, // tablet
+        575:{slidesPerView:4}, // tablet
+        768: { slidesPerView: 6 }, // tablet & desktop
+      },
+    });
+  </script>
 
 </body>
 

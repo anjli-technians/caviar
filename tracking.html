@@ -20,6 +20,154 @@ rel="stylesheet">
 <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+
+<style>
+    .order-info {
+      font-size: 14px;
+      color: #6c757d;
+      margin-bottom: 20px;
+    }
+
+    .order-info span {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .progress-container {
+  position: relative;
+  width: 100%; 
+  margin-bottom: 30px;
+}
+
+.progress-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(208, 213, 221, 1);
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.progress-line-active {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 3px;
+  background-color: #22c55e;
+  z-index: 2;
+  transition: width 0.4s ease;
+  transform: translateY(-50%);
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  margin-top: 20px;
+}
+
+.step {
+  text-align: center;
+  width: 25%;
+  position: relative;
+}
+
+.step .circle {
+  width: 14px;
+  height: 14px;
+  background-color: rgba(208, 213, 221, 1);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.step.active .circle {
+  background-color: #22c55e;
+}
+
+
+    .step-title {    
+      color: rgba(208, 213, 221, 1);
+      margin-bottom: 15px;
+
+      font-family: 'Poppins', sans-serif;
+font-weight: 500; 
+font-size: 14px; 
+text-align: center;
+
+    }
+
+    .step.active .step-title {
+      color: #22c55e;
+      /* font-weight: 600; */
+    }
+
+    .step-date {
+      font-size: 12px;
+      color: rgba(102, 112, 133, 1);
+    }
+
+    .expected-date {
+      color: #6c757d;
+    }
+
+    .icon-green {
+      color: #22c55e;
+      margin-right: 5px;
+    }
+
+    .order_buttons .invoice_btn{
+        border: 1px solid rgba(208, 213, 221, 1);
+        font-family: 'Poppins', sans-serif;
+font-weight: 600; 
+font-size: 12px; 
+color: rgba(102, 112, 133, 1);
+    }
+
+    .order_buttons .track_btn{
+        background-color: rgba(250, 105, 5, 1);
+        font-family: 'Poppins', sans-serif;
+font-weight: 600; 
+font-size: 12px; 
+color : rgba(255, 255, 255, 1);
+    }
+
+    .order_buttons .track_btn img{
+        filter: invert(1);
+    }
+
+    .tracker-main{
+        border-bottom: 1px solid rgba(208, 213, 221, 1);
+        padding-bottom: 10px;
+    }
+
+    @media (max-width:575px){
+        .tracking .order_detail ul{
+            flex-direction: row;
+        }
+        .order_detail ul li{
+            font-size: 10px;
+        }
+        .order_buttons {
+            left: 0;
+            right:0;
+            margin: auto;
+        }
+        .step-title{
+            font-size: 10px;
+            margin-bottom: 35px;
+        }
+        .step-date{
+            font-size: 10px;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -192,11 +340,12 @@ rel="stylesheet">
 
 
 <!-- ======================================================================================== -->
- <div class="container contactus">
+ <div class="container contactus tracking">
      <div class="breadcrumb">
         <span><a href="#">Home</a></span><span style="font-weight: 600;">></span> <span><a href="#">Orders</a></span> <span style="font-weight: 600;">></span> <span>ID 3352655445</span>
     </div>
     <div class="row"> 
+<<<<<<< HEAD
         <div class="order_id">
             <h3 class="order_id_title">Order ID: 3354654654526</h3>
             <div>
@@ -209,7 +358,71 @@ rel="stylesheet">
                 <li>Order date: <span>Sep 16, 2025</span></li>
                 <li class="estimate_delivery"><img src="images/truck-tick.png" alt="img">Estimated delivery: Oct 16, 2025</li>
             </ul>
+=======
+        <div class="tracker-main d-flex justify-content-between align-items-start flex-wrap">
+  <div>
+    <h3 class="order_id_title">Order ID: 3354654654526</h3>
+    <div class="order_detail">
+      <ul>
+        <li>Order date: <span>Sep 16, 2025</span></li>
+        <li class="estimate_delivery">
+          <img src="images/truck-tick.png" alt="img"> Estimated delivery: Oct 16, 2025
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="order_buttons d-flex gap-2 mt-2 mt-md-0">
+    <button class="btn invoice_btn">
+      <img src="images/invoice.png" alt="Invoice" class="me-2"> Invoice
+    </button>
+    <button class="btn track_btn text-white">
+      Track order <img src="images/location.png" alt="Track" class="ms-2">
+    </button>
+  </div>
+</div>
+        <!-- ==================================== -->
+          <div class="container">
+    <!-- <div class="order-info d-flex align-items-center gap-3">
+      <div>Order date: <span>Sep 16, 2025</span></div>
+      <div>|</div>
+      <div class="text-success">
+        <i class="bi bi-truck icon-green"></i> Estimated delivery: <strong>Oct 16, 2025</strong>
+      </div>
+    </div> -->
+
+    <div class="progress-container">
+      <!-- Main Progress Line -->
+      <div class="progress-line"></div>
+      <div class="progress-line-active" style="width: 25%;"></div> <!-- Adjust width: 25%, 50%, 75%, 100% -->
+
+      <div class="progress-steps">
+        <div class="step active">
+          <div class="step-title">Order Confirmed</div>
+          <div class="circle"></div>
+          <div class="step-date">Wed, 11<sup>th</sup> Oct</div>
+>>>>>>> e54790763569716747be85a07511e0639d7f7aa6
         </div>
+        <div class="step">
+          <div class="step-title">Shipped</div>
+          <div class="circle"></div>
+          <div class="step-date">Wed, 11<sup>th</sup> Oct</div>
+        </div>
+        <div class="step">
+          <div class="step-title">Out For Delivery</div>
+          <div class="circle"></div>
+          <div class="step-date">Wed, 11<sup>th</sup> Oct</div>
+        </div>
+        <div class="step">
+          <div class="step-title">Delivered</div>
+          <div class="circle"></div>
+          <div class="step-date expected-date">Expected by, Mon 16<sup>th</sup> Oct</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- ==================================== -->
         <div class="track_products">
             <ul>
                 <li>
@@ -271,14 +484,14 @@ Gurgaon, Haryana <br>
 974-769-3919</p></li>
             </ul>
             <ul class="order_summary payment_delivery">
-                <li><h5>Need Help</h5>
+                <li class="order-md-1 order-2"><h5>Need Help</h5>
                     <ul class="mt-md-3">
                         <li><img src="images/info-circle.png" alt="img">Order Issues <img src="images/arrow-up.png" alt="img" class="arrow"></li>
                         <li><img src="images/truck-time.png" alt="img">Delivery Info <img src="images/arrow-up.png" alt="img" class="arrow"></li>
                         <li><img src="images/box-remove.png" alt="img">Returns <img src="images/arrow-up.png" alt="img" class="arrow"></li>
                     </ul>
                 </li>
-                <li>
+                <li class="order-md-2 order-1">
                     <h5>Order Summary</h5> 
                     <table>
                         <tbody>
@@ -307,6 +520,49 @@ Gurgaon, Haryana <br>
                 </li>
             </ul>
         </div>
+
+        <section class="my-lg-3 d-md-none d-block">
+      <div class="row">
+        <div class="container">
+        <div class="col-md-12">
+          <div class="swiper logo_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/dell.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/asus.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/jbl.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/apple.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/samsung.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_bg">
+                  <img src="images/LG.png" alt="img" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
     </div>
 </div>
 
