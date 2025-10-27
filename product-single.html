@@ -571,19 +571,27 @@
 
         @media (max-width: 992px) {
             .help-section {
-                flex-direction: column;
-                text-align: center;
+                /* flex-direction: column; */
+                text-align: center;border-radius: 8px;
+    padding: 10px;
             }
+            .camera-out-section .help-text h2 { font-weight: 500;
+    font-size: 13px; }
+    .help-text p{font-size: 7px;margin-top: 0px;margin-bottom: 0px;}
+    .contact-btn{margin-top: 5px;}
+    .team-avatars img{width: 20px;
+    height: 20px;margin-right: -12px;}
+    .camera-out-section .contact-btn .btn{color: #000;padding: 5px 8px;text-wrap-mode: nowrap;font-size: 9px;border-radius: 5px;}
 
             .help-text {
-                max-width: 100%;
+                max-width: 100%;text-align: left;
             }
-
+.contact-btn small{font-size: 7px;}
             .help-image {
                 position: static;
                 transform: none;
-                margin-top: 30px;
-                width: 250px;
+                margin-top: -14px;
+                width: 120px;
             }
         }
 
