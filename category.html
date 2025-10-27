@@ -389,6 +389,107 @@ label input[type="checkbox"]:checked::after {
 @media (min-width:575px){
   .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 6px 15px;}
 }
+
+
+/* ########################################################################### */
+ /* Filter button */
+    /* .filter-div {
+      transition: all 0.3s ease;
+    }
+
+    .filter-div:hover {
+      background-color: #f8f9fa;
+    }
+
+     .sidebar {
+      position: fixed;
+      top: 0;
+      left: -350px;  
+      height: 100%;
+      width: 300px;
+      background: #fff;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      overflow-y: auto;
+      z-index: 999;
+      padding: 20px;
+      transition: left 0.4s ease;
+    }
+
+    .sidebar.active {
+      left: 0;  
+    }
+
+     .sidebar .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 22px;
+      cursor: pointer;
+      color: #333;
+      transition: transform 0.2s ease;
+    }
+
+    .sidebar .close-btn:hover {
+      transform: rotate(90deg);
+    }
+
+    .sidebar h6 {
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    .sidebar label {
+      display: block;
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+     .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 998;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease;
+    }
+
+    .overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+     @keyframes fadeIn {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .sidebar.active {
+      animation: fadeIn 0.4s ease;
+    }
+
+    @media (min-width: 992px) {
+       .filter-div {
+        display: none;
+      }
+      .sidebar {
+        position: static;
+        height: auto;
+        box-shadow: none;
+        width: auto;
+        left: 0;
+        transition: none;
+      }
+      .overlay {
+        display: none;
+      }
+      .sidebar.active{
+        display: block !important;
+      }
+    } */
 </style>
   </head>
 
@@ -624,6 +725,9 @@ label input[type="checkbox"]:checked::after {
               <button class="btn btn-light btn-sm border"><i
                   class="bi bi-grid"></i></button>
             </div>
+            <!-- <div class="filter-div1"> filters:
+              <i class="bi bi-funnel"></i>
+            </div> -->
             <!-- <div class="filter-div">
               <input class="search-in" type="text">
 
@@ -634,6 +738,8 @@ label input[type="checkbox"]:checked::after {
         <div class="row">
           <!-- Sidebar -->
           <div class="col-lg-2 col-md-4 sidebar d-md-block d-none">
+            
+  <!-- <i class="bi bi-x-lg close-btn"></i> -->
             <h6>Categories</h6>
             <label><input type="checkbox" checked> Laptop</label>
             <label><input type="checkbox" checked> Phones</label>
@@ -693,6 +799,9 @@ label input[type="checkbox"]:checked::after {
             </div> -->
 
           </div>
+          
+<!-- Overlay -->
+<!-- <div class="overlay"></div> -->
 
           <!-- Product List -->
           <div class="col-lg-10 col-md-8">
@@ -1440,6 +1549,32 @@ function toggleMyDiv() {
     }
 }
 </script>
+
+
+
+<!-- <script>
+  const filterBtn = document.querySelector('.filter-div1');
+  const sidebar = document.querySelector('.sidebar');
+  const closeBtn = document.querySelector('.close-btn');
+  const overlay = document.querySelector('.overlay');
+
+  filterBtn.addEventListener('click', () => {
+    sidebar.style.display = 'block';
+    sidebar.classList.add('active');
+    overlay.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    sidebar.style.display = 'none';
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+</script> -->
 
 
  <script>
