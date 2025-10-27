@@ -706,19 +706,19 @@
 
         /* Fixed first card */
         .fixed-review-card {
-            width: 250px;
-            height: 160px;
-            background: #fff;
-            box-shadow: 0px 13.29px 26.58px 0px #1B3B770D;
+            /* width: 250px; */
+            /* height: 160px; */
+            /* background: #fff; */
+            /* box-shadow: 0px 13.29px 26.58px 0px #1B3B770D;
             box-shadow: 0px 26.58px 66.46px 0px #062F7D0D;
-            box-shadow: 0px 2.22px 4.43px 0px #0704921A;
-            padding: 25px;
-            position: absolute;
-            left: 0;
-            top: -10%;
+            box-shadow: 0px 2.22px 4.43px 0px #0704921A; */
+            /* padding: 25px; */
+            /* position: absolute; */
+            /* left: 0;
+            top: 0%;
             right: 70%;
             bottom: 0;
-            margin: auto;
+            margin: auto; */
             /* transform: translateY(-50%); */
             z-index: 5;
             text-align: center;
@@ -779,7 +779,7 @@
         /* Swiper styling */
         .review-swiper {
             margin-left: 90px;
-            overflow: hidden;
+            overflow: hidden;padding: 15px 0;
         }
 
         .review-swiper .swiper-slide {
@@ -787,8 +787,8 @@
             box-shadow: 0px 13.29px 26.58px 0px #1B3B770D;
             box-shadow: 0px 26.58px 66.46px 0px #062F7D0D;
             box-shadow: 0px 2.22px 4.43px 0px #0704921A;
-            padding: 20px;
-            width: 250px;
+            padding: 20px;height: unset;
+            /* width: 250px; */
         }
 
         .review-stars {
@@ -834,7 +834,7 @@
             font-weight: 600;
             font-size: 12px;
             color: #000;
-            border-top: 1px solid #D9D9D9;
+            border-top: 1px solid #D9D9D9;width: max-content;
 
         }
 
@@ -905,6 +905,20 @@
             .camera-section .swiper .swiper-slide .camera-card .card-body .d-flex{position: absolute;bottom: 10px;width: -webkit-fill-available;left: 10px;right: 10px;}
             .camera-section .swiper .swiper-slide .camera-card .card-body{margin-bottom: 25px;}
             .camera-swiper-button{display: none !important;}
+            .fixed-review-card img {
+    height: 20px;}
+    .review-section .fixed-review-card .all-review{font-size: 9px;}
+    .review-section .fixed-review-card .single-star{font-size: 12px;}
+    .review-section .fixed-review-card .single-star img{height: 15px;}
+    .review-time{font-size:9px;}
+    .review-swiper .swiper-slide{padding: 10px}
+    .review-section h2{margin-bottom: 10px;font-size: 19px;}
+    .review-stars img {
+    height: 14px;
+}
+.review-section{padding-bottom: 10px;}
+.review-title{font-size: 12px;}
+.review-text{font-size: 10px;}
             .fixed-review-card {
                 position: static;
                 transform: none;
@@ -1411,9 +1425,9 @@
             <div class="row">
 
                 <h2>Don't take our word for it</h2>
-                <div class="col-lg-2">
+                <!-- <div class="col-lg-2">
                     <!-- Fixed Card -->
-                    <div class="fixed-review-card">
+                   <!-- <div class="fixed-review-card">
                         <h5>Excellent</h5>
                         <div class="big-star-img d-flex align-items-center">
                             <img src="./images/product-single/big green star.png" alt="Stars">
@@ -1426,12 +1440,26 @@
                         <p class="single-star"><img src="./images/product-single/Shape.png" alt="star">Trustpilot</p>
 
                     </div>
-                </div>
-                <div class="col-lg-10">
+                </div> -->
+                <div class="col-lg-12">
                     <!-- Swiper -->
                     <div class="swiper review-swiper">
                         <div class="swiper-wrapper">
+<div class="swiper-slide">
+    <div class="fixed-review-card">
+                        <h5>Excellent</h5>
+                        <div class="big-star-img d-flex align-items-center">
+                            <img src="./images/product-single/big green star.png" alt="Stars">
+                            <img src="./images/product-single/big green star.png" alt="Stars">
+                            <img src="./images/product-single/big green star.png" alt="Stars">
+                            <img src="./images/product-single/big green star.png" alt="Stars">
+                            <img src="./images/product-single/big green star.png" alt="Stars">
+                        </div>
+                        <p class="all-review">Based on <span>456 reviews</span></p>
+                        <p class="single-star"><img src="./images/product-single/Shape.png" alt="star">Trustpilot</p>
 
+                    </div>
+</div>
                             <!-- Slide 1 -->
                             <div class="swiper-slide">
                                 <div class="d-flex justify-content-between align-items-center">
@@ -1523,7 +1551,7 @@
 
             </div>
         </div>
-        <button class="review-btn">Write a review</button>
+        <button class="review-btn d-lg-block d-none">Write a review</button>
     </section>
 
     <!-- ======= Got a Question Section ======= -->
@@ -1851,12 +1879,18 @@
             slidesPerView: 4,
             spaceBetween: 20,
             grabCursor: true,
-              loop: true,
-            speed: 600,
-              autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-              },
+              loop: false,
+            // speed: 600,
+            //   autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            //   },
+               breakpoints: {
+                0: { slidesPerView: 2,spaceBetween: 10, },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                992: { slidesPerView: 4.7, autoplay: false  }
+            }
         });
     </script>
 
