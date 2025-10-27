@@ -855,6 +855,40 @@
         }
 
         @media (max-width: 768px) {
+            .single-product-details .product-heading h2{font-weight: 600; font-size: 27px;}
+            .rating { font-weight: 500;font-size: 9px;}
+            .rating .star-img {width: 10px;}
+            .single-product-details p{ font-size: 12px;font-weight: 500;}
+            .options-box .option-btn{padding: 8px;border-radius: 4px}
+            .single-product-details .stock img {width: 21px;}
+            .specs li{ font-size: 10px;font-weight: 500;}
+            .specs li img {width: 20px;height: 20px;object-fit: contain;}
+            .specs li .single-product-link{ font-size: 9px;}
+            .button-group {gap: 10px;flex-wrap: wrap; justify-content: center;}
+            .info-text img {width: 16px;height: auto;}
+            .single-product-price{font-weight: 600; font-size: 21px;}
+            .product-single-accordion .accordion-item .accordion-header .accordion-button{padding: 8px 0;font-size: 13px;}
+            .product-single-accordion .accordion-item .accordion-collapse .accordion-body{padding: 2px 0 15px;font-size: 9px;}
+            .long-bar-section{padding-top: 0px;}
+            .promo-text span{display: none;}
+            .promo-text{width: -webkit-fill-available;}
+            .promo-text span:nth-child(1){font-weight: 700; font-size: 13px;display: block;padding-left: 0px;text-align: center;}
+            .specs-details{margin-top: 0px;}
+            .specs-details .section-title{font-size: 13px;}
+            .icon-box img{width: 35px;}
+            .icon-box .icon-name{font-weight: 600; font-size: 9px;}
+            .info_block_wdth{padding: 0;}
+            .info-block, .info-block .side-image{border-radius: 0;}
+            .info-block{margin-bottom: 30px;}
+            .info-block .side-image{height: 230px; object-fit: cover;}
+            .info-block .side-text{padding: 40px;text-align: center;}
+            .info-block .side-text h3 { font-weight: 500; font-size: 18px; }
+            .info-block .side-text p {font-weight: 300; font-size: 10px;}
+            .product-single-accordion .accordion-item{margin-bottom: 0px;}
+            .feature-box h5, .feature-box p{text-align: center;}
+            .feature-box img{margin-bottom: 15px;}
+            .feature-box h5{font-weight: 500; font-size: 18px;}
+            .feature-box p{font-size: 11px;}
             .fixed-review-card {
                 position: static;
                 transform: none;
@@ -867,24 +901,25 @@
         }
         @media (max-width:575px){
            
-    .button-group .add-to-cart, .button-group .buy-now, .button-group .bulk-order{font-size: 14px; padding: 7px 20px;}
-    .info-text{padding-top: 20px; padding-bottom:20px;}
+    .button-group .add-to-cart, .button-group .buy-now, .button-group .bulk-order{font-size: 12px; padding: 7px 35px;font-weight: 300;}
+    .info-text{padding-top: 20px; padding-bottom:20px;gap: 3px}
     .card-body .card-title{text-align: left;}
         }
 
         @media(max-width:991px){
              .thumbs-swiper{
-                height: 100px;
+                height: 70px;
     width: auto; 
             }
-            .thumbs-swiper .swiper-slide{    height: 90px !important;
+            .thumbs-swiper .swiper-slide{    height: 45px !important;
     cursor: pointer;
-    width: 80px;}
+    width: 55px;}
             .swiper-vertical>.swiper-wrapper{flex-direction: row;}
     .product-page .row .col-lg-6 {flex-direction: column;}
     
-    .thumbs-swiper img{height: 80%;}
-    .swiper.main-swiper{height: 400px;}
+    .thumbs-swiper img{height: 40px;
+        width: 50px !important;}
+    .swiper.main-swiper{height: auto;}
         }
     </style>
 </head>
@@ -1243,51 +1278,55 @@
 
             <!-- 4 Icon Row -->
             <div class="row justify-content-center text-center mb-5">
-                <div class="col-6 col-md-3 icon-box">
+                <div class="col col-md-3 icon-box">
                     <img src="./images/product-single/DSLR.png" alt="Nikon Z5">
                     <p class="icon-name">Nikon Z5</p>
                 </div>
-                <div class="col-6 col-md-3 icon-box">
+                <div class="col col-md-3 icon-box">
                     <img src="./images/product-single/Lens (1).png" alt="Lens">
                     <p class="icon-name">20mm Lens</p>
                 </div>
-                <div class="col-6 col-md-3 icon-box">
+                <div class="col col-md-3 icon-box">
                     <img src="./images/product-single/Charger.png" alt="Cable">
                     <p class="icon-name">Charging Cable</p>
                 </div>
-                <div class="col-6 col-md-3 icon-box">
+                <div class="col col-md-3 icon-box">
                     <img src="./images/product-single/ST.png" alt="Adobe Subscription">
                     <p class="icon-name">Adobe Stock Subscription</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Orange Info Block -->
-            <div class="info-block">
-                <div class="row text-content">
-                    <div class="col-lg-6">
-                        <div class="side-text">
-                            <h3>Expand your creative playground</h3>
-                            <p>
-                                Your full frame journey begins with the Z 5. Simple yet sophisticated, compact yet
-                                powerful, the Z 5 is built to grow with you. It’s everything you’d expect from a full
-                                frame mirrorless camera—intense detail, expansive views, brilliant low light
-                                capabilities, 4K UHD video and more—plus all the innovative tools you need to push the
-                                limits of your creativity.
+            <div class="container info_block_wdth">
+                <!-- Orange Info Block -->
+                <div class="info-block ">
+                    <div class="row text-content">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                            <div class="side-text">
+                                <h3>Expand your creative playground</h3>
+                                <p>
+                                    Your full frame journey begins with the Z 5. Simple yet sophisticated, compact yet
+                                    powerful, the Z 5 is built to grow with you. It’s everything you’d expect from a full
+                                    frame mirrorless camera—intense detail, expansive views, brilliant low light
+                                    capabilities, 4K UHD video and more—plus all the innovative tools you need to push the
+                                    limits of your creativity.
 
-                            </p>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="side-image" src="./images/product-single/Image (1).png" alt="Camera">
+                        <div class="col-lg-6 order-1 order-lg-2">
+                            <img class="side-image" src="./images/product-single/Image (1).png" alt="Camera">
+
+                        </div>
 
                     </div>
-
                 </div>
             </div>
 
             <!-- 3-Column Features -->
-            <div class="row text-center">
-                <div class="col-md-4 feature-box p-2">
+            <div class="container swiper">
+                <div class="row text-center">
+                <div class="col-md-4 feature-box p-md-2">
                     <img src="./images/product-single/Chip (1).png" alt="Super powered">
                     <h5>Super powered.</h5>
                     <p>
@@ -1296,7 +1335,7 @@
                         clarity, and detail.
                     </p>
                 </div>
-                <div class="col-md-4 feature-box p-2">
+                <div class="col-md-4 feature-box p-md-2">
                     <img src="./images/product-single/Sutter Speed.png" alt="Stability">
                     <h5>The stability you crave.</h5>
                     <p>
@@ -1305,7 +1344,7 @@
                         even in low light.
                     </p>
                 </div>
-                <div class="col-md-4 feature-box p-2">
+                <div class="col-md-4 feature-box p-md-2">
                     <img src="./images/product-single/Stability.png" alt="Speed">
                     <h5>In the blink of an iris.</h5>
                     <p>
@@ -1313,6 +1352,7 @@
                         shooting portraits or motion.
                     </p>
                 </div>
+            </div>
             </div>
         </div>
     </section>
