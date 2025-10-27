@@ -379,12 +379,16 @@ label input[type="checkbox"]:checked::after {
    }
 
    .stars, .product-title, .current-price, .original-price{font-size: 9px;}
-   .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 5px 6px; font-size: 9px;}
+   .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 5px 6px; font-size: 9px; border-radius: 5px;}
    .product-buttons{gap: 2px;}
    .action-btn{width: 32px;height: 25px;}
+   .filter-div .btn-light{padding: 5px;}
+   .filter-div .btn-light i{font-size: 12px;}
 }
 @media (max-width:420px){
   .filter-section .filter-div{gap: 5px;}
+  .filter-div .form-select, .category-page .filter-section .filter-div input, .category-page .filter-section .filter-div select {font-size: 10px; padding: 5px;}
+  .category-page .filter-section .filter-div input{padding: 5px;}
 }
 @media (min-width:575px){
   .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 6px 15px;}
@@ -710,7 +714,7 @@ label input[type="checkbox"]:checked::after {
           </div>
           <div class="filter-section d-flex align-items-center gap-3">
             <div class="filter-div">Per Page: <input type="number"
-                class="form-control form-control-sm" style="width:70px;"
+                class="form-control form-control-sm" style="width:50px;"
                 value="10"></div>
             <div class="filter-div">Sort By:
               <select class="form-select form-select-sm">
