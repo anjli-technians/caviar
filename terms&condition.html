@@ -357,14 +357,15 @@
     <section class="policy-wrapper container">
         <div class="row g-4">
             <!-- Sidebar -->
-            <aside class="col-lg-2 order-2">
+            <aside class="col-lg-2 order-md-1 order-2">
                 <div class="sidebar privacy-sidebar">
                     <div class="sidebar-title">Legal Information</div>
 
                     <ul class="nav nav-pills privacy-nav_pills flex-column gap-3" id="policy-tabs" role="tablist"
                         aria-orientation="vertical">
                         <li class="nav-item" role="presentation">
-                            <a href="./privacy-policy.html" class="nav-link privacy-nav_link active" id="tab-collect" type="button" role="tab" aria-controls="pane-collect"
+                            <a href="./privacy-policy.html" class="nav-link privacy-nav_link "  
+                                  type="button" role="tab"  
                                 aria-selected="true">
                                 <span class="pill-icon" aria-hidden="true">
                                     <!-- inline svg icon -->
@@ -379,27 +380,28 @@
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <a href="./terms&condition.html" class="nav-link"  type="button" role="tab" aria-controls="pane-cookies"
+                            <a href="./terms&condition.html" class="nav-link active"   
+                                type="button" role="tab"  
                                 aria-selected="false">
                                 <span class="pill-icon" aria-hidden="true">
                                     <img class="policy-vector" src="./images/privacy-policy/contact-vector-2.png"
                                         alt="privacy img">
                                 </span>
                                 <div class="tab_padd">
-                                    <span class="pill-label">Terms & conditions</span>
+                                    <span class="pill-label">Terms & Conditions</span>
                                  </div>
                             </a>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <a href="./refund.html" class="nav-link" 
-                                type="button" role="tab" aria-controls="pane-usage" aria-selected="false">
+                            <a href="./refund.html" class="nav-link"  
+                                type="button" role="tab" aria-selected="false">
                                 <span class="pill-icon" aria-hidden="true">
                                     <img class="policy-vector" src="./images/privacy-policy/contact-vector-3.png"
                                         alt="usage img">
                                 </span>
                                 <div class="tab_padd">
-                                    <span class="pill-label">Refund / Cancellation Policy</span>
+                                    <span class="pill-label">Refund/ Cancellation Policy</span>
                                  </div>
                             </a>
                         </li>
@@ -437,10 +439,10 @@
             </aside>
 
             <!-- Content -->
-            <div class="col-lg-10">
+            <div class="col-lg-10 order-md-2 order-1">
                 <div class="tab-content policy" id="policy-tabContent">
                     <!-- Collect -->
-                    <div class="tab-pane fade show active" id="pane-collect" role="tabpanel"
+                    <div class="tab-pane fade" id="pane-collect" role="tabpanel"
                         aria-labelledby="tab-collect" tabindex="0">
                         
                             <h2>Privacy Policy</h2>
@@ -478,9 +480,9 @@
                     </div>
 
                     <!-- Cookies -->
-                    <div class="tab-pane fade" id="pane-cookies" role="tabpanel" aria-labelledby="tab-cookies"
+                    <div class="tab-pane fade  show active" id="pane-cookies" role="tabpanel" aria-labelledby="tab-cookies"
                         tabindex="0">
-                        <h2>Terms & conditions</h2>
+                        <h2>Terms & Conditions</h2>
                         <em class="section-ref">Section 10.1 “De Cookie Politica”</em>
                         <p>
                             We use cookies and similar tracking technologies to track activity on our service and hold
@@ -551,48 +553,7 @@
                 </div>
             </div>
 
-            <section class="my-lg-3 d-md-none d-block">
-      <div class="row">
-        <div class="container">
-        <div class="col-md-12">
-          <div class="swiper logo_slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="slider_bg">
-                  <img src="images/dell.png" alt="img" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_bg">
-                  <img src="images/asus.png" alt="img" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_bg">
-                  <img src="images/jbl.png" alt="img" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_bg">
-                  <img src="images/apple.png" alt="img" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_bg">
-                  <img src="images/samsung.png" alt="img" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_bg">
-                  <img src="images/LG.png" alt="img" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
+             
         </div>
     </section>
 
@@ -710,28 +671,7 @@
     </script>
 
 
-    <script>
-    const logo_slider = new Swiper('.logo_slider', {
-      loop: true, slidesPerView: 6,freeMode: true,
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      }, spaceBetween: 10,
-      autoplay: {
-        delay: 0,disableOnInteraction: false,
-      }, speed: 3000,
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-      breakpoints: {
-        0:{slidesPerView: 2}, // mobile
-        480:{slidesPerView: 3.5}, // tablet
-        575:{slidesPerView:4}, // tablet
-        768: { slidesPerView: 6 }, // tablet & desktop
-      },
-    });
-  </script>
+     
 </body>
 
 </html>
