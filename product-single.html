@@ -608,11 +608,7 @@
             padding-bottom: 30px;
             padding-left: 9vw;
             padding-top: 20px;
-        }
-
-        .camera-section .swiper-slide {
-            width: 250px !important;
-        }
+        } 
 
         .camera-Swiper .swiper-wrapper {
             height: auto !important;
@@ -869,7 +865,7 @@
             .single-product-details p{ font-size: 12px;font-weight: 500;}
             .options-box .option-btn{padding: 8px;border-radius: 4px}
             .single-product-details .stock img {width: 21px;}
-            .specs li{ font-size: 10px;font-weight: 500;}
+            .specs li{ font-size: 12px;font-weight: 500;}
             .specs li img {width: 20px;height: 20px;object-fit: contain;}
             .specs li .single-product-link{ font-size: 9px;}
             .button-group {gap: 10px;flex-wrap: wrap; justify-content: center;}
@@ -897,6 +893,18 @@
             .feature-box img{margin-bottom: 15px;}
             .feature-box h5{font-weight: 500; font-size: 18px;}
             .feature-box p{font-size: 11px;}
+            .full-image-section.real-world{padding: 32px 10px;}
+            .full-image-section.real-world h2{font-weight: 700;font-size: 15px;margin-bottom: 0px;}
+            .camera-section .container h4{font-size: 16px;padding-left: 7vw;}
+            .card-img-top{width: 120px;}
+            .camera-Swiper .camera-card{padding: 10px;}
+            .camera-Swiper .camera-card .card-body .rating{font-size: 8px;}
+            .camera-Swiper .camera-card .card-body .star-image {width: 10px;}
+            .camera-section .swiper .swiper-slide{height: unset;}
+            .camera-section .swiper .swiper-slide .camera-card{height: 100%;}
+            .camera-section .swiper .swiper-slide .camera-card .card-body .d-flex{position: absolute;bottom: 10px;width: -webkit-fill-available;left: 10px;right: 10px;}
+            .camera-section .swiper .swiper-slide .camera-card .card-body{margin-bottom: 25px;}
+            .camera-swiper-button{display: none !important;}
             .fixed-review-card {
                 position: static;
                 transform: none;
@@ -911,7 +919,9 @@
            
     .button-group .add-to-cart, .button-group .buy-now, .button-group .bulk-order{font-size: 12px; padding: 7px 35px;font-weight: 300;}
     .info-text{padding-top: 20px; padding-bottom:20px;gap: 3px}
-    .card-body .card-title{text-align: left;}
+    .card-body .card-title{text-align: left;font-size: 11px !important;}
+    .camera-Swiper .card-price{font-size: 9px;}
+    .camera-Swiper .camera-card .card-body .add-cart{font-size: 9px;font-weight: 300;}
         }
 
         @media(max-width:991px){
@@ -1332,35 +1342,65 @@
             </div>
 
             <!-- 3-Column Features -->
-            <div class="container swiper">
-                <div class="row text-center">
-                <div class="col-md-4 feature-box p-md-2">
-                    <img src="./images/product-single/Chip (1).png" alt="Super powered">
-                    <h5>Super powered.</h5>
-                    <p>
-                        Powered by Nikon’s EXPEED 6 image processor, the Z 5 delivers stunning image quality with
-                        enhanced sharpness,
-                        clarity, and detail.
-                    </p>
+            <div class="container">
+                <!-- <div class="row text-center d-lg-flex d-none">
+                    <div class="col-md-4 feature-box p-md-2">
+                        <img src="./images/product-single/Chip (1).png" alt="Super powered">
+                        <h5>Super powered.</h5>
+                        <p>
+                            Powered by Nikon’s EXPEED 6 image processor, the Z 5 delivers stunning image quality with
+                            enhanced sharpness,
+                            clarity, and detail.
+                        </p>
+                    </div>
+                    <div class="col-md-4 feature-box p-md-2">
+                        <img src="./images/product-single/Sutter Speed.png" alt="Stability">
+                        <h5>The stability you crave.</h5>
+                        <p>
+                            With 5-axis in-body image stabilization, you can shoot handheld and still achieve crystal-clear
+                            photos and videos,
+                            even in low light.
+                        </p>
+                    </div>
+                    <div class="col-md-4 feature-box p-md-2">
+                        <img src="./images/product-single/Stability.png" alt="Speed">
+                        <h5>In the blink of an iris.</h5>
+                        <p>
+                            Experience blazing-fast autofocus performance that captures subjects instantly, whether you’re
+                            shooting portraits or motion.
+                        </p>
+                    </div>
+                </div> -->
+                <div class="swiper feature_slider ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide feature-box ">
+                        <img src="./images/product-single/Chip (1).png" alt="Super powered">
+                        <h5>Super powered.</h5>
+                        <p>
+                            Powered by Nikon’s EXPEED 6 image processor, the Z 5 delivers stunning image quality with
+                            enhanced sharpness,
+                            clarity, and detail.
+                        </p>
+                    </div>
+                    <div class="swiper-slide feature-box ">
+                        <img src="./images/product-single/Sutter Speed.png" alt="Stability">
+                        <h5>The stability you crave.</h5>
+                        <p>
+                            With 5-axis in-body image stabilization, you can shoot handheld and still achieve crystal-clear
+                            photos and videos,
+                            even in low light.
+                        </p>
+                    </div>
+                    <div class="swiper-slide feature-box ">
+                        <img src="./images/product-single/Stability.png" alt="Speed">
+                        <h5>In the blink of an iris.</h5>
+                        <p>
+                            Experience blazing-fast autofocus performance that captures subjects instantly, whether you’re
+                            shooting portraits or motion.
+                        </p>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-md-4 feature-box p-md-2">
-                    <img src="./images/product-single/Sutter Speed.png" alt="Stability">
-                    <h5>The stability you crave.</h5>
-                    <p>
-                        With 5-axis in-body image stabilization, you can shoot handheld and still achieve crystal-clear
-                        photos and videos,
-                        even in low light.
-                    </p>
-                </div>
-                <div class="col-md-4 feature-box p-md-2">
-                    <img src="./images/product-single/Stability.png" alt="Speed">
-                    <h5>In the blink of an iris.</h5>
-                    <p>
-                        Experience blazing-fast autofocus performance that captures subjects instantly, whether you’re
-                        shooting portraits or motion.
-                    </p>
-                </div>
-            </div>
             </div>
         </div>
     </section>
@@ -1789,12 +1829,16 @@
             navigation: {
                 nextEl: ".camera-swiper-button-next",
                 prevEl: ".camera-swiper-button-prev",
-            },
+            },speed: 600,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
             breakpoints: {
-                0: { slidesPerView: 1 },
+                0: { slidesPerView: 2,spaceBetween: 10, },
                 576: { slidesPerView: 2 },
                 768: { slidesPerView: 3 },
-                992: { slidesPerView: 4 }
+                992: { slidesPerView: 4.7, autoplay: false  }
             }
         });
     </script>
@@ -1804,7 +1848,7 @@
     <!-- ====== client review swiper ======= -->
     <script>
         var swiper = new Swiper(".review-swiper", {
-            slidesPerView: "auto",
+            slidesPerView: 4,
             spaceBetween: 20,
             grabCursor: true,
               loop: true,
@@ -1816,6 +1860,25 @@
         });
     </script>
 
+    
+<script>
+        var swiper = new Swiper(".feature_slider", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            grabCursor: true,
+              loop: true,
+            speed: 600,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 } 
+            }
+        });
+    </script>
 </body>
 
 </html>
