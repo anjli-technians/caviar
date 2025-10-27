@@ -79,7 +79,7 @@
 
     }
 
-     
+     .product-card{height: 100%;}
 
     .product-img { 
         width: 25%;
@@ -370,16 +370,24 @@ label input[type="checkbox"]:checked::after {
   color: #fff;  
 }
 
-@media (max-width:576px){
+@media (max-width:575px){
   .category-page .filter-section .filter-div{
     font-size: 10px;
   }
    .category-page .filter-section{
     gap: 2px !important;
    }
+
+   .stars, .product-title, .current-price, .original-price{font-size: 9px;}
+   .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 5px 6px; font-size: 9px;}
+   .product-buttons{gap: 2px;}
+   .action-btn{width: 32px;height: 25px;}
 }
 @media (max-width:420px){
   .filter-section .filter-div{gap: 5px;}
+}
+@media (min-width:575px){
+  .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 6px 15px;}
 }
 </style>
   </head>
@@ -690,7 +698,7 @@ label input[type="checkbox"]:checked::after {
           <div class="col-lg-10 col-md-8">
 
             <div class="row">
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -735,7 +743,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -780,7 +788,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -832,7 +840,7 @@ label input[type="checkbox"]:checked::after {
               <!-- </div> -->
               <!-- Desktop product next row -->
               <!-- <div class="row d-none d-md-flex"> -->
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -877,7 +885,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -923,7 +931,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -968,7 +976,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1013,7 +1021,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1058,7 +1066,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 p-2">
+              <div class="col-lg-4 col-6 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
