@@ -244,7 +244,7 @@ text-wrap: nowrap;
   position: relative;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   display: inline-block;  
   margin-top: 20px;
@@ -266,7 +266,7 @@ text-wrap: nowrap;
 .category-page .sidebar label{
     font-family: 'Poppins';
 font-weight: 400; 
-font-size: 12px; 
+font-size: 11px; 
 color: rgba(126, 129, 162, 1);
 
 }
@@ -338,6 +338,7 @@ label input[type="checkbox"] {
   outline: none;
   /* transition: all 0.3s ease; */
 }
+.product-actions{opacity: 1;bottom: 0;}
  
 label input[type="checkbox"]::after {
   content: "✔";
@@ -377,7 +378,18 @@ label input[type="checkbox"]:checked::after {
    .category-page .filter-section{
     gap: 2px !important;
    }
-
+   .product-info {
+    padding: 10px 5px;
+}
+.product-buttons .btn-cart, .product-buttons .btn-buy {
+    font-size: 8px !important;
+}
+.product-image .product-img{width: 145px;
+        height: 145px;}
+.product-card{height: 100% !important;}
+.product-image {
+    height: 180px !important;}
+    .load-more{margin: 30px 0 10px;}
    .stars, .product-title, .current-price, .original-price{font-size: 9px;}
    .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 5px 6px; font-size: 9px; border-radius: 5px;}
    .product-buttons{gap: 2px;}
@@ -391,8 +403,25 @@ label input[type="checkbox"]:checked::after {
   .category-page .filter-section .filter-div input{padding: 5px;}
 }
 @media (min-width:575px){
-  .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 6px 15px;}
+  .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 6px 15px;width: 100%;}
 }
+/* @media (min-width:992px){ */
+  .product-image img{height: 155px;width: 100%;}
+  .product-image .product-actions .action-btn img{height: 8px; width: auto;}
+  .stars{font-size: 7px;}
+  .stars p.star-qty{font-size: 8px;}
+  .action-btn{height: 25px;}
+  .product-title{font-size: 9px;}
+  .current-price{font-size: 14px;}
+  .original-price{font-size: 11px;}
+  .product-buttons .btn-cart, .product-buttons .btn-buy{font-size: 10px;}
+  .product-image{height: 220px;margin-top: -40px;}
+  .discount-badge{top: 45px;}
+  .product-card {height: auto;margin-bottom: 0;}
+  .product-card .product-image .product-img {padding: 0px;}
+  .product-info{padding: 15px 10px;}
+  .product-buttons{width: -webkit-fill-available;}
+/* } */
 
 
 /* ########################################################################### */
@@ -811,7 +840,7 @@ label input[type="checkbox"]:checked::after {
           <div class="col-lg-10 col-md-8">
 
             <div class="row">
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -856,7 +885,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -901,17 +930,17 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
                       alt="New Headphones">
                     <!-- <span class="discount-badge">40%</span> -->
                     <span class="discount-percent">-25%</span>
-                    <div class="sale-timer">
+                    <!-- <div class="sale-timer">
                       <img src="./images/watch-icon.png" alt="watch icon">
                       <p>223 : 23 : 56 : <span>56</span></p>
-                    </div>
+                    </div> -->
                     <div class="product-actions">
                       <button class="action-btn" title="Quick View">
                         <img src="./images/eye.png" alt>
@@ -953,7 +982,7 @@ label input[type="checkbox"]:checked::after {
               <!-- </div> -->
               <!-- Desktop product next row -->
               <!-- <div class="row d-none d-md-flex"> -->
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/TV.png"
@@ -998,7 +1027,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1044,7 +1073,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1089,7 +1118,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1134,7 +1163,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1179,7 +1208,7 @@ label input[type="checkbox"]:checked::after {
                 </div>
               </div>
 
-              <div class="col-lg-4 col-6 p-1">
+              <div class="col-lg-3 col-6 p-md-2 p-1">
                 <div class="product-card">
                   <div class="product-image">
                     <img class="product-img" src="./images/category-laptop.png"
@@ -1215,6 +1244,145 @@ label input[type="checkbox"]:checked::after {
                     <div class="product-price">
                       <span class="current-price">₹250</span>
                       <span class="original-price">₹350</span>
+                    </div>
+                    <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 p-md-2 p-1">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img class="product-img" src="./images/TV.png"
+                      alt="New Phone Holder">
+                    <span class="discount-badge">New</span>
+                    <div class="product-actions">
+                      <button class="action-btn" title="Quick View">
+                        <img src="./images/eye.png" alt>
+                      </button>
+                      <button class="action-btn" title="Add to Wishlist">
+                        <img src="./images/heart.png" alt>
+                      </button>
+                      <button class="action-btn" title="Compare">
+                        <img class="shuffle" src="./images/shuffle.png" alt>
+                      </button>
+                      <button class="action-btn" title="Add to Cart">
+                        <img src="./images/cart.png" alt>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="star-qty">(3)</p>
+                      </div>
+                    </div>
+                    <h5 class="product-title">NEW WIRELESS PHONE HOLDER</h5>
+                    <div class="product-price">
+                      <span class="current-price">₹250</span>
+                      <span class="original-price">₹350</span>
+                    </div>
+                    <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 p-md-2 p-1">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img class="product-img" src="./images/TV.png"
+                      alt="New Smart TV">
+                    <span class="discount-badge">New</span>
+                    <div class="product-actions">
+                      <button class="action-btn" title="Quick View">
+                        <img src="./images/eye.png" alt>
+                      </button>
+                      <button class="action-btn" title="Add to Wishlist">
+                        <img src="./images/heart.png" alt>
+                      </button>
+                      <button class="action-btn" title="Compare">
+                        <img class="shuffle" src="./images/shuffle.png" alt>
+                      </button>
+                      <button class="action-btn" title="Add to Cart">
+                        <img src="./images/cart.png" alt>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p class="star-qty">(4)</p>
+                      </div>
+                    </div>
+                    <h5 class="product-title">NEW 4K SMART TV</h5>
+                    <div class="product-price">
+                      <span class="current-price">₹15000</span>
+                      <span class="original-price">₹20000</span>
+                    </div>
+                    <div class="product-buttons">
+          <button class="btn btn-cart">Add To Cart</button>
+          <button class="btn btn-buy">Buy It Now</button>
+        </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 p-md-2 p-1">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img class="product-img" src="./images/TV.png"
+                      alt="New Headphones">
+                    <!-- <span class="discount-badge">40%</span> -->
+                    <span class="discount-percent">-25%</span>
+                    <!-- <div class="sale-timer">
+                      <img src="./images/watch-icon.png" alt="watch icon">
+                      <p>223 : 23 : 56 : <span>56</span></p>
+                    </div> -->
+                    <div class="product-actions">
+                      <button class="action-btn" title="Quick View">
+                        <img src="./images/eye.png" alt>
+                      </button>
+                      <button class="action-btn" title="Add to Wishlist">
+                        <img src="./images/heart.png" alt>
+                      </button>
+                      <button class="action-btn" title="Compare">
+                        <img class="shuffle" src="./images/shuffle.png" alt>
+                      </button>
+                      <button class="action-btn" title="Add to Cart">
+                        <img src="./images/cart.png" alt>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-rating">
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p class="star-qty">(3)</p>
+                      </div>
+                    </div>
+                    <h5 class="product-title">NEW WIRELESS HEADPHONES</h5>
+                    <div class="product-price">
+                      <span class="current-price">₹1200</span>
+                      <span class="original-price">₹2000</span>
                     </div>
                     <div class="product-buttons">
           <button class="btn btn-cart">Add To Cart</button>
