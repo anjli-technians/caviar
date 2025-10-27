@@ -513,6 +513,10 @@ text-transform: capitalize;
     .track_products .order_summary.payment_delivery table tr td{font-size: 12px;color: #667085;font-weight: 400;}
     .track_products .order_summary.payment_delivery table tr th{color: #475467; font-weight: 500;}
     .track_products .order_summary.payment_delivery{padding-bottom: 60px;}
+    .order_id{display: flex;justify-content: space-between;}
+    .order_id a{background-color: #fff;border: 1px solid #D0D5DD;color: #667085;text-decoration: none;font-weight: 500;padding: 8px 15px;border-radius: 8px;font-size: 10px;}
+    .order_id a img{width: 12px;}
+    .order_id a:last-child{background-color: #FA6905;color: #fff;}
 
  @media (min-width:650px) and (max-width:767px) {
         .stay_in_touch .card {
