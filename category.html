@@ -11,8 +11,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="precONect" href="https://fonts.googleapis.com">
+    <link rel="precONect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
@@ -494,6 +494,12 @@ label input[type="checkbox"]:checked::after {
         display: block !important;
       }
     } */
+    .sub_list{position: absolute;left: 100%;background: #ffecdf;top: 20px;width: max-content;height: 100%;max-height: 77vh;overflow: auto;}
+    .sub_list ul{padding-left: 0;list-style: none;}
+    .sub_list ul li{padding: 10px 20px; border-bottom: 1px solid #f9e1d0;color: #000;text-transform: capitalize;font-weight: 500;}
+    .nav-pills #toggle_section .nav-link .sub_list{display: none;}
+    .nav-pills #toggle_section .nav-link:hover .sub_list{display: block;}
+    .nav_below_item{padding-right: 0px;}
 </style>
   </head>
 
@@ -629,53 +635,130 @@ label input[type="checkbox"]:checked::after {
           <!-- Left Side: Toggle + Title -->
           <div class="col-md-3 d-flex align-items-center p-md-0">
             <div class="category_menu">
-              <button onclick="toggleMyDiv()" class="top_category"><img
-                  src="images/toggle.png" alt> Top
-                Category</button>
-              <div class="nav_below_item nav flex-column nav-pills me-3"
-                id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button onclick="toggleMyDiv()" class="top_category"><img src="images/toggle.png" alt> Top Category</button>
+              <div class="nav_below_item nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <div id="toggle_section">
-                  <button class="nav-link active" id="v-pills-new_product-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-new_product" type="button"
-                    role="tab" aria-controls="v-pills-new_product"
-                    aria-selected="true"><img src="images/tv_icon.png" alt>new
-                    product</button>
-                  <button class="nav-link" id="v-pills-kitchen_appliance-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-kitchen_appliance" type="button"
-                    role="tab"
-                    aria-controls="v-pills-kitchen_appliance"
-                    aria-selected="false"><img src="images/fridge_icon.png"
-                      alt>kitchen appliance</button>
-                  <button class="nav-link" id="v-pills-electronic_home-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-electronic_home" type="button"
-                    role="tab"
-                    aria-controls="v-pills-electronic_home"
-                    aria-selected="false"><img src="images/headphone_icon.png"
-                      alt>electronic & home</button>
-                  <button class="nav-link" id="v-pills-messages-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-messages" type="button" role="tab"
-                    aria-controls="v-pills-messages"
-                    aria-selected="false"><img
-                      src="images/washing-machine_icon.png" alt>home
-                    accessorise</button>
-                  <button class="nav-link" id="v-pills-desktop_product-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-desktop_product" type="button"
-                    role="tab"
-                    aria-controls="v-pills-desktop_product"
-                    aria-selected="false"><img src="images/press.png"
-                      alt>desktop
-                    product</button>
-                  <button class="nav-link" id="v-pills-all_category-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-all_category" type="button"
-                    role="tab" aria-controls="v-pills-all_category"
-                    aria-selected="false"><img src="images/phone_icon.png"
-                      alt>see all category</button>
+                  <button class="nav-link"><img src="images/tv_icon.png" alt>Laptop IC
+                  <div class="sub_list">
+                    <ul>
+                      <li>Laptop IC 1</li>
+                      <li>Laptop IC 2</li>
+                      <li>Laptop IC 3</li>
+                      <li>Laptop IC 4</li>
+                      <li>Laptop IC 5</li>
+                      <li>Laptop IC 6</li>
+                      <li>Laptop IC 7</li>
+                      <li>Laptop IC 8</li>
+                      <li>Laptop IC 9</li>
+                      <li>Laptop IC 10</li>
+                      <li>Laptop IC 11</li>
+                      <li>Laptop IC 12</li>
+                      <li>Laptop IC 13</li>
+                      <li>Laptop IC 14</li>
+                      <li>Laptop IC 15</li>
+                    </ul>
+                  </div>
+                  </button>
+                  <button class="nav-link" ><img src="images/fridge_icon.png" alt>Laptop DC Jack
+                  <div class="sub_list">
+                    <ul>
+                      <li>Laptop DC Jack 1</li>
+                      <li>Laptop DC Jack 2</li>
+                      <li>Laptop DC Jack 3</li>
+                      <li>Laptop DC Jack 4</li>
+                      <li>Laptop DC Jack 5</li>
+                      <li>Laptop DC Jack 6</li>
+                      <li>Laptop DC Jack 7</li>
+                      <li>Laptop DC Jack 8</li>
+                      <li>Laptop DC Jack 9</li>
+                      <li>Laptop DC Jack 10</li>
+                      <li>Laptop DC Jack 11</li>
+                      <li>Laptop DC Jack 12</li>
+                      <li>Laptop DC Jack 13</li>
+                      <li>Laptop DC Jack 14</li>
+                      <li>Laptop DC Jack 15</li>
+                    </ul>
+                  </div></button>
+                  <button class="nav-link"><img src="images/headphone_icon.png" alt>Hard Disk CONector
+                  <div class="sub_list">
+                    <ul>
+                      <li>Hard Disk CONector 1</li>
+                      <li>Hard Disk CONector 2</li>
+                      <li>Hard Disk CONector 3</li>
+                      <li>Hard Disk CONector 4</li>
+                      <li>Hard Disk CONector 5</li>
+                      <li>Hard Disk CONector 6</li>
+                      <li>Hard Disk CONector 7</li>
+                      <li>Hard Disk CONector 8</li>
+                      <li>Hard Disk CONector 9</li>
+                      <li>Hard Disk CONector 10</li>
+                      <li>Hard Disk CONector 11</li>
+                      <li>Hard Disk CONector 12</li>
+                      <li>Hard Disk CONector 13</li>
+                      <li>Hard Disk CONector 14</li>
+                      <li>Hard Disk CONector 15</li>
+                    </ul>
+                  </div></button>
+                  <button class="nav-link"><img src="images/washing-machine_icon.png" alt>Laptop Display Cable
+                  <div class="sub_list">
+                    <ul>
+                      <li>Laptop Display Cable 1</li>
+                      <li>Laptop Display Cable 2</li>
+                      <li>Laptop Display Cable 3</li>
+                      <li>Laptop Display Cable 4</li>
+                      <li>Laptop Display Cable 5</li>
+                      <li>Laptop Display Cable 6</li>
+                      <li>Laptop Display Cable 7</li>
+                      <li>Laptop Display Cable 8</li>
+                      <li>Laptop Display Cable 9</li>
+                      <li>Laptop Display Cable 10</li>
+                      <li>Laptop Display Cable 11</li>
+                      <li>Laptop Display Cable 12</li>
+                      <li>Laptop Display Cable 13</li>
+                      <li>Laptop Display Cable 14</li>
+                      <li>Laptop Display Cable 15</li>
+                    </ul>
+                  </div></button>
+                  <button class="nav-link"><img src="images/press.png" alt>ON/OFF Witch(Power Button)
+                  <div class="sub_list">
+                    <ul>
+                      <li>ON/OFF Witch(Power Button) 1</li>
+                      <li>ON/OFF Witch(Power Button) 2</li>
+                      <li>ON/OFF Witch(Power Button) 3</li>
+                      <li>ON/OFF Witch(Power Button) 4</li>
+                      <li>ON/OFF Witch(Power Button) 5</li>
+                      <li>ON/OFF Witch(Power Button) 6</li>
+                      <li>ON/OFF Witch(Power Button) 7</li>
+                      <li>ON/OFF Witch(Power Button) 8</li>
+                      <li>ON/OFF Witch(Power Button) 9</li>
+                      <li>ON/OFF Witch(Power Button) 10</li>
+                      <li>ON/OFF Witch(Power Button) 11</li>
+                      <li>ON/OFF Witch(Power Button) 12</li>
+                      <li>ON/OFF Witch(Power Button) 13</li>
+                      <li>ON/OFF Witch(Power Button) 14</li>
+                      <li>ON/OFF Witch(Power Button) 15</li>
+                    </ul>
+                  </div></button>
+                  <button class="nav-link"><img src="images/phone_icon.png" alt>Repairing Tools
+                  <div class="sub_list">
+                    <ul>
+                      <li>Repairing Tools 1</li>
+                      <li>Repairing Tools 2</li>
+                      <li>Repairing Tools 3</li>
+                      <li>Repairing Tools 4</li>
+                      <li>Repairing Tools 5</li>
+                      <li>Repairing Tools 6</li>
+                      <li>Repairing Tools 7</li>
+                      <li>Repairing Tools 8</li>
+                      <li>Repairing Tools 9</li>
+                      <li>Repairing Tools 10</li>
+                      <li>Repairing Tools 11</li>
+                      <li>Repairing Tools 12</li>
+                      <li>Repairing Tools 13</li>
+                      <li>Repairing Tools 14</li>
+                      <li>Repairing Tools 15</li>
+                    </ul>
+                  </div></button>
                 </div>
               </div>
             </div>
