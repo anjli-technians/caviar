@@ -465,31 +465,8 @@
         font-size: 12px;
       }
 
-      .product_lisiting .product-card-category {
-        flex-direction: column;
-      }
+      
 
-      .product_lisiting .product-card-category{
-        flex-direction: row;
-      }
-      .product_lisiting .product-card-category .product-img{
-        width: 30%;
-      }
-      .product_lisiting .product-card-category .mob-design{
-        width: 70%;
-      }
-      .product_lisiting .list-button{
-        align-items: flex-start;
-        padding: 0 10px;
-      }
-      .product_lisiting .product-info-category h5{font-size: 14px;}
-      .product_lisiting .product-info-category p{font-size: 10px;}
-      .product_lisiting .price{font-size: 14px;}
-      .product_lisiting .old-price{font-size: 12px;}
-      .product_lisiting .product-img{height: 100%;}
-      .product_lisiting .product-buttons.list-button .btn-buy
-{padding: 6px 27px !important;}
-.mob-design{flex-direction: column !important;}
     }
 .mob-design  {
   display: flex;
@@ -797,7 +774,37 @@
       display: flex;
     }
 
+@media(max-width:767px){
+  .product_lisiting .product-card-category {
+        flex-direction: column;
+      }
 
+      .product_lisiting .product-card-category{
+        flex-direction: row;
+      }
+      .product_lisiting .product-card-category .product-img{
+        width: 30%;
+      }
+      .product_lisiting .product-card-category .mob-design{
+        width: 70%;
+      }
+      .product_lisiting .list-button{
+        align-items: flex-start;
+        padding: 0 10px;
+      }
+      .product_lisiting .product-info-category h5{font-size: 14px;}
+      .product_lisiting .product-info-category p{font-size: 10px;}
+      .product_lisiting .price{font-size: 14px;}
+      .product_lisiting .old-price{font-size: 12px;}
+      .product_lisiting .product-img{height: 100%;}
+      .product_lisiting .product-buttons.list-button .btn-buy
+{padding: 6px 27px !important;}
+.mob-design{flex-direction: column !important;}
+}
+@media (max-width:991px) {
+  
+.product_lisiting{width: 100%;}
+}
   </style>
 </head>
 
