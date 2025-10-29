@@ -63,7 +63,7 @@
       padding: 15px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-evenly;
       margin-bottom: 20px;
       transition: 0.3s;
       box-shadow: 0px 0px 20px 5px rgba(248, 246, 253, 0.75);
@@ -468,8 +468,33 @@
       .product_lisiting .product-card-category {
         flex-direction: column;
       }
-    }
 
+      .product_lisiting .product-card-category{
+        flex-direction: row;
+      }
+      .product_lisiting .product-card-category .product-img{
+        width: 30%;
+      }
+      .product_lisiting .product-card-category .mob-design{
+        width: 70%;
+      }
+      .product_lisiting .list-button{
+        align-items: flex-start;
+        padding: 0 10px;
+      }
+      .product_lisiting .product-info-category h5{font-size: 14px;}
+      .product_lisiting .product-info-category p{font-size: 10px;}
+      .product_lisiting .price{font-size: 14px;}
+      .product_lisiting .old-price{font-size: 12px;}
+      .product_lisiting .product-img{height: 100%;}
+      .product_lisiting .product-buttons.list-button .btn-buy
+{padding: 6px 27px !important;}
+.mob-design{flex-direction: column !important;}
+    }
+.mob-design  {
+  display: flex;
+  flex-direction: row;
+}
     @media (max-width:420px) {
 
       .filter-section .filter-div,
@@ -771,6 +796,8 @@
     .nav-pills #toggle_section .nav-link {
       display: flex;
     }
+
+
   </style>
 </head>
 
@@ -1709,9 +1736,11 @@
           <!-- Product Card -->
           <div class="row list-view" style="display: none;">
             <div class="product-card-category">
+              
               <div class="product-img">
                 <img src="./images/category-laptop.png" alt="product">
               </div>
+              <div class="mob-design"> 
               <div class="product-info-category">
                 <h5>MacBook Pro 14”
                   <span class="color-dots">
@@ -1729,9 +1758,11 @@
                   non
                   in justo.</p>
               </div>
+              
               <div class="product-buttons list-button">
                 <button class="btn btn-cart">Add To Cart</button>
                 <button class="btn btn-buy">Buy It Now</button>
+              </div>
               </div>
             </div>
 
@@ -1739,6 +1770,8 @@
               <div class="product-img">
                 <img src="./images/category-laptop.png" alt="product">
               </div>
+              
+              <div class="mob-design"> 
               <div class="product-info-category">
                 <h5>MacBook Pro 14”
                   <span class="color-dots">
@@ -1760,33 +1793,6 @@
                 <button class="btn btn-cart">Add To Cart</button>
                 <button class="btn btn-buy">Buy It Now</button>
               </div>
-            </div>
-
-
-            <div class="product-card-category">
-              <div class="product-img">
-                <img src="./images/category-laptop.png" alt="product">
-              </div>
-              <div class="product-info-category">
-                <h5>MacBook Pro 14”
-                  <span class="color-dots">
-                    <span class="dot red"></span>
-                    <span class="dot blue"></span>
-                    <span class="dot yellow"></span>
-                  </span>
-                </h5>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="price">₹222599.00</span>
-                  <span class="old-price">₹225999.00</span>
-                  <span class="stars">★★★★★</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
-                  non
-                  in justo.</p>
-              </div>
-              <div class="product-buttons list-button">
-                <button class="btn btn-cart">Add To Cart</button>
-                <button class="btn btn-buy">Buy It Now</button>
               </div>
             </div>
 
@@ -1795,6 +1801,8 @@
               <div class="product-img">
                 <img src="./images/category-laptop.png" alt="product">
               </div>
+              
+              <div class="mob-design"> 
               <div class="product-info-category">
                 <h5>MacBook Pro 14”
                   <span class="color-dots">
@@ -1815,6 +1823,38 @@
               <div class="product-buttons list-button">
                 <button class="btn btn-cart">Add To Cart</button>
                 <button class="btn btn-buy">Buy It Now</button>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="product-card-category">
+              <div class="product-img">
+                <img src="./images/category-laptop.png" alt="product">
+              </div>
+              
+              <div class="mob-design"> 
+              <div class="product-info-category">
+                <h5>MacBook Pro 14”
+                  <span class="color-dots">
+                    <span class="dot red"></span>
+                    <span class="dot blue"></span>
+                    <span class="dot yellow"></span>
+                  </span>
+                </h5>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="price">₹222599.00</span>
+                  <span class="old-price">₹225999.00</span>
+                  <span class="stars">★★★★★</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
+                  non
+                  in justo.</p>
+              </div>
+              <div class="product-buttons list-button">
+                <button class="btn btn-cart">Add To Cart</button>
+                <button class="btn btn-buy">Buy It Now</button>
+              </div>
               </div>
             </div>
 
@@ -1824,6 +1864,8 @@
               <div class="product-img">
                 <img src="./images/category-laptop.png" alt="product">
               </div>
+              
+              <div class="mob-design"> 
               <div class="product-info-category">
                 <h5>MacBook Pro 14”
                   <span class="color-dots">
@@ -1844,6 +1886,7 @@
               <div class="product-buttons list-button">
                 <button class="btn btn-cart">Add To Cart</button>
                 <button class="btn btn-buy">Buy It Now</button>
+              </div>
               </div>
             </div>
 
@@ -1852,6 +1895,8 @@
               <div class="product-img">
                 <img src="./images/category-laptop.png" alt="product">
               </div>
+              
+              <div class="mob-design"> 
               <div class="product-info-category">
                 <h5>MacBook Pro 14”
                   <span class="color-dots">
@@ -1872,6 +1917,7 @@
               <div class="product-buttons list-button">
                 <button class="btn btn-cart">Add To Cart</button>
                 <button class="btn btn-buy">Buy It Now</button>
+              </div>
               </div>
             </div>
 
