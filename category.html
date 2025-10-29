@@ -401,8 +401,11 @@
 
       .category-page .filter-section .filter-div,
       .category-page .filter-section .filter-div1 {
-        font-size: 10px;
+        font-size: 9px;
       }
+      .category-page .filter-section .filter-div input[type="number"]{width: 25px !important;}
+      .category-page .filter-section .filter-div select{font-size: 6px !important;background-position: right 3px center;background-size: 8px;}
+      .category-page .filter-section .filter-div button{padding: 0px;background: transparent;border: 0px !important;}
 
       .category-page .filter-section {
         gap: 2px !important;
@@ -462,7 +465,7 @@
       }
 
       .filter-div .btn-light i {
-        font-size: 12px;
+        font-size: 11px;
       }
 
       
@@ -476,7 +479,8 @@
 
       .filter-section .filter-div,
       .filter-section .filter-div1 {
-        gap: 5px;
+        gap: 3px;
+        margin-right: 7px;
       }
 
       .filter-div .form-select,
@@ -792,10 +796,10 @@
         align-items: flex-start;
         padding: 0 10px;
       }
-      .product_lisiting .product-info-category h5{font-size: 14px;}
+      .product_lisiting .product-info-category h5{font-size: 18px;}
       .product_lisiting .product-info-category p{font-size: 10px;}
-      .product_lisiting .price{font-size: 14px;}
-      .product_lisiting .old-price{font-size: 12px;}
+      .product_lisiting .price{font-size: 16px;}
+      .product_lisiting .old-price{font-size: 11px;font-weight: 400;margin-left: 0;}
       .product_lisiting .product-img{height: 100%;}
       .product_lisiting .product-buttons.list-button .btn-buy
 {padding: 6px 27px !important;}
@@ -1116,8 +1120,8 @@
             </select>
           </div>
           <div class="filter-div">View:
-            <button class="btn btn-light btn-sm border" id="listViewBtn"><i class="bi bi-list"></i></button>
             <button class="btn btn-light btn-sm border" id="gridViewBtn"><i class="bi bi-grid"></i></button>
+            <button class="btn btn-light btn-sm border" id="listViewBtn"><i class="bi bi-list"></i></button>
           </div>
           <div class="filter-div1 d-lg-none d-block"> filters:
             <i class="bi bi-funnel"></i>
@@ -1756,14 +1760,14 @@
                     <span class="dot yellow"></span>
                   </span>
                 </h5>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="price">₹222599.00</span>
-                  <span class="old-price">₹225999.00</span>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <div>
+                    <span class="price">₹222599.00</span>
+                    <span class="old-price">₹225999.00</span>
+                  </div>
                   <span class="stars">★★★★★</span>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
-                  non
-                  in justo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus non in justo.</p>
               </div>
               
               <div class="product-buttons list-button">
@@ -1787,14 +1791,14 @@
                     <span class="dot yellow"></span>
                   </span>
                 </h5>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="price">₹222599.00</span>
-                  <span class="old-price">₹225999.00</span>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <div>
+                    <span class="price">₹222599.00</span>
+                    <span class="old-price">₹225999.00</span>
+                  </div>
                   <span class="stars">★★★★★</span>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
-                  non
-                  in justo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus non in justo.</p>
               </div>
               <div class="product-buttons list-button">
                 <button class="btn btn-cart">Add To Cart</button>
@@ -1818,72 +1822,11 @@
                     <span class="dot yellow"></span>
                   </span>
                 </h5>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="price">₹222599.00</span>
-                  <span class="old-price">₹225999.00</span>
-                  <span class="stars">★★★★★</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
-                  non
-                  in justo.</p>
-              </div>
-              <div class="product-buttons list-button">
-                <button class="btn btn-cart">Add To Cart</button>
-                <button class="btn btn-buy">Buy It Now</button>
-              </div>
-              </div>
-            </div>
-
-
-            <div class="product-card-category">
-              <div class="product-img">
-                <img src="./images/category-laptop.png" alt="product">
-              </div>
-              
-              <div class="mob-design"> 
-              <div class="product-info-category">
-                <h5>MacBook Pro 14”
-                  <span class="color-dots">
-                    <span class="dot red"></span>
-                    <span class="dot blue"></span>
-                    <span class="dot yellow"></span>
-                  </span>
-                </h5>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="price">₹222599.00</span>
-                  <span class="old-price">₹225999.00</span>
-                  <span class="stars">★★★★★</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
-                  non
-                  in justo.</p>
-              </div>
-              <div class="product-buttons list-button">
-                <button class="btn btn-cart">Add To Cart</button>
-                <button class="btn btn-buy">Buy It Now</button>
-              </div>
-              </div>
-            </div>
-
-
-
-            <div class="product-card-category">
-              <div class="product-img">
-                <img src="./images/category-laptop.png" alt="product">
-              </div>
-              
-              <div class="mob-design"> 
-              <div class="product-info-category">
-                <h5>MacBook Pro 14”
-                  <span class="color-dots">
-                    <span class="dot red"></span>
-                    <span class="dot blue"></span>
-                    <span class="dot yellow"></span>
-                  </span>
-                </h5>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="price">₹222599.00</span>
-                  <span class="old-price">₹225999.00</span>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <div>
+                    <span class="price">₹222599.00</span>
+                    <span class="old-price">₹225999.00</span>
+                  </div>
                   <span class="stars">★★★★★</span>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
@@ -1912,9 +1855,78 @@
                     <span class="dot yellow"></span>
                   </span>
                 </h5>
-                <div class="d-flex align-items-center gap-2">
-                  <span class="price">₹222599.00</span>
-                  <span class="old-price">₹225999.00</span>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <div>
+                    <span class="price">₹222599.00</span>
+                    <span class="old-price">₹225999.00</span>
+                  </div>
+                  <span class="stars">★★★★★</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
+                  non
+                  in justo.</p>
+              </div>
+              <div class="product-buttons list-button">
+                <button class="btn btn-cart">Add To Cart</button>
+                <button class="btn btn-buy">Buy It Now</button>
+              </div>
+              </div>
+            </div>
+
+
+
+            <div class="product-card-category">
+              <div class="product-img">
+                <img src="./images/category-laptop.png" alt="product">
+              </div>
+              
+              <div class="mob-design"> 
+              <div class="product-info-category">
+                <h5>MacBook Pro 14”
+                  <span class="color-dots">
+                    <span class="dot red"></span>
+                    <span class="dot blue"></span>
+                    <span class="dot yellow"></span>
+                  </span>
+                </h5>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <div>
+                    <span class="price">₹222599.00</span>
+                    <span class="old-price">₹225999.00</span>
+                  </div>
+                  <span class="stars">★★★★★</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
+                  non
+                  in justo.</p>
+              </div>
+              <div class="product-buttons list-button">
+                <button class="btn btn-cart">Add To Cart</button>
+                <button class="btn btn-buy">Buy It Now</button>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="product-card-category">
+              <div class="product-img">
+                <img src="./images/category-laptop.png" alt="product">
+              </div>
+              
+              <div class="mob-design"> 
+              <div class="product-info-category">
+                <h5>MacBook Pro 14”
+                  <span class="color-dots">
+                    <span class="dot red"></span>
+                    <span class="dot blue"></span>
+                    <span class="dot yellow"></span>
+                  </span>
+                </h5>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <div>
+                    <span class="price">₹222599.00</span>
+                    <span class="old-price">₹225999.00</span>
+                  </div>
                   <span class="stars">★★★★★</span>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in <br> est adipiscing in phasellus
