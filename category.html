@@ -65,8 +65,8 @@
       margin-right: 8px;
     }
 
-    /* Product Card */
-    .product-card-category { 
+    /* Product Card  */
+    .product_lisiting .product-card-category { 
       border-radius: 10px;
       padding: 15px;
       display: flex;
@@ -79,93 +79,64 @@
 
     }
 
-     .product-card{height: 100%;}
+    .product_lisiting .product-card{height: 100%;}
 
-    .product-img { 
-        width: 25%;
+    .product_lisiting .product-img { 
+        width: 220px;
       height: auto; 
       overflow: hidden;
     }
 
-    .product-img img {
+    .product_lisiting .product-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    .product-info-category {
+    .product_lisiting .product-info-category {
       flex: 1;
       padding: 0 20px;
     }
 
-    .product-info-category h5 { 
+    .product_lisiting .product-info-category h5 { 
       margin-bottom: 5px; 
-      color: rgba(52, 64, 84, 1);
-
-
-      font-family: 'Poppins';
+      color: rgba(52, 64, 84, 1); font-family: 'Poppins';
 font-weight: 600; 
 font-size: 19px; 
 
     }
-
-    .color-dots {
-      display: inline-flex;
-      gap: 6px;
-      margin-left: 5px;
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: inline-block;
-    }
-
-    .dot.red { background-color: #ef4444; }
-    .dot.blue { background-color: #3b82f6; }
-    .dot.yellow { background-color: #facc15; }
-
-    .price {
+ 
+    .product_lisiting .price {
       font-weight: 600;
       font-size: 15px; 
-      color: rgba(29, 41, 57, 1);
-
-
-      font-family: 'Poppins';
+      color: rgba(29, 41, 57, 1); font-family: 'Poppins';
 font-weight: 600; 
-font-size: 16px; 
+font-size: 16px;  }
 
-    }
-
-    .old-price {
+    .product_lisiting .old-price {
       text-decoration: line-through;
       color:  rgba(169, 169, 169, 1); 
-      margin-left: 8px;
-
-      font-family: 'Poppins';
+      margin-left: 8px; font-family: 'Poppins';
 font-weight: 600; 
 font-size: 16px; 
 
     }
 
-    .stars {
+    .product_lisiting .product-rating .stars i {
       color: rgba(255, 196, 22, 1);
-      font-size: 13px;
+      font-size: 9px;
     }
 
-    .product-info-category p { 
+    .product_lisiting .product-info-category p { 
       color: #6b7280;
       margin-top: 8px;
-        color: rgba(146, 149, 170, 1);
-
-      font-family: 'Poppins';
+        color: rgba(146, 149, 170, 1); font-family: 'Poppins';
 font-weight: 400; 
 font-size: 13px; 
 
     }
 
-    .product-buttons {
+    .product_lisiting .product-buttons {
       /* display: flex;
       flex-direction: column;
       gap: 10px;
@@ -178,7 +149,7 @@ font-size: 13px;
     gap: 7px;
     }
 
-    .product-buttons .btn-cart {  
+   .product_lisiting  .product-buttons .btn-cart {  
       padding: 6px 25px;
       background: rgba(255, 141, 40, 1);
 
@@ -189,13 +160,13 @@ font-size: 12px;
 
     }
 
-    .btn-cart {
+    .product_lisiting .btn-cart {
       background-color: #f97316;
       color: #fff;
       border: none;
     }
 
-   .product-buttons .btn-buy {
+   .product_lisiting .product-buttons .btn-buy {
       background-color: rgba(249, 191, 51, 1);
       color: #fff; 
       border: 1px solid rgba(249, 191, 51, 1);
@@ -381,7 +352,7 @@ label input[type="checkbox"]:checked::after {
    .product-info {
     padding: 10px 5px;
 }
-.product-buttons .btn-cart, .product-buttons .btn-buy {
+.product_lisiting .product-buttons .btn-cart, .product_lisiting .product-buttons .btn-buy {
     font-size: 8px !important;
 }
 .product-image .product-img{width: 145px;
@@ -391,7 +362,7 @@ label input[type="checkbox"]:checked::after {
     height: 180px !important;}
     .load-more{margin: 30px 0 10px;}
    .stars, .product-title, .current-price, .original-price{font-size: 9px;}
-   .product-buttons .btn-cart, .product-buttons .btn-buy{padding: 5px 6px; font-size: 9px; border-radius: 5px;}
+   .product_lisiting .product-buttons .btn-cart, .product_lisiting .product-buttons .btn-buy{padding: 5px 6px; font-size: 9px; border-radius: 5px;}
    .product-buttons{gap: 2px;}
    .action-btn{width: 32px;height: 25px;}
    .filter-div .btn-light{padding: 5px;}
@@ -414,7 +385,7 @@ label input[type="checkbox"]:checked::after {
   .product-title{font-size: 9px;}
   .current-price{font-size: 14px;}
   .original-price{font-size: 11px;}
-  .product-buttons .btn-cart, .product-buttons .btn-buy{font-size: 10px;}
+  .product-buttons .btn-cart, .product-buttons .btn-buy{font-size: 10px !important;padding: 5px !important;}
   .product-image{height: 220px;margin-top: -40px;}
   .discount-badge{top: 45px;}
   .product-card {height: auto;margin-bottom: 0;}
@@ -735,8 +706,7 @@ label input[type="checkbox"]:checked::after {
     <section class="category-page">
       <div class="container">
         <!-- Header -->
-        <div
-          class="d-flex justify-content-between align-items-center page-header flex-wrap">
+        <div class="d-flex justify-content-between align-items-center page-header flex-wrap">
           <div>
             <h4>Our products</h4>
             <p>About 8,920 results (0.62 seconds)</p>
@@ -837,7 +807,7 @@ label input[type="checkbox"]:checked::after {
 <!-- <div class="overlay"></div> -->
 
           <!-- Product List -->
-          <div class="col-lg-10 col-md-8">
+          <div class="col-lg-10 col-md-8 product_lisiting">
 
             <div class="row">
               <div class="col-lg-3 col-6 p-md-2 p-1">
