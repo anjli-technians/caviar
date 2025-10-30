@@ -192,7 +192,7 @@
     /* =================================== */
     .filter-section .filter-div {
       display: flex;
-      gap: 10px;
+      gap: 5px;
       align-items: center;
       justify-content: center;
     }
@@ -215,14 +215,15 @@
     .category-page .filter-section .filter-div1 {
       font-family: 'Poppins';
       font-weight: 400;
-      font-size: 12px;
+      font-size: 10px;
       text-wrap: nowrap;
     }
 
     .category-page .filter-section .filter-div input,
     .category-page .filter-section .filter-div select {
       border: 1px solid rgba(231, 230, 239, 1);
-      font-size: 12px;
+      font-size: 10px;
+      padding: 5px;
 
     }
 
@@ -397,13 +398,23 @@
       color: #fff;
     }
 
+    .filter-div #gridViewBtn, .filter-div #listViewBtn{
+      border: unset !important;
+      font-size: 14px;
+      padding: 0;
+    }
     @media (max-width:575px) {
+
+      .category-page .page-header{
+        flex-direction: column;
+        align-items: flex-start !important;
+      }
 
       .category-page .filter-section .filter-div,
       .category-page .filter-section .filter-div1 {
-        font-size: 9px;
+        font-size: 9px; 
       }
-      .category-page .filter-section .filter-div input[type="number"]{width: 25px !important;}
+      .category-page .filter-section .filter-div input[type="number"]{width: 25px !important; font-size: 6px; padding: 2px;}
       .category-page .filter-section .filter-div select{font-size: 6px !important;background-position: right 3px center;background-size: 8px;}
       .category-page .filter-section .filter-div button{padding: 0px;background: transparent;border: 0px !important;}
 
@@ -597,7 +608,7 @@
       box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
       overflow-y: auto;
       z-index: 999;
-      padding: 10px;
+      padding: 15px;
       transition: left 0.4s ease;
     }
 
@@ -776,9 +787,9 @@
 
     .nav-pills #toggle_section .nav-link {
       display: flex;
-    }
-
+    } 
 @media(max-width:767px){
+  .category-page .filter-section .filter-div input, .category-page .filter-section .filter-div select{font-size: 11px; padding: 2px;}
   .product_lisiting .product-card-category {
         flex-direction: column;
       }
@@ -807,7 +818,7 @@
 }
 @media (max-width:991px) {
   
-.product_lisiting{width: 100%;}
+.product_lisiting{width: 100%;  }
 }
   </style>
 </head>
