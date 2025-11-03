@@ -1203,6 +1203,116 @@
                         <button class="quantity-btn" onclick="decreaseQty()">-</button>
                         <button class="quantity-btn" onclick="increaseQty()">+</button>
                     </div>
+                    <style>
+                        .pricing-container { 
+                        border-radius: 6px;
+                        }
+
+                        label.option {
+                        display: flex;
+                        align-items: flex-start;
+                        border: 1.5px solid #ccc;
+                        border-radius: 8px;
+                        padding: 14px 16px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        transition: all 0.25s ease;
+                        background-color: #fff;
+                        }
+
+                        label.option:hover {
+                        border-color: #0052cc;
+                        }
+
+                        input[type="radio"] {
+                        accent-color: #0052cc;
+                        margin-right: 14px;
+                        margin-top: 5px;
+                        flex-shrink: 0;
+                        }
+
+                        .option-content {
+                        flex: 1;
+                        display: flex; 
+                        gap: 4px;justify-content: space-between;
+                        }
+
+                        .option-title {
+                        font-weight: 600;
+                        color: #000;
+                        }
+
+                        .price {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px; /* space between current and old price */
+                        font-weight: 600;
+                        color: #0052cc;
+                        flex-wrap: nowrap;justify-content: flex-end;
+                        }
+
+                        .old-price {
+                        text-decoration: line-through;
+                        color: #999;
+                        font-weight: normal;
+                        font-size: 14px;
+                        }
+
+                        .discount-price {
+                        color: #0052cc;
+                        font-weight: 600;
+                        font-size: 16px;
+                        }
+
+                        .total {
+                        font-size: 14px;
+                        color: #444;
+                        }
+
+                        .new-total {
+                        font-weight: bold;
+                        color: #0052cc;
+                        }
+
+                        /* ✅ Background + border change on selection */
+                        label.option:has(input[type="radio"]:checked) {
+                        background-color: #f5f8ff;
+                        border-color: #0052cc;
+                        }
+
+                        /* Smooth transition */
+                        label.option {
+                        transition: background-color 0.2s, border-color 0.2s;
+                        } 
+                    </style>
+                    <div class="pricing-container">
+                        <label class="option">
+                            <input type="radio" name="pieces" checked>
+                            <div class="option-content">
+                                <div class="option-title">Buy 1 – 4 pieces</div>
+                                <div class="price_flex">
+                                    <div class="price">
+                                        <span>₹144.00</span>
+                                    </div>
+                                    <div class="total">Total:
+                                        <span class="old-price">₹350.00</span> <span class="new-total">₹144.00</span></div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option">
+                            <input type="radio" name="pieces">
+                            <div class="option-content">
+                            <div class="option-title">Buy 5+ pieces and save 17%</div>
+                                <div class="price_flex">
+                                    <div class="price">
+                                    <span class="old-price">₹144.00</span>
+                                    <span class="discount-price">₹120.00</span>
+                                </div>
+                            </div>
+                            </div>
+                        </label>
+                    </div>
 
                     <div class="button-group d-flex mb-3">
                         <button class="btn add-to-cart">Add To Cart</button>
