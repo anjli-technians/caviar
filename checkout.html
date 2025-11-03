@@ -396,23 +396,37 @@ font-size: 19px;
         }
 
         @media (max-width:575px){
+            
+        #paymentAccordion .card-option .d-flex .ms-2 p{font-size: 11px;}
+        #paymentAccordion .card-option .d-flex .ms-2 small{font-size: 10px;}
+        [type="radio"].with-gap:checked+label:after{width: 25px; height: 25px;}
+        [type="radio"].with-gap:checked+label:before{width: 15px; height: 15px; margin: 2px;}
             .checkout-steps i, .summary-item .info h6, .summary-item .info p, .offer-box span, .payment-details .row .col, .address-box p, .address-box span, .checkout-steps p span{
                 font-size: 12px !important;
             }
             .payment-details p, .payment-details .total div, .pay-btn, .checkout-page-section .accordion-button, .add-method-btn{
-                font-size: 14px;
+                font-size: 12px;
             }
+            .accordion-body h6{font-size: 12px;}
             .checkout-steps img{
                 width: 12px;
             }
+            .accordion-body .body-text{font-size: 12px;}
+            .summary-item .checkout-cross-icon i{width: 20px; height: 20px; font-size: 13px;}
             .checkout-steps{margin-bottom: 10px;}
-            .add-method-btn i{font-size: 15px; width: 30px; height: 30px;}
-            .checkout-heading{margin-top: 20px; font-size: 20px;}
+            .add-method-btn i{font-size: 13px; width: 25px; height: 25px;}
+            .checkout-heading{margin-top: 20px; font-size: 16px;}
             .summary-card{padding: 30px;}
             .summary-item img{width: 120px;}
-            .card-option img{width:30px}
+            .card-option img{width:25px}
             .card-option img div p, .card-option img div small{font-size: 14px;}
+            [type="radio"]:not(:checked)+label, [type="radio"]:checked+label{padding: 9px;}
         }
+        @media(max-width:991px){
+            .checkout-steps{margin-bottom: 10px;}
+            .checkout-heading {margin-top: 30px;}
+        }
+        #paymentAccordion .card-option .d-flex .ms-2{display: flex; gap: 10px; align-items: center;}
     </style>
 </head>
 
@@ -614,7 +628,7 @@ font-size: 19px;
             </div>
             <div class="row ">
                 <!-- Left Column -->
-                <div class="col-lg-7 pe-md-5 order-md-1 order-2">
+                <div class="col-lg-7 pe-md-5 order-lg-1 order-2">
                     <h4 class="checkout-heading ">Payment Method</h4>
 
                     <div class="accordion" id="paymentAccordion">
@@ -681,7 +695,7 @@ font-size: 19px;
                 </div>
 
                 <!-- Right Column -->
-                <div class="col-lg-5 order-md-2 order-1">
+                <div class="col-lg-5 order-lg-2 order-1">
                     <div class="summary-card ">
                         <div class="summary-item ">
                             <img src="https://m.media-amazon.com/images/I/71an9eiBxpL._SL1500_.jpg" alt="Laptop">
